@@ -43,14 +43,14 @@ function HeroCarousel() {
   const slides = [
     {
       image: '/images/hero-caregiver-senior.jpeg',
-      alt: 'ArayoLight caregiver providing compassionate care to a senior at home',
+      alt: 'Moshi Homecare caregiver providing compassionate care to a senior at home',
       caption: null
     },
     {
-      image: '/rahab-ceo.jpeg',
-      alt: 'Rahab Kinity, Founder & CEO of ArayoLight',
+      image: '/founder-ceo.jpeg',
+      alt: 'Founder & CEO of Moshi Homecare',
       caption: {
-        name: 'Rahab Kinity',
+        name: 'Our Founder',
         title: 'Founder & CEO',
         description: 'Registered Nurse with 25+ years of healthcare experience'
       }
@@ -305,7 +305,7 @@ export default function HomePage() {
                   </h1>
                   
                   <p className="text-care-gray-600 text-base md:text-lg lg:text-xl mb-4 md:mb-8 leading-relaxed max-w-xl text-center lg:text-left">
-                    ArayoLight provides professional, reliable homecare services that help seniors 
+                    Moshi Homecare provides professional, reliable homecare services that help seniors 
                     maintain independence and dignity in the comfort of their own homes. 
                     Serving families nationwide for over 20 years.
                   </p>
@@ -541,7 +541,7 @@ export default function HomePage() {
                 How It Works
               </h2>
               <p className="text-white/90 text-lg leading-relaxed drop-shadow-md">
-                Getting started with ArayoLight homecare services is easy. Three simple steps to quality care.
+                Getting started with Moshi Homecare homecare services is easy. Three simple steps to quality care.
               </p>
             </FadeIn>
           </div>
@@ -634,14 +634,14 @@ export default function HomePage() {
                   variant="white"
                   className="mb-6"
                 >
-                  Why Choose ArayoLight
+                  Why Choose Moshi Homecare
                 </SectionBadge>
                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl !text-white mb-6 tracking-tight">
                   Trusted Care for Over 20 Years
                 </h2>
                 <p className="text-white/70 text-lg mb-10 leading-relaxed">
                   We understand that choosing a caregiver for your loved one is one of the most 
-                  important decisions you&apos;ll make. That&apos;s why ArayoLight has built its reputation on 
+                  important decisions you&apos;ll make. That&apos;s why Moshi Homecare has built its reputation on 
                   trust, compassion, and excellence in care.
                 </p>
                 
@@ -666,7 +666,7 @@ export default function HomePage() {
                 <div className="rounded-3xl overflow-hidden shadow-floating border border-white/10">
                   <Image
                     src="/images/trust-team.jpeg"
-                    alt="ArayoLight professional caregiving team"
+                    alt="Moshi Homecare professional caregiving team"
                     width={600}
                     height={500}
                     className="object-cover object-top w-full h-full"

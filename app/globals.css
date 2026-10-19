@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 /* ==========================================
-   ARAYOLIGHT - BILLION-DOLLAR DESIGN SYSTEM
+   MOSHI HOMECARE - DESIGN SYSTEM
    Premium Healthcare Elegance
    ========================================== */
 
 :root {
   /* Core Brand Colors */
-  --care-red: #C62828;
-  --care-red-dark: #991B1B;
-  --care-red-light: #FEE2E2;
-  --care-navy: #0F172A;
-  --care-navy-light: #1E293B;
-  --care-blue: #1E3A8A;
-  --care-blue-light: #3B82F6;
+  --care-red: #F07B1D;
+  --care-red-dark: #B4580C;
+  --care-red-light: #FEE8D6;
+  --care-navy: #0F2B32;
+  --care-navy-light: #17373F;
+  --care-blue: #14525C;
+  --care-blue-light: #2A90A0;
   --care-white: #FFFFFF;
   
   /* Sophisticated Grays - Warm Undertones */
@@ -39,7 +39,7 @@
   --card-foreground: 222 47% 11%;
   --popover: 0 0% 100%;
   --popover-foreground: 222 47% 11%;
-  --primary: 0 72% 46%;
+  --primary: 27 87% 53%;
   --primary-foreground: 0 0% 100%;
   --secondary: 210 40% 96%;
   --secondary-foreground: 222 47% 11%;
@@ -51,7 +51,7 @@
   --destructive-foreground: 0 0% 100%;
   --border: 214 32% 91%;
   --input: 214 32% 91%;
-  --ring: 0 72% 46%;
+  --ring: 27 87% 53%;
   --radius: 1rem;
 }
 
@@ -90,17 +90,17 @@ body {
 
 /* Care gradient - trust and professionalism */
 .bg-gradient-care {
-  background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%);
+  background: linear-gradient(135deg, #0F2B32 0%, #14525C 100%);
 }
 
 /* Red gradient - CTA energy */
 .bg-gradient-red {
-  background: linear-gradient(135deg, #C62828 0%, #991B1B 100%);
+  background: linear-gradient(135deg, #F07B1D 0%, #B4580C 100%);
 }
 
 /* Navy gradient - depth */
 .bg-gradient-navy {
-  background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%);
+  background: linear-gradient(180deg, #17373F 0%, #0F2B32 100%);
 }
 
 /* Soft gray gradient - section variation */
@@ -130,7 +130,7 @@ body {
 }
 
 .glass-dark {
-  background: rgba(15, 23, 42, 0.6);
+  background: rgba(15, 43, 50, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -174,33 +174,33 @@ body {
   /* Primary CTA - Refined red with premium shadow */
   .btn-primary {
     @apply inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all duration-300;
-    background: linear-gradient(135deg, #C62828 0%, #991B1B 100%);
+    background: linear-gradient(135deg, #F07B1D 0%, #B4580C 100%);
     box-shadow: 
-      0 4px 14px rgba(198, 40, 40, 0.25),
-      0 8px 30px rgba(198, 40, 40, 0.15);
+      0 4px 14px rgba(240, 123, 29, 0.25),
+      0 8px 30px rgba(240, 123, 29, 0.15);
   }
   
   .btn-primary:hover {
     transform: translateY(-2px);
     box-shadow: 
-      0 8px 25px rgba(198, 40, 40, 0.35),
-      0 12px 40px rgba(198, 40, 40, 0.2);
+      0 8px 25px rgba(240, 123, 29, 0.35),
+      0 12px 40px rgba(240, 123, 29, 0.2);
   }
 
   /* Secondary - Navy for trust */
   .btn-secondary {
     @apply inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-all duration-300;
-    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    background: linear-gradient(135deg, #0F2B32 0%, #17373F 100%);
     box-shadow: 
-      0 4px 14px rgba(15, 23, 42, 0.2),
-      0 8px 30px rgba(15, 23, 42, 0.1);
+      0 4px 14px rgba(15, 43, 50, 0.2),
+      0 8px 30px rgba(15, 43, 50, 0.1);
   }
   
   .btn-secondary:hover {
     transform: translateY(-2px);
     box-shadow: 
-      0 8px 25px rgba(15, 23, 42, 0.3),
-      0 12px 40px rgba(15, 23, 42, 0.15);
+      0 8px 25px rgba(15, 43, 50, 0.3),
+      0 12px 40px rgba(15, 43, 50, 0.15);
   }
 
   /* Outline - Clean for secondary actions */
@@ -220,12 +220,12 @@ body {
   /* Ghost button */
   .btn-ghost {
     @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-300;
-    background: rgba(15, 23, 42, 0.05);
+    background: rgba(15, 43, 50, 0.05);
     color: var(--care-navy);
   }
   
   .btn-ghost:hover {
-    background: rgba(15, 23, 42, 0.1);
+    background: rgba(15, 43, 50, 0.1);
   }
 }
 
@@ -239,15 +239,15 @@ body {
     @apply bg-white rounded-2xl overflow-hidden transition-all duration-300;
     border: 1px solid rgba(226, 232, 240, 0.6);
     box-shadow: 
-      0 1px 2px rgba(15, 23, 42, 0.02),
-      0 4px 12px rgba(15, 23, 42, 0.04);
+      0 1px 2px rgba(15, 43, 50, 0.02),
+      0 4px 12px rgba(15, 43, 50, 0.04);
   }
   
   .card-care:hover {
     transform: translateY(-6px);
     box-shadow: 
-      0 12px 40px rgba(15, 23, 42, 0.08),
-      0 4px 12px rgba(15, 23, 42, 0.04);
+      0 12px 40px rgba(15, 43, 50, 0.08),
+      0 4px 12px rgba(15, 43, 50, 0.04);
     border-color: rgba(226, 232, 240, 0.9);
   }
 
@@ -256,14 +256,14 @@ body {
     @apply bg-white rounded-2xl overflow-hidden transition-all duration-300;
     border: 1px solid rgba(255, 255, 255, 0.8);
     box-shadow: 
-      0 20px 50px rgba(15, 23, 42, 0.1),
-      0 8px 20px rgba(15, 23, 42, 0.05);
+      0 20px 50px rgba(15, 43, 50, 0.1),
+      0 8px 20px rgba(15, 43, 50, 0.05);
   }
 
   /* Dark card */
   .card-dark {
     @apply rounded-2xl overflow-hidden transition-all duration-300;
-    background: linear-gradient(145deg, #1E293B 0%, #0F172A 100%);
+    background: linear-gradient(145deg, #17373F 0%, #0F2B32 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
   
@@ -279,7 +279,7 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.6);
-    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.08);
+    box-shadow: 0 8px 32px rgba(15, 43, 50, 0.08);
   }
 
   /* Feature card - larger shadow */
@@ -287,16 +287,16 @@ body {
     @apply bg-white rounded-2xl overflow-hidden transition-all duration-500;
     border: 1px solid rgba(226, 232, 240, 0.4);
     box-shadow: 
-      0 4px 20px rgba(15, 23, 42, 0.05),
-      0 20px 60px rgba(15, 23, 42, 0.08);
+      0 4px 20px rgba(15, 43, 50, 0.05),
+      0 20px 60px rgba(15, 43, 50, 0.08);
   }
 
   .card-feature:hover {
     transform: translateY(-8px) scale(1.01);
     box-shadow: 
-      0 8px 30px rgba(15, 23, 42, 0.08),
-      0 30px 80px rgba(15, 23, 42, 0.12);
-    border-color: rgba(198, 40, 40, 0.2);
+      0 8px 30px rgba(15, 43, 50, 0.08),
+      0 30px 80px rgba(15, 43, 50, 0.12);
+    border-color: rgba(240, 123, 29, 0.2);
   }
 }
 
@@ -335,7 +335,7 @@ body {
 }
 
 .overlay-navy {
-  background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(30,58,138,0.88) 100%);
+  background: linear-gradient(135deg, rgba(15,43,50,0.92) 0%, rgba(20,82,92,0.88) 100%);
 }
 
 .overlay-gradient {
@@ -381,7 +381,7 @@ body {
 
   .hover-lift:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+    box-shadow: 0 20px 40px rgba(15, 43, 50, 0.1);
   }
 
   .hover-scale {
@@ -467,15 +467,15 @@ body {
 }
 
 .orb-red {
-  background: radial-gradient(circle, rgba(198, 40, 40, 0.3) 0%, rgba(198, 40, 40, 0) 70%);
+  background: radial-gradient(circle, rgba(240, 123, 29, 0.3) 0%, rgba(240, 123, 29, 0) 70%);
 }
 
 .orb-blue {
-  background: radial-gradient(circle, rgba(30, 58, 138, 0.3) 0%, rgba(30, 58, 138, 0) 70%);
+  background: radial-gradient(circle, rgba(20, 82, 92, 0.3) 0%, rgba(20, 82, 92, 0) 70%);
 }
 
 .orb-navy {
-  background: radial-gradient(circle, rgba(15, 23, 42, 0.3) 0%, rgba(15, 23, 42, 0) 70%);
+  background: radial-gradient(circle, rgba(15, 43, 50, 0.3) 0%, rgba(15, 43, 50, 0) 70%);
 }
 
 /* Gradient border */
@@ -489,7 +489,7 @@ body {
   inset: 0;
   border-radius: inherit;
   padding: 2px;
-  background: linear-gradient(135deg, #C62828 0%, #1E3A8A 100%);
+  background: linear-gradient(135deg, #F07B1D 0%, #14525C 100%);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
@@ -512,7 +512,7 @@ body {
 .form-input:focus {
   outline: none;
   border-color: var(--care-blue-light);
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
+  box-shadow: 0 0 0 4px rgba(42, 144, 160, 0.08);
 }
 
 .form-input::placeholder {
@@ -539,7 +539,7 @@ body {
 .form-select:focus {
   outline: none;
   border-color: var(--care-blue-light);
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
+  box-shadow: 0 0 0 4px rgba(42, 144, 160, 0.08);
 }
 
 .form-textarea {
@@ -553,7 +553,7 @@ body {
 .form-textarea:focus {
   outline: none;
   border-color: var(--care-blue-light);
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.08);
+  box-shadow: 0 0 0 4px rgba(42, 144, 160, 0.08);
 }
 
 /* ==========================================
@@ -562,23 +562,23 @@ body {
 
 .badge-red {
   @apply inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold;
-  background: rgba(198, 40, 40, 0.08);
+  background: rgba(240, 123, 29, 0.08);
   color: var(--care-red);
-  border: 1px solid rgba(198, 40, 40, 0.12);
+  border: 1px solid rgba(240, 123, 29, 0.12);
 }
 
 .badge-blue {
   @apply inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold;
-  background: rgba(30, 58, 138, 0.08);
+  background: rgba(20, 82, 92, 0.08);
   color: var(--care-blue);
-  border: 1px solid rgba(30, 58, 138, 0.12);
+  border: 1px solid rgba(20, 82, 92, 0.12);
 }
 
 .badge-navy {
   @apply inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold;
-  background: rgba(15, 23, 42, 0.06);
+  background: rgba(15, 43, 50, 0.06);
   color: var(--care-navy);
-  border: 1px solid rgba(15, 23, 42, 0.1);
+  border: 1px solid rgba(15, 43, 50, 0.1);
 }
 
 /* ==========================================
@@ -805,7 +805,7 @@ body {
 
 /* Text gradient */
 .text-gradient {
-  background: linear-gradient(135deg, #C62828 0%, #1E3A8A 100%);
+  background: linear-gradient(135deg, #F07B1D 0%, #14525C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

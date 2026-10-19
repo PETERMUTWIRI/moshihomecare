@@ -105,7 +105,7 @@ export default function AwardsPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/trust-team.jpeg"
-        imageAlt="ArayoLight award-winning caregiving team"
+        imageAlt="Moshi Homecare award-winning caregiving team"
         overlay="white-light"
         className="relative"
       >
@@ -129,7 +129,7 @@ export default function AwardsPage() {
                   <span className="text-care-red">Recognized by Industry Leaders.</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  For over two decades, ArayoLight has set the standard for compassionate, 
+                  For over two decades, Moshi Homecare has set the standard for compassionate, 
                   professional homecare. These recognitions reflect our unwavering commitment 
                   to excellence, transparency, and the families we serve.
                 </p>
@@ -225,7 +225,7 @@ export default function AwardsPage() {
       {/* Trust Section - Image Background */}
       <SectionBackground
         imageSrc="/images/about-story.jpeg"
-        imageAlt="ArayoLight trusted caregiving team"
+        imageAlt="Moshi Homecare trusted caregiving team"
         overlay="white-light"
         className="relative"
       >
@@ -263,7 +263,7 @@ export default function AwardsPage() {
                     <p className="text-care-gray-600 text-lg leading-relaxed">
                       Recognition is nice, but what truly matters is the peace of mind we bring 
                       to families every single day. Let us show you why thousands of families 
-                      across the USA choose ArayoLight.
+                      across the USA choose Moshi Homecare.
                     </p>
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                       <Link

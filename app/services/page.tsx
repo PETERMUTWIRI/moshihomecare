@@ -59,7 +59,7 @@ export default function ServicesPage() {
                   Comprehensive <span className="text-care-red">Homecare Services</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  From daily assistance to specialized care, ArayoLight provides a full spectrum of 
+                  From daily assistance to specialized care, Moshi Homecare provides a full spectrum of 
                   professional services designed to help your loved ones maintain independence, dignity, 
                   and quality of life in the comfort of their own home.
                 </p>
@@ -80,7 +80,7 @@ export default function ServicesPage() {
                   variant="blue"
                   className="mb-3 md:mb-6"
                 >
-                  Why Choose ArayoLight
+                  Why Choose Moshi Homecare
                 </SectionBadge>
                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-care-navy mb-6 leading-tight tracking-tight">
                   Care That Adapts to Your Unique Needs
@@ -112,7 +112,7 @@ export default function ServicesPage() {
                 <div className="rounded-3xl overflow-hidden shadow-floating border border-white/40">
                   <Image
                     src="/images/about-story.jpeg"
-                    alt="ArayoLight caregiver providing personalized care"
+                    alt="Moshi Homecare caregiver providing personalized care"
                     width={600}
                     height={500}
                     className="object-cover w-full h-full"
@@ -516,7 +516,7 @@ export default function ServicesPage() {
 
                   <div className="bg-white rounded-2xl p-6 border-l-4 border-care-red shadow-soft">
                     <p className="text-care-gray-600 italic leading-relaxed">
-                      &ldquo;The companionship my mother receives from her ArayoLight caregiver has 
+                      &ldquo;The companionship my mother receives from her Moshi Homecare caregiver has 
                       transformed her outlook. She looks forward to their visits, and I have peace 
                       of mind knowing she&apos;s not alone.&rdquo;
                     </p>
@@ -542,7 +542,7 @@ export default function ServicesPage() {
                 Ready to Get Started?
               </h2>
               <p className="text-white/70 text-lg">
-                Beginning care with ArayoLight is simple and stress-free. We&apos;re here to guide 
+                Beginning care with Moshi Homecare is simple and stress-free. We&apos;re here to guide 
                 you every step of the way.
               </p>
             </FadeIn>

@@ -86,7 +86,7 @@ export default function RequestCarePage() {
                   Submit Another Request
                 </button>
                 <a
-                  href="tel:+19194498913"
+                  href="tel:+15550100189"
                   className="btn-outline w-full"
                 >
                   Call Us Instead
@@ -320,7 +320,7 @@ export default function RequestCarePage() {
                 <div className="relative rounded-2xl overflow-hidden aspect-[16/10] shadow-elevated">
                   <Image
                     src="/images/caregiver-family.jpeg"
-                    alt="ArayoLight caregiver with happy family"
+                    alt="Moshi Homecare caregiver with happy family"
                     fill
                     className="object-cover object-center"
                   />

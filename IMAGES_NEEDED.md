@@ -1,6 +1,6 @@
-# ArayoLight Website - Image Requirements
+# Moshi Homecare Website - Image Requirements
 
-This document lists all images needed for the ArayoLight Homecare website. Please download or create these images, name them exactly as specified below, and place them in the `/public/images/` folder.
+This document lists all images needed for the Moshi Homecare website. Please download or create these images, name them exactly as specified below, and place them in the `/public/images/` folder.
 
 ---
 
@@ -113,7 +113,7 @@ This document lists all images needed for the ArayoLight Homecare website. Pleas
 
 ### 14. about-story.jpg
 **Priority: HIGH**
-- **Description:** Founding story - early days of ArayoLight
+- **Description:** Founding story - early days of Moshi Homecare
 - **Scene:** Vintage-style photo of founder with first clients OR modern interpretation showing care in early 2000s
 - **Alternative:** Photo of compassionate care moment that represents the founding mission
 - **Mood:** Heartwarming, foundational, authentic
@@ -189,7 +189,7 @@ This document lists all images needed for the ArayoLight Homecare website. Pleas
 
 ### 23. contact-office.jpg
 **Priority: MEDIUM**
-- **Description:** ArayoLight support/office environment
+- **Description:** Moshi Homecare support/office environment
 - **Scene:** Friendly support team at desks OR welcoming office reception
 - **Mood:** Professional, welcoming, helpful
 - **Dimensions:** 1200x800px (3:2)
@@ -208,14 +208,14 @@ This document lists all images needed for the ArayoLight Homecare website. Pleas
 ### 25. og-image.jpg (Open Graph/Social Media)
 **Priority: HIGH**
 - **Description:** Social media preview image
-- **Scene:** Professional caregiver with senior, ArayoLight branding feel
-- **Text:** Can include "ArayoLight Homecare - Professional Care You Can Trust"
+- **Scene:** Professional caregiver with senior, Moshi Homecare branding feel
+- **Text:** Can include "Moshi Homecare - Professional Care You Can Trust"
 - **Mood:** Professional, trustworthy, warm
 - **Dimensions:** 1200x630px (1.91:1 - standard OG ratio)
 
 ### 26. logo.png (Optional if you have a logo file)
 **Priority: MEDIUM**
-- **Description:** ArayoLight logo
+- **Description:** Moshi Homecare logo
 - **Format:** PNG with transparency
 - **Dimensions:** 512x512px minimum
 
@@ -231,9 +231,9 @@ This document lists all images needed for the ArayoLight Homecare website. Pleas
 - **Respectful:** Dignified portrayal of seniors and care situations
 
 ### Color Palette to Match:
-- Deep Red: #C62828 (accents, CTAs)
-- Dark Navy: #0F172A (text, dark sections)
-- Soft Blue: #1E3A8A (trust elements)
+- Deep Red: #F07B1D (accents, CTAs)
+- Dark Navy: #0F2B32 (text, dark sections)
+- Soft Blue: #14525C (trust elements)
 - Light Gray: #F8FAFC (backgrounds)
 
 ### People Representation:

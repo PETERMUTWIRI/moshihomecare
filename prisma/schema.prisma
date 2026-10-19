@@ -8,7 +8,7 @@ datasource db {
 }
 
 // ==========================================
-// KINITY 2027 - PRESIDENTIAL CAMPAIGN SCHEMA
+// MOSHI HOMECARE - DATABASE SCHEMA
 // ==========================================
 
 // News/Press Releases - Transformed from Blog Posts
@@ -453,7 +453,7 @@ model CampaignStat {
 }
 
 // ==========================================
-// ARAYOLIGHT - CLIENT REVIEWS
+// MOSHI HOMECARE - CLIENT REVIEWS
 // ==========================================
 
 model Review {

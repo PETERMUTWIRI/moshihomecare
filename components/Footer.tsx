@@ -47,7 +47,7 @@ export default function Footer() {
           }}
         >
           <Image
-            src="/Arayolight-logo.png"
+            src="/moshi-mark-white.png"
             alt=""
             fill
             className="object-contain"
@@ -64,17 +64,17 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 group mb-6">
-              <div className="relative w-12 h-12 rounded-xl bg-white/10 p-1.5 backdrop-blur-sm">
+              <div className="relative w-12 h-12 rounded-xl bg-white p-1.5">
                 <Image
-                  src="/Arayolight-logo.png"
-                  alt="ArayoLight Homecare Services"
+                  src="/moshi-mark.png"
+                  alt="Moshi Homecare"
                   fill
                   className="object-contain"
                 />
               </div>
               <div>
-                <span className="font-heading text-xl font-bold !text-white block tracking-tight">ArayoLight</span>
-                <span className="text-white/60 text-xs font-medium uppercase tracking-wider">Homecare Services</span>
+                <span className="font-heading text-xl font-bold !text-white block tracking-tight">Moshi</span>
+                <span className="text-white/60 text-xs font-medium uppercase tracking-wider">Homecare</span>
               </div>
             </Link>
             <p className="text-care-gray-300 text-sm leading-relaxed mb-6">
@@ -83,21 +83,21 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="#"
+                href="https://facebook.com/moshihomecare"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-care-red transition-all duration-300 hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com/moshihomecare"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-care-red transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://linkedin.com/company/moshihomecare"
                 className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-care-red transition-all duration-300 hover:scale-110"
                 aria-label="LinkedIn"
               >
@@ -148,8 +148,8 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-care-gray-400 uppercase tracking-wider mb-0.5">Phone</p>
-                  <a href="tel:+19194498913" className="text-white hover:text-care-red transition-colors text-sm">
-                    +1 (919) 449-8913
+                  <a href="tel:+15550100189" className="text-white hover:text-care-red transition-colors text-sm">
+                    +1 (555) 010-0189
                   </a>
                 </div>
               </li>
@@ -157,8 +157,8 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-care-gray-400 uppercase tracking-wider mb-0.5">Email</p>
-                  <a href="mailto:raylightcare76@gmail.com" className="text-white hover:text-care-red transition-colors text-sm">
-                    raylightcare76@gmail.com
+                  <a href="mailto:info@moshihomecare.com" className="text-white hover:text-care-red transition-colors text-sm">
+                    info@moshihomecare.com
                   </a>
                 </div>
               </li>
@@ -186,7 +186,7 @@ export default function Footer() {
         <div className="container-care mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-care-gray-400 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} ArayoLight Homecare. All rights reserved.
+              © {new Date().getFullYear()} Moshi Homecare. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               {footerLinks.legal.map((link) => (

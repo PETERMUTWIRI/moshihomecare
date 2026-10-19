@@ -4,8 +4,8 @@ import { Accessibility, ArrowLeft, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
-  description: 'Our commitment to making ArayoLight homecare services accessible to everyone. Learn about our accessibility features and WCAG compliance.',
-  keywords: ['accessibility', 'WCAG', 'screen reader', 'keyboard navigation', 'inclusive design', 'ArayoLight'],
+  description: 'Our commitment to making Moshi Homecare homecare services accessible to everyone. Learn about our accessibility features and WCAG compliance.',
+  keywords: ['accessibility', 'WCAG', 'screen reader', 'keyboard navigation', 'inclusive design', 'Moshi Homecare'],
 };
 
 export default function AccessibilityPage() {
@@ -36,7 +36,7 @@ export default function AccessibilityPage() {
             <div className="card-care p-8 md:p-12">
               <div className="prose prose-care max-w-none">
                 <p className="text-lg text-care-gray-500 mb-8">
-                  ArayoLight Homecare is committed to ensuring digital accessibility for people with 
+                  Moshi Homecare is committed to ensuring digital accessibility for people with 
                   disabilities. We continually work to improve the user experience for all visitors 
                   to our website.
                 </p>
@@ -50,7 +50,7 @@ export default function AccessibilityPage() {
 
                 <h2 className="font-heading text-xl text-care-navy mt-8 mb-4">Conformance Status</h2>
                 <p className="text-care-gray-500 mb-4">
-                  ArayoLight Homecare strives to conform to <strong>WCAG 2.1 Level AA</strong> standards. 
+                  Moshi Homecare strives to conform to <strong>WCAG 2.1 Level AA</strong> standards. 
                   We are continuously working to improve the accessibility of our website to ensure 
                   all users can access our content.
                 </p>
@@ -89,8 +89,8 @@ export default function AccessibilityPage() {
                 </p>
                 
                 <div className="bg-care-gray-50 rounded-xl p-6 mb-6">
-                  <p className="text-care-gray-500">Email: <a href="mailto:accessibility@arayolight.com" className="text-care-red hover:underline">accessibility@arayolight.com</a></p>
-                  <p className="text-care-gray-500">Phone: <a href="tel:+19194498913" className="text-care-red hover:underline">+1 (919) 449-8913</a></p>
+                  <p className="text-care-gray-500">Email: <a href="mailto:accessibility@moshihomecare.com" className="text-care-red hover:underline">accessibility@moshihomecare.com</a></p>
+                  <p className="text-care-gray-500">Phone: <a href="tel:+15550100189" className="text-care-red hover:underline">+1 (555) 010-0189</a></p>
                 </div>
 
                 <p className="text-care-gray-500 mb-4">
@@ -113,7 +113,7 @@ export default function AccessibilityPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-care-blue flex-shrink-0 mt-0.5" />
                     <p className="text-care-navy font-medium">
-                      Quality care should be accessible to everyone. ArayoLight is committed to making our 
+                      Quality care should be accessible to everyone. Moshi Homecare is committed to making our 
                       website and services accessible to all users, regardless of ability.
                     </p>
                   </div>

@@ -31,7 +31,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: '2004', event: 'ArayoLight was founded with a mission to provide quality homecare' },
+  { year: '2004', event: 'Moshi Homecare was founded with a mission to provide quality homecare' },
   { year: '2010', event: 'Expanded services to cover all 50 states' },
   { year: '2015', event: 'Reached 5,000 families served milestone' },
   { year: '2020', event: 'Launched specialized dementia and Alzheimer\'s care programs' },
@@ -51,7 +51,7 @@ export default function AboutPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/team-founder.jpeg"
-        imageAlt="Rahab Kinity, Founder of ArayoLight"
+        imageAlt="Moshi Homecare, Founder of Moshi Homecare"
         overlay="white-light"
         className="relative"
       >
@@ -75,7 +75,7 @@ export default function AboutPage() {
                   <span className="text-care-red">Compassionate Care</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  For over 20 years, ArayoLight has been a trusted partner for families seeking 
+                  For over 20 years, Moshi Homecare has been a trusted partner for families seeking 
                   quality homecare services. Our mission is simple: to help seniors and individuals 
                   with care needs live with dignity, comfort, and independence in their own homes.
                 </p>
@@ -108,7 +108,7 @@ export default function AboutPage() {
       {/* Story Section - Image Background with Glass Card */}
       <SectionBackground
         imageSrc="/images/about-story.jpeg"
-        imageAlt="ArayoLight founders and early team"
+        imageAlt="Moshi Homecare founders and early team"
         overlay="gradient"
         className="relative"
       >
@@ -129,16 +129,16 @@ export default function AboutPage() {
                   </h2>
                   <div className="space-y-5 text-care-gray-600 leading-relaxed text-lg">
                     <p>
-                      ArayoLight was born from one woman&apos;s unwavering belief that aging with dignity 
-                      isn&apos;t a privilege—it&apos;s a fundamental right. In 2004, Rahab Kinity, a registered 
-                      nurse with over 25 years of clinical experience, founded ArayoLight after witnessing 
-                      countless families struggle to find care that truly honored their loved ones.
+                      Moshi Homecare was born from a simple, unwavering belief: that aging with dignity
+                      isn&apos;t a privilege—it&apos;s a fundamental right. Founded in 2004 by a registered
+                      nurse with over 25 years of clinical experience, Moshi Homecare exists because
+                      countless families struggled to find care that truly honored their loved ones.
                     </p>
                     <p>
-                      Rahab&apos;s passion stems from her deep-rooted conviction that healing happens best 
-                      where love lives—at home. She built ArayoLight not as a business, but as a promise 
-                      to every family: that their parents, their grandparents, their loved ones would 
-                      receive the same level of care she would want for her own family.
+                      Our founder&apos;s passion stems from a deep-rooted conviction that healing happens best
+                      where love lives—at home. Moshi Homecare was built not as a business, but as a promise
+                      to every family: that their parents, their grandparents, their loved ones would
+                      receive the same level of care we would want for our own family.
                     </p>
                     <p>
                       Today, that same spirit guides over 5,000 caregivers nationwide. What started as 
@@ -237,7 +237,7 @@ export default function AboutPage() {
       {/* Team Section - Image Background */}
       <SectionBackground
         imageSrc="/images/trust-team.jpeg"
-        imageAlt="ArayoLight leadership team"
+        imageAlt="Moshi Homecare leadership team"
         overlay="gradient"
         className="relative"
       >
@@ -253,7 +253,7 @@ export default function AboutPage() {
                   Our Team
                 </SectionBadge>
                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-care-navy mb-5 tracking-tight">
-                  Meet the ArayoLight Leadership
+                  Meet the Moshi Homecare Leadership
                 </h2>
                 <p className="text-care-gray-600 text-lg">
                   Dedicated professionals committed to delivering excellence in homecare.
@@ -267,12 +267,12 @@ export default function AboutPage() {
                   <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-elevated border-4 border-white group-hover:shadow-elevated-hover group-hover:border-care-red/20 transition-all duration-500">
                     <Image
                       src="/images/team-founder.jpeg"
-                      alt="Founder & CEO of ArayoLight"
+                      alt="Founder & CEO of Moshi Homecare"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
                   </div>
-                  <h3 className="font-heading text-xl text-care-navy">Rahab Kinity</h3>
+                  <h3 className="font-heading text-xl text-care-navy">Moshi Homecare</h3>
                   <p className="text-care-red text-sm mb-2 font-medium">Founder & CEO</p>
                   <p className="text-care-gray-600 text-sm max-w-xs mx-auto">Registered Nurse with 25+ years of healthcare experience</p>
                 </div>
@@ -283,7 +283,7 @@ export default function AboutPage() {
                   <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-elevated border-4 border-white group-hover:shadow-elevated-hover group-hover:border-care-red/20 transition-all duration-500">
                     <Image
                       src="/images/team-director.jpeg"
-                      alt="Care Director at ArayoLight"
+                      alt="Care Director at Moshi Homecare"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -299,7 +299,7 @@ export default function AboutPage() {
                   <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-elevated border-4 border-white group-hover:shadow-elevated-hover group-hover:border-care-red/20 transition-all duration-500">
                     <Image
                       src="/images/team-operations.jpeg"
-                      alt="Operations Manager at ArayoLight"
+                      alt="Operations Manager at Moshi Homecare"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-700"
                     />
@@ -359,7 +359,7 @@ export default function AboutPage() {
       {/* Coverage Section - Image Background */}
       <SectionBackground
         imageSrc="/images/nationwide-coverage.jpeg"
-        imageAlt="ArayoLight nationwide coverage map"
+        imageAlt="Moshi Homecare nationwide coverage map"
         overlay="gradient"
         className="relative"
       >
@@ -371,7 +371,7 @@ export default function AboutPage() {
                   <div className="relative rounded-3xl overflow-hidden h-[400px] shadow-floating border border-white/40">
                     <Image
                       src="/images/nationwide-coverage.jpeg"
-                      alt="ArayoLight nationwide coverage map - serving all US states"
+                      alt="Moshi Homecare nationwide coverage map - serving all US states"
                       fill
                       className="object-cover"
                     />
@@ -390,7 +390,7 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <p className="text-care-gray-600 leading-relaxed mb-8 text-lg">
-                      No matter where you are in the United States, ArayoLight is ready to help. 
+                      No matter where you are in the United States, Moshi Homecare is ready to help. 
                       Our extensive network of caregivers spans all 50 states, ensuring that quality 
                       homecare is always within reach.
                     </p>

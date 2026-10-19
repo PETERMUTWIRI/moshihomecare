@@ -10,7 +10,7 @@ export default function CookieConsent() {
 
   useEffect(() => {
     // Check if user has already consented
-    const hasConsented = localStorage.getItem('arayolight-cookie-consent');
+    const hasConsented = localStorage.getItem('moshihomecare-cookie-consent');
     if (!hasConsented) {
       // Small delay for better UX
       const timer = setTimeout(() => {
@@ -22,15 +22,15 @@ export default function CookieConsent() {
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem('arayolight-cookie-consent', 'accepted');
-    localStorage.setItem('arayolight-cookie-consent-date', new Date().toISOString());
+    localStorage.setItem('moshihomecare-cookie-consent', 'accepted');
+    localStorage.setItem('moshihomecare-cookie-consent-date', new Date().toISOString());
     setIsAnimating(false);
     setTimeout(() => setIsVisible(false), 300);
   };
 
   const handleDecline = () => {
-    localStorage.setItem('arayolight-cookie-consent', 'declined');
-    localStorage.setItem('arayolight-cookie-consent-date', new Date().toISOString());
+    localStorage.setItem('moshihomecare-cookie-consent', 'declined');
+    localStorage.setItem('moshihomecare-cookie-consent-date', new Date().toISOString());
     setIsAnimating(false);
     setTimeout(() => setIsVisible(false), 300);
   };

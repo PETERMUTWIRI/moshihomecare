@@ -8,7 +8,7 @@ import BackToTop from '@/components/BackToTop';
 import CookieConsent from '@/components/CookieConsent';
 
 // ==========================================
-// ARAYOLIGHT - PROFESSIONAL HOMECARE
+// MOSHI HOMECARE - PROFESSIONAL HOMECARE
 // Root Layout with SEO Optimization
 // ==========================================
 
@@ -26,12 +26,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   // Core title template
   title: {
-    default: "ArayoLight Homecare Service",
-    template: "%s | ArayoLight Homecare",
+    default: "Moshi Homecare",
+    template: "%s | Moshi Homecare",
   },
   
   // Primary description
-  description: "Professional homecare services you can trust. Serving families across all states for over 20 years. Compassionate caregivers for seniors and individuals needing assistance at home.",
+  description: "Compassionate care, right at home. Professional homecare services you can trust, serving families across all states. Caregivers for seniors and individuals needing assistance at home.",
   
   // Keywords for search engines
   keywords: [
@@ -49,13 +49,13 @@ export const metadata: Metadata = {
     'USA homecare',
     'professional caregivers',
     'licensed homecare',
-    'ArayoLight',
+    'Moshi Homecare',
   ],
   
   // Authors and ownership
-  authors: [{ name: "ArayoLight Homecare" }],
-  creator: "ArayoLight Homecare",
-  publisher: "ArayoLight Homecare",
+  authors: [{ name: "Moshi Homecare" }],
+  creator: "Moshi Homecare",
+  publisher: "Moshi Homecare",
   
   // Format detection
   formatDetection: {
@@ -65,28 +65,29 @@ export const metadata: Metadata = {
   },
   
   // Canonical URL base
-  metadataBase: new URL('https://www.arayolight.com'),
+  metadataBase: new URL('https://www.moshihomecare.com'),
   
   // Alternates
   alternates: {
     canonical: '/',
   },
   
-  // Icons - Using ArayoLight logo as favicon
+  // Icons - Using Moshi Homecare logo as favicon
   icons: {
     icon: [
-      { url: '/Arayolight-logo.png', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
     ],
-    shortcut: '/Arayolight-logo.png',
-    apple: '/Arayolight-logo.png',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
   
   // Open Graph - Social sharing
   openGraph: {
-    title: "ArayoLight Homecare Service",
+    title: "Moshi Homecare",
     description: "Trusted homecare services for your loved ones. 20+ years of experience serving families across all states.",
-    url: 'https://www.arayolight.com',
-    siteName: "ArayoLight Homecare",
+    url: 'https://www.moshihomecare.com',
+    siteName: "Moshi Homecare",
     locale: 'en_US',
     type: 'website',
     images: [
@@ -94,7 +95,7 @@ export const metadata: Metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'ArayoLight - Professional Homecare Services',
+        alt: 'Moshi Homecare - Professional Homecare Services',
       },
     ],
   },
@@ -102,11 +103,11 @@ export const metadata: Metadata = {
   // Twitter Cards
   twitter: {
     card: 'summary_large_image',
-    title: "ArayoLight Homecare Service",
+    title: "Moshi Homecare",
     description: "Trusted homecare services for your loved ones. Serving all states with compassion and professionalism.",
     images: ['/images/og-image.jpg'],
-    creator: '@ArayoLight',
-    site: '@ArayoLight',
+    creator: '@MoshiHomecare',
+    site: '@MoshiHomecare',
   },
   
   // Robots
@@ -136,7 +137,7 @@ export const metadata: Metadata = {
 // ==========================================
 
 export const viewport = {
-  themeColor: '#0F172A',
+  themeColor: '#1E8996',
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
@@ -169,12 +170,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
-              name: 'ArayoLight Homecare',
+              name: 'Moshi Homecare',
               description: 'Professional homecare services serving all states across the USA. 20+ years of experience providing compassionate care for seniors and individuals needing assistance.',
-              url: 'https://www.arayolight.com',
-              telephone: '+1 (919) 449-8913',
-              email: 'raylightcare76@gmail.com',
-              image: 'https://www.arayolight.com/images/logo.png',
+              url: 'https://www.moshihomecare.com',
+              telephone: '+1 (555) 010-0189',
+              email: 'info@moshihomecare.com',
+              image: 'https://www.moshihomecare.com/moshi_logo_card.png',
               address: {
                 '@type': 'PostalAddress',
                 addressCountry: 'US',
@@ -194,9 +195,9 @@ export default function RootLayout({
               priceRange: '$$',
               openingHours: '24/7',
               sameAs: [
-                'https://facebook.com/arayolight',
-                'https://instagram.com/arayolight',
-                'https://linkedin.com/company/arayolight',
+                'https://facebook.com/moshihomecare',
+                'https://instagram.com/moshihomecare',
+                'https://linkedin.com/company/moshihomecare',
               ],
             }),
           }}
@@ -212,7 +213,7 @@ export default function RootLayout({
               serviceType: 'Homecare Services',
               provider: {
                 '@type': 'LocalBusiness',
-                name: 'ArayoLight Homecare',
+                name: 'Moshi Homecare',
               },
               areaServed: {
                 '@type': 'Country',

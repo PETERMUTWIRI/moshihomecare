@@ -12,8 +12,8 @@ const contactMethods = [
     icon: Phone,
     title: 'Phone',
     description: 'Speak directly with our care coordinators',
-    action: '+1 (919) 449-8913',
-    href: 'tel:+19194498913',
+    action: '+1 (555) 010-0189',
+    href: 'tel:+15550100189',
     cta: 'Call Now',
   },
   {
@@ -29,8 +29,8 @@ const contactMethods = [
     icon: Mail,
     title: 'Email',
     description: 'Send us your questions anytime',
-    action: 'raylightcare76@gmail.com',
-    href: 'mailto:raylightcare76@gmail.com',
+    action: 'info@moshihomecare.com',
+    href: 'mailto:info@moshihomecare.com',
     cta: 'Send Email',
   },
 ];
@@ -46,7 +46,7 @@ export default function ContactPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/contact-office.jpeg"
-        imageAlt="ArayoLight support team ready to help"
+        imageAlt="Moshi Homecare support team ready to help"
         overlay="white-light"
         className="relative"
       >
@@ -66,7 +66,7 @@ export default function ContactPage() {
                   Contact Us
                 </SectionBadge>
                 <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-care-navy mb-5 leading-tight tracking-tight">
-                  Get in Touch with ArayoLight
+                  Get in Touch with Moshi Homecare
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl">
                   Have questions about our services? We&apos;re here to help. Reach out to us through 
@@ -110,7 +110,7 @@ export default function ContactPage() {
       {/* Coverage & Quick Actions - Image Background */}
       <SectionBackground
         imageSrc="/images/support-team.jpeg"
-        imageAlt="ArayoLight support team"
+        imageAlt="Moshi Homecare support team"
         overlay="gradient"
         className="relative"
       >
@@ -123,7 +123,7 @@ export default function ContactPage() {
                     <div className="relative h-52 rounded-xl overflow-hidden mb-6">
                       <Image
                         src="/images/contact-office.jpeg"
-                        alt="ArayoLight support team ready to help"
+                        alt="Moshi Homecare support team ready to help"
                         fill
                         className="object-cover"
                       />
@@ -198,7 +198,7 @@ export default function ContactPage() {
                   <Clock className="w-12 h-12 text-care-red mb-5 mx-auto md:mx-0" />
                   <h2 className="font-heading text-2xl md:text-3xl !text-white mb-4">Fast Response Times</h2>
                   <p className="text-white/70 mb-8">
-                    We understand that care needs can be urgent. That&apos;s why ArayoLight prioritizes 
+                    We understand that care needs can be urgent. That&apos;s why Moshi Homecare prioritizes 
                     quick responses to all inquiries.
                   </p>
                   <div className="grid grid-cols-2 gap-6">
@@ -218,7 +218,7 @@ export default function ContactPage() {
                 <div className="relative rounded-3xl overflow-hidden h-80 md:h-full min-h-[320px] shadow-floating border border-white/10">
                   <Image
                     src="/images/support-team.jpeg"
-                    alt="ArayoLight customer support team"
+                    alt="Moshi Homecare customer support team"
                     fill
                     className="object-cover"
                   />

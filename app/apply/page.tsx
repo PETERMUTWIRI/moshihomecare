@@ -55,7 +55,7 @@ export default function ApplyPage() {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        recipientEmail: 'careers@arayolight.com',
+        recipientEmail: 'careers@moshihomecare.com',
       });
       window.open(mailtoLink, '_blank');
     }
@@ -142,7 +142,7 @@ export default function ApplyPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/caregiver-team.jpeg"
-        imageAlt="ArayoLight professional caregiving team"
+        imageAlt="Moshi Homecare professional caregiving team"
         overlay="white-light"
         className="relative"
       >
@@ -162,7 +162,7 @@ export default function ApplyPage() {
                   Join Our Team
                 </SectionBadge>
                 <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl text-care-navy mb-5 leading-tight tracking-tight">
-                  Apply to Be an ArayoLight Caregiver
+                  Apply to Be an Moshi Homecare Caregiver
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl">
                   Join our team of compassionate caregivers. Fill out the form below and we&apos;ll connect with you via WhatsApp.
@@ -382,7 +382,7 @@ export default function ApplyPage() {
                 <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-elevated">
                   <Image
                     src="/images/caregiver-team.jpeg"
-                    alt="ArayoLight professional caregiving team"
+                    alt="Moshi Homecare professional caregiving team"
                     fill
                     className="object-cover object-center"
                   />
@@ -414,7 +414,7 @@ export default function ApplyPage() {
                 <div className="relative rounded-2xl overflow-hidden aspect-[16/10] shadow-elevated">
                   <Image
                     src="/images/caregiver-training.jpeg"
-                    alt="ArayoLight caregiver training program"
+                    alt="Moshi Homecare caregiver training program"
                     fill
                     className="object-cover object-center"
                   />
@@ -427,7 +427,7 @@ export default function ApplyPage() {
               {/* Stats Card */}
               <FadeIn direction="up" delay={0.25}>
                 <FloatingCard variant="dark" className="text-center">
-                  <h3 className="font-heading text-lg !text-white mb-6">Join 5,000+ ArayoLight Caregivers</h3>
+                  <h3 className="font-heading text-lg !text-white mb-6">Join 5,000+ Moshi Homecare Caregivers</h3>
                   <div className="grid grid-cols-3 gap-4">
                     <div>
                       <p className="font-heading text-2xl text-care-red">Competitive</p>

@@ -45,25 +45,26 @@ const config: Config = {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         
-        // Caregiver Brand Colors - Professional Healthcare Palette
+        // Moshi Homecare Brand Colors - sampled from logo (teal hands/wordmark, orange roof/heart)
+        // Token names (red/blue/navy) kept stable so existing components re-theme automatically
         care: {
-          // Primary Deep Red - CTAs only, use sparingly
+          // CTA Orange - roof/heart orange, deepened slightly for white-text contrast. Use for CTAs
           red: {
-            DEFAULT: '#C62828',
-            50: '#FEE2E2',
-            100: '#FECACA',
-            200: '#FCA5A5',
-            300: '#F87171',
-            400: '#EF4444',
-            500: '#C62828', // Primary CTA
-            600: '#B91C1C',
-            700: '#991B1B',
-            800: '#7F1D1D',
-            900: '#450A0A',
+            DEFAULT: '#F07B1D',
+            50: '#FFF4EB',
+            100: '#FEE8D6',
+            200: '#FDCDA4',
+            300: '#FBB274',
+            400: '#FE9B5B', // Logo heart
+            500: '#F07B1D', // Primary CTA
+            600: '#D96A0E',
+            700: '#B4580C',
+            800: '#8F470E',
+            900: '#733B0F',
           },
-          // Base Dark Navy - Primary text and dark sections
+          // Base Dark Teal - Primary text and dark sections
           navy: {
-            DEFAULT: '#0F172A',
+            DEFAULT: '#0F2B32',
             50: '#F1F5F9',
             100: '#E2E8F0',
             200: '#CBD5E1',
@@ -71,23 +72,23 @@ const config: Config = {
             400: '#64748B',
             500: '#475569',
             600: '#334155',
-            700: '#1E293B',
-            800: '#0F172A', // Primary dark
-            900: '#020617',
+            700: '#17373F',
+            800: '#0F2B32', // Primary dark
+            900: '#081C21',
           },
-          // Soft Blue - Trust, healthcare feel
+          // Teal - Trust, healthcare feel. Logo primary (hands + wordmark)
           blue: {
-            DEFAULT: '#1E3A8A',
-            50: '#EFF6FF',
-            100: '#DBEAFE',
-            200: '#BFDBFE',
-            300: '#93C5FD',
-            400: '#60A5FA',
-            500: '#3B82F6',
-            600: '#2563EB',
-            700: '#1D4ED8',
-            800: '#1E3A8A', // Primary blue
-            900: '#1E3A5F',
+            DEFAULT: '#14525C',
+            50: '#EFF8F9',
+            100: '#D7EEF1',
+            200: '#B0DDE3',
+            300: '#7FC6D0',
+            400: '#4BA7B4',
+            500: '#2A90A0',
+            600: '#1E8996', // Logo teal
+            700: '#1A6B77',
+            800: '#14525C', // Primary dark teal
+            900: '#0E3A42',
           },
           // Warm grays for sophistication
           cream: '#FAFBFC',
@@ -112,11 +113,11 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-care': 'linear-gradient(135deg, #0F172A 0%, #1E3A8A 100%)',
+        'gradient-care': 'linear-gradient(135deg, #0F2B32 0%, #14525C 100%)',
         'gradient-hero': 'linear-gradient(180deg, #FAFBFC 0%, #FFFFFF 50%, #F5F7FA 100%)',
-        'gradient-hero-dark': 'linear-gradient(180deg, #1E293B 0%, #0F172A 100%)',
-        'gradient-red': 'linear-gradient(135deg, #C62828 0%, #991B1B 100%)',
-        'gradient-navy': 'linear-gradient(180deg, #1E293B 0%, #0F172A 100%)',
+        'gradient-hero-dark': 'linear-gradient(180deg, #17373F 0%, #0F2B32 100%)',
+        'gradient-red': 'linear-gradient(135deg, #F07B1D 0%, #B4580C 100%)',
+        'gradient-navy': 'linear-gradient(180deg, #17373F 0%, #0F2B32 100%)',
         'gradient-soft': 'linear-gradient(180deg, #FFFFFF 0%, #F5F7FA 50%, #F1F5F9 100%)',
         'gradient-warm': 'linear-gradient(135deg, #FAFBFC 0%, #F8F9FC 50%, #F5F7FA 100%)',
         'gradient-lift': 'linear-gradient(180deg, #F1F5F9 0%, #FFFFFF 100%)',
@@ -124,18 +125,18 @@ const config: Config = {
       },
       boxShadow: {
         // Premium shadows
-        'soft': '0 4px 20px -2px rgba(15, 23, 42, 0.08)',
-        'soft-lg': '0 10px 40px -4px rgba(15, 23, 42, 0.1)',
-        'card': '0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.03)',
-        'card-hover': '0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 8px 10px -6px rgba(15, 23, 42, 0.05)',
-        'elevated': '0 20px 50px rgba(15, 23, 42, 0.1), 0 8px 20px rgba(15, 23, 42, 0.05)',
-        'elevated-hover': '0 30px 80px rgba(15, 23, 42, 0.12), 0 12px 30px rgba(15, 23, 42, 0.08)',
-        'glow-red': '0 0 30px rgba(198, 40, 40, 0.3)',
-        'glow-red-lg': '0 0 60px rgba(198, 40, 40, 0.2)',
-        'glow-blue': '0 0 30px rgba(30, 58, 138, 0.3)',
-        'glow-blue-lg': '0 0 60px rgba(30, 58, 138, 0.2)',
+        'soft': '0 4px 20px -2px rgba(15, 43, 50, 0.08)',
+        'soft-lg': '0 10px 40px -4px rgba(15, 43, 50, 0.1)',
+        'card': '0 4px 6px -1px rgba(15, 43, 50, 0.05), 0 2px 4px -2px rgba(15, 43, 50, 0.03)',
+        'card-hover': '0 20px 25px -5px rgba(15, 43, 50, 0.1), 0 8px 10px -6px rgba(15, 43, 50, 0.05)',
+        'elevated': '0 20px 50px rgba(15, 43, 50, 0.1), 0 8px 20px rgba(15, 43, 50, 0.05)',
+        'elevated-hover': '0 30px 80px rgba(15, 43, 50, 0.12), 0 12px 30px rgba(15, 43, 50, 0.08)',
+        'glow-red': '0 0 30px rgba(240, 123, 29, 0.3)',
+        'glow-red-lg': '0 0 60px rgba(240, 123, 29, 0.2)',
+        'glow-blue': '0 0 30px rgba(30, 137, 150, 0.3)',
+        'glow-blue-lg': '0 0 60px rgba(30, 137, 150, 0.2)',
         'inner-light': 'inset 0 2px 4px rgba(255, 255, 255, 0.5)',
-        'floating': '0 25px 60px rgba(15, 23, 42, 0.12), 0 10px 20px rgba(15, 23, 42, 0.06)',
+        'floating': '0 25px 60px rgba(15, 43, 50, 0.12), 0 10px 20px rgba(15, 43, 50, 0.06)',
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out forwards',

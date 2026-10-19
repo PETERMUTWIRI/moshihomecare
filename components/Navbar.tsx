@@ -43,7 +43,7 @@ const resourcesDropdown = {
     { 
       href: '/reviews', 
       label: 'Reviews', 
-      description: 'Hear from families who trust ArayoLight',
+      description: 'Hear from families who trust Moshi Homecare',
       icon: MessageSquareHeart,
     },
     { 
@@ -147,18 +147,18 @@ export default function Navbar() {
             {/* Right: Contact Info */}
             <div className="flex items-center gap-4 md:gap-6">
               <a 
-                href="tel:+19194498913" 
+                href="tel:+15550100189" 
                 className="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 md:w-4 md:h-4" />
-                <span className="text-xs md:text-sm font-medium whitespace-nowrap">+1 (919) 449-8913</span>
+                <span className="text-xs md:text-sm font-medium whitespace-nowrap">+1 (555) 010-0189</span>
               </a>
               <a 
-                href="mailto:raylightcare76@gmail.com" 
+                href="mailto:info@moshihomecare.com" 
                 className="hidden lg:flex items-center gap-1.5 text-white/90 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span className="text-sm font-medium whitespace-nowrap">raylightcare76@gmail.com</span>
+                <span className="text-sm font-medium whitespace-nowrap">info@moshihomecare.com</span>
               </a>
             </div>
           </div>
@@ -169,7 +169,7 @@ export default function Navbar() {
       <header
         className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
           scrolled 
-            ? 'top-0 bg-white/95 backdrop-blur-md shadow-[0_1px_3px_rgba(15,23,42,0.08)]' 
+            ? 'top-0 bg-white/95 backdrop-blur-md shadow-[0_1px_3px_rgba(15,43,50,0.08)]' 
             : 'top-[40px] md:top-[44px] bg-white'
         }`}
       >
@@ -177,10 +177,10 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-xl bg-care-navy p-1.5 shadow-md flex-shrink-0">
+              <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
                 <Image
-                  src="/Arayolight-logo.png"
-                  alt="ArayoLight Homecare Services"
+                  src="/moshi-mark.png"
+                  alt="Moshi Homecare"
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-105"
                   priority
@@ -188,16 +188,14 @@ export default function Navbar() {
               </div>
               {/* Mobile: Single line title with colors; Desktop: Stacked */}
               <span className="font-heading text-base sm:text-lg md:text-xl lg:text-2xl leading-tight font-bold tracking-tight sm:hidden whitespace-nowrap">
-                <span className="text-care-red">ArayoLight</span>
-                <span className="text-care-red"> Homecare </span>
-                <span className="text-care-navy">Services</span>
+                <span className="text-care-red">Moshi</span><span className="text-care-navy"> Homecare</span>
               </span>
               <div className="hidden sm:flex flex-col">
                 <span className="font-heading text-lg md:text-xl lg:text-2xl leading-tight text-care-navy font-bold tracking-tight">
-                  ArayoLight
+                  Moshi
                 </span>
                 <span className="text-[10px] md:text-xs lg:text-sm text-care-gray-500 font-medium tracking-wide uppercase">
-                  Homecare Services
+                  Homecare
                 </span>
               </div>
             </Link>
@@ -250,7 +248,7 @@ export default function Navbar() {
                       : 'opacity-0 -translate-y-2 pointer-events-none'
                   }`}
                 >
-                  <div className="bg-white rounded-2xl shadow-[0_20px_60px_rgba(15,23,42,0.15)] border border-care-gray-100 p-2 w-72">
+                  <div className="bg-white rounded-2xl shadow-[0_20px_60px_rgba(15,43,50,0.15)] border border-care-gray-100 p-2 w-72">
                     {resourcesDropdown.items.map((item) => (
                       <Link
                         key={item.href}
@@ -310,7 +308,7 @@ export default function Navbar() {
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:+19194498913"
+                href="tel:+15550100189"
                 className="flex items-center gap-2 text-sm font-medium text-care-navy hover:text-care-red transition-colors"
               >
                 <Phone className="w-4 h-4" />
@@ -318,7 +316,7 @@ export default function Navbar() {
               </a>
               <Link
                 href="/request-care"
-                className="bg-care-red text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-care-red-dark transition-all duration-300 shadow-[0_4px_14px_rgba(198,40,40,0.25)] hover:shadow-[0_6px_20px_rgba(198,40,40,0.35)] hover:-translate-y-0.5"
+                className="bg-care-red text-white text-sm font-semibold py-2.5 px-6 rounded-full hover:bg-care-red-dark transition-all duration-300 shadow-[0_4px_14px_rgba(240,123,29,0.25)] hover:shadow-[0_6px_20px_rgba(240,123,29,0.35)] hover:-translate-y-0.5"
               >
                 Request Care
               </Link>
@@ -344,9 +342,7 @@ export default function Navbar() {
               {/* Logo Text in Menu */}
               <div className="px-4 py-3 border-b border-white/10 mb-2">
                 <span className="font-heading text-lg leading-tight font-bold tracking-tight whitespace-nowrap">
-                  <span className="text-care-red">ArayoLight</span>
-                  <span className="text-care-red"> Homecare </span>
-                  <span className="text-white">Services</span>
+                  <span className="text-care-red">Moshi</span><span className="text-white"> Homecare</span>
                 </span>
               </div>
 
@@ -419,18 +415,18 @@ export default function Navbar() {
               ))}
               <div className="pt-3 mt-3 border-t border-white/10 space-y-2">
                 <a
-                  href="tel:+19194498913"
+                  href="tel:+15550100189"
                   className="flex items-center gap-2 py-3 px-4 text-sm font-bold text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>+1 (919) 449-8913</span>
+                  <span>+1 (555) 010-0189</span>
                 </a>
                 <a
-                  href="mailto:raylightcare76@gmail.com"
+                  href="mailto:info@moshihomecare.com"
                   className="flex items-center gap-2 py-3 px-4 text-sm font-bold text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>raylightcare76@gmail.com</span>
+                  <span>info@moshihomecare.com</span>
                 </a>
                 <Link
                   href="/request-care"

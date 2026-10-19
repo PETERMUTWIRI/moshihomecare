@@ -2,7 +2,7 @@
 // Format and send messages via WhatsApp API
 
 // Default WhatsApp number - should be set in environment variables
-const DEFAULT_WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '19194498913';
+const DEFAULT_WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '15550100189';
 
 interface ClientRequestData {
   name: string;
@@ -27,7 +27,7 @@ interface CaregiverApplicationData {
  * Format client request message for WhatsApp
  */
 export function formatClientRequestMessage(data: ClientRequestData): string {
-  const message = `*New Client Request - ArayoLight*%0A%0A` +
+  const message = `*New Client Request - Moshi Homecare*%0A%0A` +
     `*Name:* ${encodeURIComponent(data.name)}%0A` +
     `*Phone:* ${encodeURIComponent(data.phone)}%0A` +
     `*Location:* ${encodeURIComponent(data.location)}%0A` +
@@ -45,7 +45,7 @@ export function formatClientRequestMessage(data: ClientRequestData): string {
  * Format caregiver application message for WhatsApp
  */
 export function formatCaregiverApplicationMessage(data: CaregiverApplicationData): string {
-  let message = `*New Caregiver Application - ArayoLight*%0A%0A` +
+  let message = `*New Caregiver Application - Moshi Homecare*%0A%0A` +
     `*Name:* ${encodeURIComponent(data.name)}%0A` +
     `*Phone:* ${encodeURIComponent(data.phone)}%0A` +
     `*Email:* ${encodeURIComponent(data.email)}%0A` +
