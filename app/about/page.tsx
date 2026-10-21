@@ -50,8 +50,8 @@ export default function AboutPage() {
     <main className="min-h-screen">
       {/* Hero Section - Image Background */}
       <SectionBackground
-        imageSrc="/images/team-founder.jpeg"
-        imageAlt="Moshi Homecare, Founder of Moshi Homecare"
+        imageSrc="/images/caregiver-family.jpeg"
+        imageAlt="Moshi Homecare caregiver with a senior and their family"
         overlay="white-light"
         className="relative"
       >
@@ -75,9 +75,16 @@ export default function AboutPage() {
                   <span className="text-care-red">Compassionate Care</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  For over 20 years, Moshi Homecare has been a trusted partner for families seeking 
-                  quality homecare services. Our mission is simple: to help seniors and individuals 
-                  with care needs live with dignity, comfort, and independence in their own homes.
+                  At Moshi Homecare, we are dedicated to providing compassionate, dependable, and 
+                  personalized home care services to individuals and families across the United States. 
+                  Our mission is to help clients maintain their comfort, dignity, independence, and 
+                  quality of life in the familiar surroundings of their own homes.
+                </p>
+                <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mt-4">
+                  We understand that choosing home care for yourself or a loved one is an important 
+                  decision. That is why we are committed to treating every client with kindness, 
+                  respect, patience, and understanding — because everyone deserves to feel safe, 
+                  valued, and cared for.
                 </p>
               </FadeIn>
             </div>
@@ -108,7 +115,7 @@ export default function AboutPage() {
       {/* Story Section - Image Background with Glass Card */}
       <SectionBackground
         imageSrc="/images/about-story.jpeg"
-        imageAlt="Moshi Homecare founders and early team"
+        imageAlt="Moshi Homecare caregiver sharing a warm moment with a senior"
         overlay="gradient"
         className="relative"
       >
@@ -135,7 +142,7 @@ export default function AboutPage() {
                       countless families struggled to find care that truly honored their loved ones.
                     </p>
                     <p>
-                      Our founder&apos;s passion stems from a deep-rooted conviction that healing happens best
+                      Our passion stems from a deep-rooted conviction that healing happens best
                       where love lives—at home. Moshi Homecare was built not as a business, but as a promise
                       to every family: that their parents, their grandparents, their loved ones would
                       receive the same level of care we would want for our own family.
@@ -233,86 +240,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Team Section - Image Background */}
-      <SectionBackground
-        imageSrc="/images/trust-team.jpeg"
-        imageAlt="Moshi Homecare leadership team"
-        overlay="gradient"
-        className="relative"
-      >
-        <div className="section-padding">
-          <div className="container-care mx-auto">
-            <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
-              <FadeIn>
-                <SectionBadge 
-                  icon={<Users className="w-4 h-4" />}
-                  variant="blue"
-                  className="mb-3 md:mb-6"
-                >
-                  Our Team
-                </SectionBadge>
-                <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-care-navy mb-5 tracking-tight">
-                  Meet the Moshi Homecare Leadership
-                </h2>
-                <p className="text-care-gray-600 text-lg">
-                  Dedicated professionals committed to delivering excellence in homecare.
-                </p>
-              </FadeIn>
-            </div>
-
-            <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto" staggerDelay={0.12}>
-              <StaggerItem>
-                <div className="text-center group">
-                  <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-elevated border-4 border-white group-hover:shadow-elevated-hover group-hover:border-care-red/20 transition-all duration-500">
-                    <Image
-                      src="/images/team-founder.jpeg"
-                      alt="Founder & CEO of Moshi Homecare"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
-                  <h3 className="font-heading text-xl text-care-navy">Moshi Homecare</h3>
-                  <p className="text-care-red text-sm mb-2 font-medium">Founder & CEO</p>
-                  <p className="text-care-gray-600 text-sm max-w-xs mx-auto">Registered Nurse with 25+ years of healthcare experience</p>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="text-center group">
-                  <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-elevated border-4 border-white group-hover:shadow-elevated-hover group-hover:border-care-red/20 transition-all duration-500">
-                    <Image
-                      src="/images/team-director.jpeg"
-                      alt="Care Director at Moshi Homecare"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
-                  <h3 className="font-heading text-xl text-care-navy">James Thompson</h3>
-                  <p className="text-care-red text-sm mb-2 font-medium">Care Director</p>
-                  <p className="text-care-gray-600 text-sm max-w-xs mx-auto">Expert in caregiver training and quality assurance</p>
-                </div>
-              </StaggerItem>
-
-              <StaggerItem>
-                <div className="text-center group">
-                  <div className="relative w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden shadow-elevated border-4 border-white group-hover:shadow-elevated-hover group-hover:border-care-red/20 transition-all duration-500">
-                    <Image
-                      src="/images/team-operations.jpeg"
-                      alt="Operations Manager at Moshi Homecare"
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
-                  <h3 className="font-heading text-xl text-care-navy">Maria Garcia</h3>
-                  <p className="text-care-red text-sm mb-2 font-medium">Operations Manager</p>
-                  <p className="text-care-gray-600 text-sm max-w-xs mx-auto">Ensuring seamless care coordination nationwide</p>
-                </div>
-              </StaggerItem>
-            </StaggerContainer>
-          </div>
-        </div>
-      </SectionBackground>
 
       {/* Values Section - Dark Navy with Orbs */}
       <section className="section-padding relative bg-care-navy overflow-hidden">

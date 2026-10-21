@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const footerLinks = {
   services: [
@@ -81,29 +81,6 @@ export default function Footer() {
               Professional, compassionate homecare services you can trust. 
               Serving families across all states for over 20 years.
             </p>
-            <div className="flex items-center gap-3">
-              <a
-                href="https://facebook.com/moshihomecare"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-care-red transition-all duration-300 hover:scale-110"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href="https://instagram.com/moshihomecare"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-care-red transition-all duration-300 hover:scale-110"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="https://linkedin.com/company/moshihomecare"
-                className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-care-red transition-all duration-300 hover:scale-110"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Services Column */}

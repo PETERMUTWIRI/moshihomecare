@@ -119,28 +119,7 @@ This document lists all images needed for the Moshi Homecare website. Please dow
 - **Mood:** Heartwarming, foundational, authentic
 - **Dimensions:** 1200x1000px (6:5)
 
-### 15. team-founder.jpg
-**Priority: HIGH**
-- **Description:** Founder & CEO portrait
-- **Scene:** Professional headshot of Dr. Sarah Mitchell character - warm, professional woman in healthcare setting
-- **Mood:** Professional, caring, trustworthy, leadership
-- **Dimensions:** 600x600px (1:1, square)
-
-### 16. team-director.jpg
-**Priority: MEDIUM**
-- **Description:** Care Director portrait
-- **Scene:** Professional headshot of James Thompson character - friendly man, professional attire
-- **Mood:** Professional, approachable, experienced
-- **Dimensions:** 600x600px (1:1, square)
-
-### 17. team-operations.jpg
-**Priority: MEDIUM**
-- **Description:** Operations Manager portrait
-- **Scene:** Professional headshot of Maria Garcia character - confident woman, business casual
-- **Mood:** Professional, organized, efficient
-- **Dimensions:** 600x600px (1:1, square)
-
-### 18. nationwide-coverage.jpg
+### 15. nationwide-coverage.jpg
 **Priority: MEDIUM**
 - **Description:** USA map or representation of nationwide service
 - **Scene:** Stylized map of USA with markers OR diverse caregivers from different regions
@@ -221,6 +200,44 @@ This document lists all images needed for the Moshi Homecare website. Please dow
 
 ---
 
+## 🆕 SERVICES PAGE — NEW SERVICE SECTIONS (Added Oct 2026)
+
+These four service sections were added to `/services`. Placeholder images are currently in use — please replace them with dedicated photos using the exact filenames below (no code changes needed after replacing).
+
+### 27. service-dementia.jpeg
+**Priority: HIGH**
+- **Description:** Alzheimer's/dementia memory care
+- **Scene:** Caregiver engaging a senior in a calming, familiar activity (puzzle, photo album, music) at home
+- **Mood:** Calm, patient, reassuring, warm
+- **Dimensions:** 800x600px (4:3)
+- **Currently using:** copy of `social-worker-taking-care-senior-woman.jpg`
+
+### 28. service-mealtime.jpeg
+**Priority: HIGH**
+- **Description:** Mealtime and eating assistance
+- **Scene:** Caregiver assisting a senior at the table with a meal, or helping with food preparation
+- **Mood:** Warm, dignified, supportive
+- **Dimensions:** 800x600px (4:3)
+- **Currently using:** copy of `request-care-hero.jpeg`
+
+### 29. service-errands.jpeg
+**Priority: MEDIUM**
+- **Description:** Errands, shopping, and appointment escort
+- **Scene:** Caregiver with a senior out of the house — grocery shopping, at a pharmacy, or arriving at a medical appointment
+- **Mood:** Active, helpful, confident
+- **Dimensions:** 800x600px (4:3)
+- **Currently using:** copy of `caregiver-family.jpeg`
+
+### 30. service-exercise.jpeg
+**Priority: MEDIUM**
+- **Description:** Light exercise and active living
+- **Scene:** Caregiver and senior walking together, gentle stretching, or seated exercise at home
+- **Mood:** Encouraging, energetic, positive
+- **Dimensions:** 800x600px (4:3)
+- **Currently using:** copy of `step-3-care.jpeg`
+
+---
+
 ## 🎨 IMAGE STYLE GUIDELINES
 
 ### Photography Style:
@@ -285,9 +302,6 @@ After downloading/creating images, place them in:
 - [ ] testimonial-2.jpg
 - [ ] testimonial-3.jpg
 - [ ] about-story.jpg
-- [ ] team-founder.jpg
-- [ ] team-director.jpg
-- [ ] team-operations.jpg
 - [ ] nationwide-coverage.jpg
 - [ ] request-care-hero.jpg
 - [ ] caregiver-family.jpg
@@ -296,6 +310,10 @@ After downloading/creating images, place them in:
 - [ ] contact-office.jpg
 - [ ] support-team.jpg
 - [ ] og-image.jpg
+- [ ] service-dementia.jpeg (currently placeholder)
+- [ ] service-mealtime.jpeg (currently placeholder)
+- [ ] service-errands.jpeg (currently placeholder)
+- [ ] service-exercise.jpeg (currently placeholder)
 
 ---
 

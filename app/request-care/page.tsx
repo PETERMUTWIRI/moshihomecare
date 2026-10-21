@@ -15,6 +15,11 @@ const careTypes = [
   { value: 'Light Housekeeping', label: 'Light Housekeeping' },
   { value: 'Daily Living Assistance', label: 'Daily Living Assistance' },
   { value: 'Companionship', label: 'Companionship' },
+  { value: 'Memory Care (Alzheimer\'s & Dementia)', label: 'Memory Care (Alzheimer\'s & Dementia)' },
+  { value: 'Nutrition & Eating Assistance', label: 'Nutrition & Eating Assistance' },
+  { value: 'Errands, Shopping & Appointments', label: 'Errands, Shopping & Appointments' },
+  { value: 'Light Exercise & Active Living', label: 'Light Exercise & Active Living' },
+  { value: 'Respite Care', label: 'Respite Care' },
   { value: 'Multiple Services', label: 'Multiple Services' },
 ];
 

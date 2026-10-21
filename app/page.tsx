@@ -17,8 +17,6 @@ import {
   CheckCircle,
   MapPin,
   Award,
-  ChevronLeft,
-  ChevronRight,
   Star,
   Phone
 } from 'lucide-react';
@@ -36,99 +34,21 @@ const trustIndicators = [
   { icon: Shield, label: 'Screened Caregivers', value: '100%' },
 ];
 
-// Hero Carousel Component
-function HeroCarousel() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  
-  const slides = [
-    {
-      image: '/images/hero-caregiver-senior.jpeg',
-      alt: 'Moshi Homecare caregiver providing compassionate care to a senior at home',
-      caption: null
-    },
-    {
-      image: '/founder-ceo.jpeg',
-      alt: 'Founder & CEO of Moshi Homecare',
-      caption: {
-        name: 'Our Founder',
-        title: 'Founder & CEO',
-        description: 'Registered Nurse with 25+ years of healthcare experience'
-      }
-    }
-  ];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, [slides.length]);
-
-  const goToSlide = (index: number) => setCurrentSlide(index);
-  const goToPrev = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  const goToNext = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
-
+// Hero Image with floating stat cards
+function HeroImage() {
   return (
     <div className="relative max-w-md mx-auto lg:max-w-none">
       <div className="relative">
         <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden aspect-[16/10] md:aspect-[4/3] shadow-floating border border-white/40">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-all duration-700 ease-smooth ${
-                index === currentSlide ? 'opacity-100 z-10 scale-100' : 'opacity-0 z-0 scale-105'
-              }`}
-            >
-              <Image
-                src={slide.image}
-                alt={slide.alt}
-                fill
-                className={`object-cover ${slide.caption ? 'object-top' : ''}`}
-                priority={index === 0}
-              />
-              {slide.caption && (
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-care-navy/95 via-care-navy/70 to-transparent p-6 lg:p-8">
-                  <div className="text-white">
-                    <p className="font-heading text-xl lg:text-2xl mb-1">{slide.caption.name}</p>
-                    <p className="text-care-red text-sm lg:text-base font-medium mb-2">{slide.caption.title}</p>
-                    <p className="text-white/80 text-sm hidden lg:block">{slide.caption.description}</p>
-                  </div>
-                </div>
-              )}
-            </div>
-          ))}
-          
-          <button
-            onClick={goToPrev}
-            className="absolute left-4 lg:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 lg:w-12 lg:h-12 rounded-full bg-white/95 hover:bg-white flex items-center justify-center shadow-elevated transition-all hover:scale-105 backdrop-blur-sm"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft className="w-5 h-5 lg:w-6 lg:h-6 text-care-navy" />
-          </button>
-          <button
-            onClick={goToNext}
-            className="absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 lg:w-12 lg:h-12 rounded-full bg-white/95 hover:bg-white flex items-center justify-center shadow-elevated transition-all hover:scale-105 backdrop-blur-sm"
-            aria-label="Next slide"
-          >
-            <ChevronRight className="w-5 h-5 lg:w-6 lg:h-6 text-care-navy" />
-          </button>
-          
-          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  index === currentSlide 
-                    ? 'bg-white w-8' 
-                    : 'bg-white/60 hover:bg-white w-2'
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
+          <Image
+            src="/images/hero-caregiver-senior.jpeg"
+            alt="Moshi Homecare caregiver providing compassionate care to a senior at home"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
-        
+
         {/* Floating Stats Cards - Hidden on mobile */}
         <div className="hidden md:block absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-8 z-30">
           <StatCard
@@ -282,7 +202,7 @@ export default function HomePage() {
             <div className="grid lg:grid-cols-2 gap-6 lg:gap-16 items-center">
               {/* Mobile: Carousel comes first (order-1), Desktop: Content first (lg:order-1) */}
               <FadeIn direction="up" delay={0.2} className="order-1 lg:order-2">
-                <HeroCarousel />
+                <HeroImage />
               </FadeIn>
 
               {/* Mobile: Content comes second (order-2), Desktop: Content first */}
@@ -305,9 +225,9 @@ export default function HomePage() {
                   </h1>
                   
                   <p className="text-care-gray-600 text-base md:text-lg lg:text-xl mb-4 md:mb-8 leading-relaxed max-w-xl text-center lg:text-left">
-                    Moshi Homecare provides professional, reliable homecare services that help seniors 
-                    maintain independence and dignity in the comfort of their own homes. 
-                    Serving families nationwide for over 20 years.
+                    We are dedicated to providing compassionate, dependable, and personalized home 
+                    care that helps your loved ones maintain comfort, dignity, independence, and 
+                    quality of life in the familiar surroundings of their own home.
                   </p>
                   
                   {/* Mobile: Horizontal buttons centered; Desktop: Row layout */}

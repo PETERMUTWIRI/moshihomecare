@@ -23,7 +23,16 @@ import {
   Shirt,
   ChefHat,
   BookHeart,
-  CarTaxiFront
+  CarTaxiFront,
+  Brain,
+  UtensilsCrossed,
+  ShoppingCart,
+  Apple,
+  Droplets,
+  ClipboardCheck,
+  Puzzle,
+  Activity,
+  NotebookPen
 } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
@@ -135,12 +144,80 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Complete Care Services Overview */}
+      <section className="section-padding bg-white">
+        <div className="container-care mx-auto">
+          <div className="text-center max-w-2xl mx-auto mb-16 md:mb-20">
+            <FadeIn>
+              <SectionBadge
+                icon={<ClipboardCheck className="w-4 h-4" />}
+                variant="blue"
+                className="mb-6"
+              >
+                Complete Care Services
+              </SectionBadge>
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-care-navy mb-5 tracking-tight">
+                Every Service Your Loved One May Need
+              </h2>
+              <p className="text-care-gray-600 text-lg leading-relaxed">
+                From personal care to specialized memory support, every service below is available
+                through Moshi Homecare — and each one can be combined into a single personalized
+                care plan tailored to your loved one&apos;s needs.
+              </p>
+            </FadeIn>
+          </div>
+
+          <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" staggerDelay={0.1}>
+            {[
+              {
+                icon: HandHeart,
+                title: 'Personal Care',
+                services: ['Bathing & Dressing', 'Oral Hygiene', 'Toileting & Incontinence Care', 'Grooming & Appearance']
+              },
+              {
+                icon: Home,
+                title: 'Daily Living Support',
+                services: ['Meal Preparation', 'Assistance with Eating', 'Laundry', 'Light Housekeeping', 'Errands & Shopping']
+              },
+              {
+                icon: Stethoscope,
+                title: 'Health & Mobility',
+                services: ['Medication Reminders', 'Mobility Assistance', 'Transfer Assistance', 'Assistance with Light Exercise']
+              },
+              {
+                icon: Brain,
+                title: 'Specialized Care & Companionship',
+                services: ['Alzheimer\'s & Dementia Care', 'Respite Care', 'Companionship & Emotional Support', 'Doctor\'s Appointment Escort']
+              }
+            ].map((category) => (
+              <StaggerItem key={category.title}>
+                <div className="bg-gradient-soft rounded-2xl p-7 border border-care-gray-100 hover:border-care-gray-200 hover:shadow-elevated transition-all duration-500 h-full">
+                  <div className="w-14 h-14 rounded-xl bg-care-red/10 flex items-center justify-center mb-5 border border-care-red/10">
+                    <category.icon className="w-7 h-7 text-care-red" />
+                  </div>
+                  <h3 className="font-heading text-lg text-care-navy mb-4">{category.title}</h3>
+                  <ul className="space-y-2.5">
+                    {category.services.map((service) => (
+                      <li key={service} className="flex items-start gap-2 text-care-gray-600 text-sm">
+                        <CheckCircle className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
+                        <span>{service}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </StaggerItem>
+            ))}
+          </StaggerContainer>
+        </div>
+      </section>
+
       {/* Service 1: Homecare Services - Image Background */}
       <SectionBackground
+        id="homecare"
         imageSrc="/images/service-homecare.jpeg"
         imageAlt="Professional homecare services"
         overlay="gradient"
-        className="relative"
+        className="relative scroll-mt-20"
       >
         <div className="section-padding">
           <div className="container-care mx-auto">
@@ -209,6 +286,20 @@ export default function ServicesPage() {
                         <p className="text-care-gray-500 text-sm">{option.desc}</p>
                       </div>
                     ))}
+                  </div>
+
+                  <div className="mt-6 bg-care-navy rounded-2xl p-6 text-white">
+                    <h4 className="font-heading !text-white mb-2 flex items-center gap-2">
+                      <Heart className="w-5 h-5 text-care-red" />
+                      Respite Care: Support for Family Caregivers
+                    </h4>
+                    <p className="text-white/70 text-sm leading-relaxed">
+                      Caring for a loved one is deeply rewarding, but even the most dedicated family 
+                      caregivers need time to rest and recharge. Our respite care provides temporary 
+                      relief — for a few hours, a weekend, or longer — with the same personalized 
+                      attention your loved one receives every day. Flexible scheduling means you can 
+                      step away with complete peace of mind.
+                    </p>
                   </div>
                 </FloatingCard>
               </FadeIn>
@@ -303,10 +394,11 @@ export default function ServicesPage() {
 
       {/* Service 3: Light Housekeeping - Image Background */}
       <SectionBackground
+        id="housekeeping"
         imageSrc="/images/service-housekeeping.jpeg"
         imageAlt="Light housekeeping services"
         overlay="gradient"
-        className="relative"
+        className="relative scroll-mt-20"
       >
         <div className="section-padding">
           <div className="container-care mx-auto">
@@ -453,10 +545,11 @@ export default function ServicesPage() {
 
       {/* Service 5: Companionship - Image Background */}
       <SectionBackground
+        id="companionship"
         imageSrc="/images/service-companionship.jpeg"
         imageAlt="Companionship services"
         overlay="gradient"
-        className="relative"
+        className="relative scroll-mt-20"
       >
         <div className="section-padding">
           <div className="container-care mx-auto">
@@ -528,6 +621,325 @@ export default function ServicesPage() {
           </div>
         </div>
       </SectionBackground>
+
+      {/* Service 6: Alzheimer's & Dementia Care - Image Background */}
+      <SectionBackground
+        id="dementia"
+        imageSrc="/images/service-dementia.jpeg"
+        imageAlt="Caregiver providing compassionate memory care to a senior"
+        overlay="gradient"
+        className="relative scroll-mt-20"
+      >
+        <div className="section-padding">
+          <div className="container-care mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <FadeIn direction="right">
+                <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40">
+                  <Image
+                    src="/images/service-dementia.jpeg"
+                    alt="Caregiver providing compassionate memory care to a senior"
+                    width={600}
+                    height={500}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </FadeIn>
+              <FadeIn direction="left" delay={0.15}>
+                <FloatingCard variant="white" className="text-center md:text-left">
+                  <SectionBadge
+                    icon={<Brain className="w-4 h-4" />}
+                    variant="red"
+                    className="mb-3 md:mb-6"
+                  >
+                    Specialized Memory Care
+                  </SectionBadge>
+                  <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                    Alzheimer&apos;s &amp; Dementia Care
+                  </h2>
+                  <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                    Caring for a loved one with Alzheimer&apos;s or dementia requires specialized
+                    skills, patience, and understanding. Our memory care services provide
+                    compassionate, consistent support that keeps your loved one safe, engaged, and
+                    comfortable in the familiar surroundings of home — where routines and
+                    environment make the greatest difference.
+                  </p>
+                  <p className="text-care-gray-600 leading-relaxed mb-8">
+                    Our caregivers are trained in proven dementia care techniques, including
+                    validation, redirection, and routine-building, focusing on reducing confusion
+                    and anxiety while preserving dignity, identity, and independence for as long
+                    as possible.
+                  </p>
+
+                  <h3 className="font-heading text-lg text-care-navy mb-4">Our Memory Care Approach</h3>
+                  <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                    {[
+                      { icon: Puzzle, title: 'Cognitive Stimulation', desc: 'Puzzles, memory games, music, and reminiscence activities that exercise the mind and spark connection.' },
+                      { icon: Shield, title: 'Safety & Wandering Prevention', desc: 'Home safety awareness, consistent routines, and attentive supervision to reduce risks.' },
+                      { icon: Clock, title: 'Consistent Routines', desc: 'Familiar schedules and caregiver consistency to reduce confusion and agitation.' },
+                      { icon: Heart, title: 'Emotional Reassurance', desc: 'A calm, patient presence that eases anxiety, builds trust, and provides comfort.' }
+                    ].map((item, index) => (
+                      <div key={index} className="bg-gradient-warm rounded-xl p-4 border border-care-gray-100">
+                        <div className="flex items-center gap-2 mb-2">
+                          <item.icon className="w-5 h-5 text-care-red" />
+                          <p className="font-heading text-care-navy text-sm">{item.title}</p>
+                        </div>
+                        <p className="text-care-gray-500 text-xs">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="bg-care-navy rounded-2xl p-6 text-white">
+                    <h4 className="font-heading !text-white mb-2 flex items-center gap-2">
+                      <Users className="w-5 h-5 text-care-red" />
+                      Family Support &amp; Communication
+                    </h4>
+                    <p className="text-white/70 text-sm leading-relaxed">
+                      Dementia affects the whole family. We provide regular updates on your loved
+                      one&apos;s condition, practical guidance for visiting and communicating, and
+                      coordination with physicians and specialists — so you never feel alone in
+                      the journey.
+                    </p>
+                  </div>
+                </FloatingCard>
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </SectionBackground>
+
+      {/* Service 7: Mealtime & Eating Assistance - Light Background */}
+      <section id="mealtime" className="section-padding bg-white scroll-mt-20">
+        <div className="container-care mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <FadeIn direction="right">
+              <div className="order-2 lg:order-1 text-center md:text-left">
+                <SectionBadge
+                  icon={<UtensilsCrossed className="w-4 h-4" />}
+                  variant="red"
+                  className="mb-3 md:mb-6"
+                >
+                  Nutrition &amp; Mealtime Support
+                </SectionBadge>
+                <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                  Mealtime &amp; Eating Assistance
+                </h2>
+                <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                  Proper nutrition is essential for health, energy, and healing — yet many seniors
+                  struggle with reduced appetite, swallowing difficulties, medication side effects,
+                  or the physical coordination eating requires. Our mealtime assistance ensures
+                  your loved one eats well, stays hydrated, and enjoys meals with dignity.
+                </p>
+                <p className="text-care-gray-600 leading-relaxed mb-8">
+                  Our caregivers provide respectful, patient support at the table and carefully
+                  monitor food and fluid intake, watching for changes in appetite or ability that
+                  should be shared with family and healthcare providers.
+                </p>
+
+                <h3 className="font-heading text-lg text-care-navy mb-4">Mealtime Support Includes</h3>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  {[
+                    { icon: UtensilsCrossed, title: 'Respectful Eating Assistance', desc: 'Patient help with feeding, always at your loved one\'s pace and comfort.' },
+                    { icon: Apple, title: 'Meal Planning & Preparation', desc: 'Nutritious, favorite meals tailored to dietary needs and preferences.' },
+                    { icon: Droplets, title: 'Hydration Reminders', desc: 'Regular encouragement to drink fluids throughout the day.' },
+                    { icon: ClipboardCheck, title: 'Intake Monitoring', desc: 'Food and fluid tracking with notes for family and providers.' }
+                  ].map((item, index) => (
+                    <div key={index} className="bg-gradient-warm rounded-xl p-4 border border-care-gray-100">
+                      <div className="flex items-center gap-2 mb-2">
+                        <item.icon className="w-5 h-5 text-care-red" />
+                        <p className="font-heading text-care-navy text-sm">{item.title}</p>
+                      </div>
+                      <p className="text-care-gray-500 text-xs">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-care-navy rounded-2xl p-6 text-white">
+                  <h4 className="font-heading !text-white mb-3">Dietary Needs Accommodated</h4>
+                  <p className="text-white/70 text-sm leading-relaxed mb-4">
+                    Every meal plan respects medical and personal requirements, including:
+                  </p>
+                  <div className="grid grid-cols-2 gap-2 text-white/70 text-sm">
+                    <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-care-red" /> Diabetic-friendly</span>
+                    <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-care-red" /> Low-sodium</span>
+                    <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-care-red" /> Soft &amp; pureed textures</span>
+                    <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-care-red" /> Allergies &amp; preferences</span>
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn direction="left" delay={0.15}>
+              <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40 order-1 lg:order-2">
+                <Image
+                  src="/images/service-mealtime.jpeg"
+                  alt="Caregiver providing gentle mealtime assistance to a senior"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 8: Errands, Shopping & Appointments - Image Background */}
+      <SectionBackground
+        id="errands"
+        imageSrc="/images/service-errands.jpeg"
+        imageAlt="Caregiver supporting a senior with everyday errands and appointments"
+        overlay="gradient"
+        className="relative scroll-mt-20"
+      >
+        <div className="section-padding">
+          <div className="container-care mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <FadeIn direction="right">
+                <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40">
+                  <Image
+                    src="/images/service-errands.jpeg"
+                    alt="Caregiver supporting a senior with everyday errands and appointments"
+                    width={600}
+                    height={500}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </FadeIn>
+              <FadeIn direction="left" delay={0.15}>
+                <FloatingCard variant="white" className="text-center md:text-left">
+                  <SectionBadge
+                    icon={<ShoppingCart className="w-4 h-4" />}
+                    variant="red"
+                    className="mb-3 md:mb-6"
+                  >
+                    Everyday Support
+                  </SectionBadge>
+                  <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                    Errands, Shopping &amp; Appointments
+                  </h2>
+                  <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                    Running errands, picking up groceries, and getting to appointments becomes
+                    harder with age — but life doesn&apos;t have to slow down. Our caregivers handle
+                    everyday tasks and accompany your loved one wherever they need to go, so daily
+                    life continues smoothly, safely, and on schedule.
+                  </p>
+                  <p className="text-care-gray-600 leading-relaxed mb-8">
+                    Whether it&apos;s the weekly grocery run or an important doctor&apos;s visit, your
+                    caregiver provides dependable transportation support and an extra set of eyes
+                    and ears — giving your loved one confidence and your family peace of mind.
+                  </p>
+
+                  <h3 className="font-heading text-lg text-care-navy mb-4">How We Help</h3>
+                  <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                    {[
+                      { icon: ShoppingCart, title: 'Grocery & Household Shopping', desc: 'Shopping for groceries and home essentials, with your loved one or on their behalf.' },
+                      { icon: Pill, title: 'Prescription Pickups', desc: 'Collecting medications and supplies from the pharmacy on schedule.' },
+                      { icon: CarTaxiFront, title: 'Appointment Escort', desc: 'Door-to-door accompaniment to medical, dental, and other appointments.' },
+                      { icon: NotebookPen, title: 'Notes & Family Updates', desc: 'Asking questions, recording instructions, and sharing updates with family.' }
+                    ].map((item, index) => (
+                      <div key={index} className="bg-gradient-warm rounded-xl p-4 border border-care-gray-100">
+                        <div className="flex items-center gap-2 mb-2">
+                          <item.icon className="w-5 h-5 text-care-red" />
+                          <p className="font-heading text-care-navy text-sm">{item.title}</p>
+                        </div>
+                        <p className="text-care-gray-500 text-xs">{item.desc}</p>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="bg-care-navy rounded-2xl p-6 text-white">
+                    <h4 className="font-heading !text-white mb-3">Every Appointment, Documented</h4>
+                    <ul className="space-y-2 text-white/70 text-sm">
+                      <li className="flex items-start gap-2">
+                        <span className="text-care-red font-bold">1.</span>
+                        Prepare a list of questions and concerns with your family beforehand
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-care-red font-bold">2.</span>
+                        Accompany your loved one, take notes, and ask their questions
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-care-red font-bold">3.</span>
+                        Share a clear summary with family and update the care plan
+                      </li>
+                    </ul>
+                  </div>
+                </FloatingCard>
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </SectionBackground>
+
+      {/* Service 9: Light Exercise & Active Living - Light Background */}
+      <section id="exercise" className="section-padding bg-gradient-lift scroll-mt-20">
+        <div className="container-care mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <FadeIn direction="right">
+              <div className="order-2 lg:order-1 text-center md:text-left">
+                <SectionBadge
+                  icon={<Activity className="w-4 h-4" />}
+                  variant="red"
+                  className="mb-3 md:mb-6"
+                >
+                  Mobility &amp; Strength
+                </SectionBadge>
+                <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                  Light Exercise &amp; Active Living
+                </h2>
+                <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                  Gentle, regular movement is one of the most effective ways for seniors to
+                  maintain strength, balance, and independence. Staying active also lifts mood,
+                  improves sleep, and supports overall health — and it&apos;s more enjoyable with
+                  encouragement and company.
+                </p>
+                <p className="text-care-gray-600 leading-relaxed mb-8">
+                  Our caregivers encourage and supervise light, physician-approved exercises,
+                  always paced to your loved one&apos;s ability and coordinated with their care plan —
+                  turning everyday movement into safe, shared activity.
+                </p>
+
+                <h3 className="font-heading text-lg text-care-navy mb-4">Staying Active Together</h3>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  {[
+                    { icon: Activity, title: 'Daily Walking', desc: 'Short, supervised walks around the home, garden, or neighborhood.' },
+                    { icon: Heart, title: 'Stretching & Chair Exercises', desc: 'Gentle stretching and seated movements that keep joints flexible.' },
+                    { icon: Shield, title: 'Balance & Fall Prevention', desc: 'Safe balance practice that builds confidence and reduces fall risk.' },
+                    { icon: ClipboardCheck, title: 'Progress Notes', desc: 'Activity updates shared with family and providers so everyone stays informed.' }
+                  ].map((item, index) => (
+                    <div key={index} className="bg-white rounded-xl p-4 border border-care-gray-100 shadow-soft hover:shadow-soft-lg transition-shadow">
+                      <div className="flex items-center gap-2 mb-2">
+                        <item.icon className="w-5 h-5 text-care-red" />
+                        <p className="font-heading text-care-navy text-sm">{item.title}</p>
+                      </div>
+                      <p className="text-care-gray-500 text-xs">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="flex items-center gap-3 bg-care-red/8 rounded-xl p-4 border border-care-red/10">
+                  <Stethoscope className="w-6 h-6 text-care-red" />
+                  <p className="text-care-gray-600 text-sm">
+                    <strong className="text-care-navy">Note:</strong> All exercise support follows
+                    the physician-approved activity level in your loved one&apos;s care plan and is
+                    adjusted as their needs change.
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn direction="left" delay={0.15}>
+              <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40 order-1 lg:order-2">
+                <Image
+                  src="/images/service-exercise.jpeg"
+                  alt="Caregiver and senior enjoying light exercise and activity together"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
 
       {/* Getting Started Section - Dark Navy with Orbs */}
       <section className="section-padding relative bg-care-navy overflow-hidden">

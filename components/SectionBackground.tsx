@@ -12,6 +12,7 @@ interface SectionBackgroundProps {
   contentClassName?: string;
   parallax?: boolean;
   priority?: boolean;
+  id?: string;
 }
 
 /**
@@ -41,6 +42,7 @@ export default function SectionBackground({
   contentClassName = '',
   parallax = false,
   priority = false,
+  id,
 }: SectionBackgroundProps) {
   const overlayClasses = {
     'white-light': 'bg-gradient-to-br from-white/85 via-white/90 to-white/85',
@@ -53,7 +55,7 @@ export default function SectionBackground({
   };
 
   return (
-    <section className={`relative overflow-hidden ${className}`}>
+    <section id={id} className={`relative overflow-hidden ${className}`}>
       {/* Background Image */}
       {imageSrc && (
         <div className={`absolute inset-0 ${parallax ? 'parallax-bg' : ''}`}>
