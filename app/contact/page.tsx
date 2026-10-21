@@ -12,8 +12,8 @@ const contactMethods = [
     icon: Phone,
     title: 'Phone',
     description: 'Speak directly with our care coordinators',
-    action: '+1 (555) 010-0189',
-    href: 'tel:+15550100189',
+    action: '+1 (910) 476-6003',
+    href: 'tel:+19104766003',
     cta: 'Call Now',
   },
   {
@@ -36,6 +36,7 @@ const contactMethods = [
 ];
 
 const coverageInfo = [
+  { icon: MapPin, title: 'Office Address', value: '145 Brisk Drive, Zebulon, NC 27597' },
   { icon: MapPin, title: 'Service Coverage', value: 'All States (USA)' },
   { icon: Clock, title: 'Availability', value: '24/7 Support' },
 ];

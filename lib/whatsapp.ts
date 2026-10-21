@@ -1,8 +1,8 @@
 // WhatsApp Integration Utility
 // Format and send messages via WhatsApp API
 
-// Default WhatsApp number - should be set in environment variables
-const DEFAULT_WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '15550100189';
+// WhatsApp Business number
+const DEFAULT_WHATSAPP_NUMBER = '19104766003';
 
 interface ClientRequestData {
   name: string;

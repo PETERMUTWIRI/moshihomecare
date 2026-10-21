@@ -147,23 +147,25 @@ body {
    TYPOGRAPHY SYSTEM - PREMIUM
    ========================================== */
 
-.font-heading {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--care-navy);
-}
+@layer components {
+  .font-heading {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--care-navy);
+  }
 
-.text-body {
-  color: var(--care-gray-600);
-}
+  .text-body {
+    color: var(--care-gray-600);
+  }
 
-.text-muted-care {
-  color: var(--care-gray-500);
-}
+  .text-muted-care {
+    color: var(--care-gray-500);
+  }
 
-.text-on-dark {
-  color: var(--care-white);
+  .text-on-dark {
+    color: var(--care-white);
+  }
 }
 
 /* ==========================================

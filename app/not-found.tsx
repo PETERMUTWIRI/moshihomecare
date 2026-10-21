@@ -58,8 +58,8 @@ export default function NotFound() {
         <div className="mt-12 pt-8 border-t border-care-gray-200">
           <p className="text-care-gray-400 text-sm">
             Need help? Contact Moshi Homecare at{' '}
-            <a href="tel:+15550100189" className="text-care-red hover:underline">
-              +1 (555) 010-0189
+            <a href="tel:+19104766003" className="text-care-red hover:underline">
+              +1 (910) 476-6003
             </a>
           </p>
         </div>

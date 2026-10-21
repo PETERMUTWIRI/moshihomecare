@@ -147,11 +147,11 @@ export default function Navbar() {
             {/* Right: Contact Info */}
             <div className="flex items-center gap-4 md:gap-6">
               <a 
-                href="tel:+15550100189" 
+                href="tel:+19104766003" 
                 className="flex items-center gap-1.5 text-white/90 hover:text-white transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 md:w-4 md:h-4" />
-                <span className="text-xs md:text-sm font-medium whitespace-nowrap">+1 (555) 010-0189</span>
+                <span className="text-xs md:text-sm font-medium whitespace-nowrap">+1 (910) 476-6003</span>
               </a>
               <a 
                 href="mailto:info@moshihomecare.com" 
@@ -308,7 +308,7 @@ export default function Navbar() {
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:+15550100189"
+                href="tel:+19104766003"
                 className="flex items-center gap-2 text-sm font-medium text-care-navy hover:text-care-red transition-colors"
               >
                 <Phone className="w-4 h-4" />
@@ -415,11 +415,11 @@ export default function Navbar() {
               ))}
               <div className="pt-3 mt-3 border-t border-white/10 space-y-2">
                 <a
-                  href="tel:+15550100189"
+                  href="tel:+19104766003"
                   className="flex items-center gap-2 py-3 px-4 text-sm font-bold text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span>+1 (555) 010-0189</span>
+                  <span>+1 (910) 476-6003</span>
                 </a>
                 <a
                   href="mailto:info@moshihomecare.com"

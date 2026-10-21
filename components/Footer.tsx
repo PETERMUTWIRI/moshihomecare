@@ -125,8 +125,8 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-care-gray-400 uppercase tracking-wider mb-0.5">Phone</p>
-                  <a href="tel:+15550100189" className="text-white hover:text-care-red transition-colors text-sm">
-                    +1 (555) 010-0189
+                  <a href="tel:+19104766003" className="text-white hover:text-care-red transition-colors text-sm">
+                    +1 (910) 476-6003
                   </a>
                 </div>
               </li>
@@ -137,6 +137,16 @@ export default function Footer() {
                   <a href="mailto:info@moshihomecare.com" className="text-white hover:text-care-red transition-colors text-sm">
                     info@moshihomecare.com
                   </a>
+                </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="text-xs text-care-gray-400 uppercase tracking-wider mb-0.5">Address</p>
+                  <p className="text-white text-sm">
+                    145 Brisk Drive<br />
+                    Zebulon, NC 27597
+                  </p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

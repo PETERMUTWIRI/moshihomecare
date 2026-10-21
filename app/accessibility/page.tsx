@@ -90,7 +90,7 @@ export default function AccessibilityPage() {
                 
                 <div className="bg-care-gray-50 rounded-xl p-6 mb-6">
                   <p className="text-care-gray-500">Email: <a href="mailto:accessibility@moshihomecare.com" className="text-care-red hover:underline">accessibility@moshihomecare.com</a></p>
-                  <p className="text-care-gray-500">Phone: <a href="tel:+15550100189" className="text-care-red hover:underline">+1 (555) 010-0189</a></p>
+                  <p className="text-care-gray-500">Phone: <a href="tel:+19104766003" className="text-care-red hover:underline">+1 (910) 476-6003</a></p>
                 </div>
 
                 <p className="text-care-gray-500 mb-4">

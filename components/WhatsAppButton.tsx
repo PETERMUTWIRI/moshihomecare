@@ -12,8 +12,7 @@ export default function WhatsAppButton({
   message = 'Hi, I would like to learn more about your homecare services.' 
 }: WhatsAppButtonProps) {
   const handleClick = () => {
-    // Use environment variable or fallback
-    const number = phoneNumber || process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
+    const number = phoneNumber || '19104766003';
     
     if (!number) {
       console.error('WhatsApp number not configured');

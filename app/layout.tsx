@@ -173,13 +173,21 @@ export default function RootLayout({
               name: 'Moshi Homecare',
               description: 'Professional homecare services serving all states across the USA. 20+ years of experience providing compassionate care for seniors and individuals needing assistance.',
               url: 'https://www.moshihomecare.com',
-              telephone: '+1 (555) 010-0189',
+              telephone: '+1 (910) 476-6003',
               email: 'info@moshihomecare.com',
               image: 'https://www.moshihomecare.com/moshi_logo_card.png',
               address: {
                 '@type': 'PostalAddress',
+                streetAddress: '145 Brisk Drive',
+                addressLocality: 'Zebulon',
+                addressRegion: 'NC',
+                postalCode: '27597',
                 addressCountry: 'US',
-                addressRegion: 'All States',
+              },
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: 35.8243,
+                longitude: -78.3147,
               },
               areaServed: {
                 '@type': 'Country',

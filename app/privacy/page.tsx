@@ -116,7 +116,7 @@ export default function PrivacyPolicyPage() {
                 <div className="bg-care-gray-50 rounded-xl p-6 mt-4">
                   <p className="mb-1 font-semibold text-care-navy">Moshi Homecare</p>
                   <p className="text-care-gray-500">Email: <a href="mailto:privacy@moshihomecare.com" className="text-care-red hover:underline">privacy@moshihomecare.com</a></p>
-                  <p className="text-care-gray-500">Phone: <a href="tel:+15550100189" className="text-care-red hover:underline">+1 (555) 010-0189</a></p>
+                  <p className="text-care-gray-500">Phone: <a href="tel:+19104766003" className="text-care-red hover:underline">+1 (910) 476-6003</a></p>
                 </div>
               </div>
 

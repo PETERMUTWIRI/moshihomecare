@@ -18,7 +18,11 @@ import {
   MapPin,
   Award,
   Star,
-  Phone
+  Phone,
+  Brain,
+  ShoppingCart,
+  UtensilsCrossed,
+  Activity
 } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
@@ -86,6 +90,10 @@ function ViewAllServicesCard() {
     { src: '/images/service-housekeeping.jpeg', alt: 'Light housekeeping' },
     { src: '/images/service-daily-living.jpeg', alt: 'Daily living assistance' },
     { src: '/images/service-companionship.jpeg', alt: 'Companionship' },
+    { src: '/images/service-dementia.jpeg', alt: 'Memory care' },
+    { src: '/images/service-mealtime.jpeg', alt: 'Mealtime assistance' },
+    { src: '/images/service-errands.jpeg', alt: 'Errands and appointments' },
+    { src: '/images/service-exercise.jpeg', alt: 'Light exercise' },
     { src: '/images/hero-caregiver-senior.jpeg', alt: 'Caregiver with senior' },
   ];
 
@@ -423,6 +431,102 @@ export default function HomePage() {
               </StaggerItem>
 
               <StaggerItem>
+                <Link href="/services#dementia" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-dementia.jpeg"
+                      alt="Alzheimer's and dementia care - caregiver providing compassionate memory care to a senior"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <Brain className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Alzheimer&apos;s &amp; Dementia Care
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Specialized memory care that keeps your loved one safe, engaged, and comfortable in familiar surroundings.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#mealtime" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-mealtime.jpeg"
+                      alt="Mealtime and eating assistance - caregiver providing gentle mealtime support to a senior"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <UtensilsCrossed className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Mealtime &amp; Eating Assistance
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Respectful support at mealtimes to ensure proper nutrition, hydration, and enjoyable dining.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#errands" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-errands.jpeg"
+                      alt="Errands, shopping and appointments - caregiver supporting a senior with everyday errands"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <ShoppingCart className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Errands, Shopping &amp; Appointments
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Help with groceries, prescription pickups, and rides to appointments so daily life keeps moving.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#exercise" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-exercise.jpeg"
+                      alt="Light exercise and active living - caregiver and senior enjoying gentle activity together"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <Activity className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Light Exercise &amp; Active Living
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Gentle, supervised exercise and daily movement to maintain strength, balance, and independence.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem className="lg:col-span-3">
                 <ViewAllServicesCard />
               </StaggerItem>
             </StaggerContainer>
