@@ -10,7 +10,7 @@ export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: 'Client Reviews',
-  description: 'Read genuine reviews from families who trust Moshi Homecare. Share your own experience and help others find quality care.',
+  description: 'Read genuine reviews from families who trust Moshi Home Care. Share your own experience and help others find quality care.',
 };
 
 function ReviewCard({ review }: { review: Awaited<ReturnType<typeof getApprovedReviews>>[number] }) {
@@ -100,7 +100,7 @@ export default async function ReviewsPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/caregiver-family.jpeg"
-        imageAlt="Happy family with Moshi Homecare caregiver"
+        imageAlt="Happy family with Moshi Home Care caregiver"
         overlay="white-light"
         className="relative"
       >
@@ -120,7 +120,7 @@ export default async function ReviewsPage() {
                   Client Testimonials
                 </SectionBadge>
                 <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-care-navy mb-6 leading-tight tracking-tight">
-                  What Families Say About <span className="text-care-red">Moshi Homecare</span>
+                  What Families Say About <span className="text-care-red">Moshi Home Care</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
                   Genuine feedback from families who have experienced our compassionate care. 
@@ -177,7 +177,7 @@ export default async function ReviewsPage() {
                 </div>
                 <h3 className="font-heading text-xl text-care-navy mb-2">No Reviews Yet</h3>
                 <p className="text-care-gray-500">
-                  Be the first to share your experience with Moshi Homecare. Your feedback helps other families make informed decisions.
+                  Be the first to share your experience with Moshi Home Care. Your feedback helps other families make informed decisions.
                 </p>
               </div>
             </FadeIn>
@@ -209,7 +209,7 @@ export default async function ReviewsPage() {
                   </h2>
                   <p className="text-care-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
                     Your feedback matters. By sharing your experience, you help other families discover 
-                    the compassionate care that Moshi Homecare provides.
+                    the compassionate care that Moshi Home Care provides.
                   </p>
                 </FadeIn>
               </div>

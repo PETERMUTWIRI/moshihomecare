@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const footerLinks = {
   services: [
-    { label: 'Homecare Services', href: '/request-care' },
+    { label: 'Home Care Services', href: '/request-care' },
     { label: 'Medication Reminder', href: '/request-care' },
     { label: 'Light Housekeeping', href: '/request-care' },
     { label: 'Daily Living Assistance', href: '/request-care' },
@@ -67,19 +67,19 @@ export default function Footer() {
               <div className="relative w-12 h-12 rounded-xl bg-white p-1.5">
                 <Image
                   src="/moshi-mark.png"
-                  alt="Moshi Homecare"
+                  alt="Moshi Home Care"
                   fill
                   className="object-contain"
                 />
               </div>
               <div>
                 <span className="font-heading text-xl font-bold !text-white block tracking-tight">Moshi</span>
-                <span className="text-white/60 text-xs font-medium uppercase tracking-wider">Homecare</span>
+                <span className="text-white/60 text-xs font-medium uppercase tracking-wider">Home Care</span>
               </div>
             </Link>
             <p className="text-care-gray-300 text-sm leading-relaxed mb-6">
-              Professional, compassionate homecare services you can trust. 
-              Serving families across all states for over 20 years.
+              Professional, compassionate home care services you can trust.
+              Serving families across all counties in North Carolina for over 5 years.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-care-gray-400 uppercase tracking-wider mb-0.5">Coverage</p>
-                  <p className="text-white text-sm">All States (USA)</p>
+                  <p className="text-white text-sm">All Counties in North Carolina</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
@@ -173,7 +173,7 @@ export default function Footer() {
         <div className="container-care mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-care-gray-400 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Moshi Homecare. All rights reserved.
+              © {new Date().getFullYear()} Moshi Home Care. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               {footerLinks.legal.map((link) => (

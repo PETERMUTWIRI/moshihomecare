@@ -32,9 +32,9 @@ import StatCard from '@/components/StatCard';
 
 // Trust indicators
 const trustIndicators = [
-  { icon: MapPin, label: 'Serving All States', value: 'USA' },
-  { icon: Award, label: 'Years Experience', value: '20+' },
-  { icon: Users, label: 'Families Served', value: '10K+' },
+  { icon: MapPin, label: 'Serving North Carolina', value: 'All NC Counties' },
+  { icon: Award, label: 'Years Experience', value: '5+' },
+  { icon: Users, label: 'Clients Cared For', value: '5K+' },
   { icon: Shield, label: 'Screened Caregivers', value: '100%' },
 ];
 
@@ -46,7 +46,7 @@ function HeroImage() {
         <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden aspect-[16/10] md:aspect-[4/3] shadow-floating border border-white/40">
           <Image
             src="/images/hero-caregiver-senior.jpeg"
-            alt="Moshi Homecare caregiver providing compassionate care to a senior at home"
+            alt="Moshi Home Care caregiver providing compassionate care to a senior at home"
             fill
             className="object-cover"
             priority
@@ -57,7 +57,7 @@ function HeroImage() {
         <div className="hidden md:block absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-8 z-30">
           <StatCard
             icon={<Award className="w-5 h-5 lg:w-6 lg:h-6" />}
-            value="20+"
+            value="5+"
             label="Years Experience"
             variant="glass"
             animate={false}
@@ -85,7 +85,7 @@ function ViewAllServicesCard() {
   const [currentImage, setCurrentImage] = useState(0);
   
   const images = [
-    { src: '/images/service-homecare.jpeg', alt: 'Homecare services' },
+    { src: '/images/service-homecare.jpeg', alt: 'Home Care services' },
     { src: '/images/service-medication.jpeg', alt: 'Medication reminder' },
     { src: '/images/service-housekeeping.jpeg', alt: 'Light housekeeping' },
     { src: '/images/service-daily-living.jpeg', alt: 'Daily living assistance' },
@@ -127,7 +127,7 @@ function ViewAllServicesCard() {
         </div>
         <h3 className="font-heading text-xl mb-2 !text-white">View All Services</h3>
         <p className="text-white/80 text-sm text-center max-w-xs">
-          Explore our complete range of homecare solutions
+          Explore our complete range of home care solutions
         </p>
         
         <div className="flex items-center gap-1.5 mt-6">
@@ -221,7 +221,7 @@ export default function HomePage() {
                     variant="red"
                     className="mb-3 md:mb-6 hidden md:inline-flex"
                   >
-                    Professional Homecare Services
+                    Professional Home Care Services
                   </SectionBadge>
                   
                   {/* Mobile: Centered title with line break; Desktop: Left aligned, no break */}
@@ -303,7 +303,7 @@ export default function HomePage() {
                   Comprehensive Care for Your Loved Ones
                 </h2>
                 <p className="text-care-gray-600 text-lg leading-relaxed">
-                  We offer a wide range of homecare services designed to support independence 
+                  We offer a wide range of home care services designed to support independence 
                   while ensuring safety and comfort at home.
                 </p>
               </FadeIn>
@@ -315,7 +315,7 @@ export default function HomePage() {
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
                       src="/images/service-homecare.jpeg"
-                      alt="Professional homecare services - caregiver assisting senior at home"
+                      alt="Professional home care services - caregiver assisting senior at home"
                       fill
                       className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     />
@@ -325,7 +325,7 @@ export default function HomePage() {
                       <Home className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
                     </div>
                     <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
-                      Homecare Services
+                      Home Care Services
                     </h3>
                     <p className="text-care-gray-600 text-sm leading-relaxed">
                       Comprehensive in-home care services tailored to meet the unique needs of each client.
@@ -565,7 +565,7 @@ export default function HomePage() {
                 How It Works
               </h2>
               <p className="text-white/90 text-lg leading-relaxed drop-shadow-md">
-                Getting started with Moshi Homecare homecare services is easy. Three simple steps to quality care.
+                Getting started with Moshi Home Care home care services is easy. Three simple steps to quality care.
               </p>
             </FadeIn>
           </div>
@@ -658,14 +658,14 @@ export default function HomePage() {
                   variant="white"
                   className="mb-6"
                 >
-                  Why Choose Moshi Homecare
+                  Why Choose Moshi Home Care
                 </SectionBadge>
                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl !text-white mb-6 tracking-tight">
-                  Trusted Care for Over 20 Years
+                  Trusted Care for Over 5 Years
                 </h2>
                 <p className="text-white/70 text-lg mb-10 leading-relaxed">
                   We understand that choosing a caregiver for your loved one is one of the most 
-                  important decisions you&apos;ll make. That&apos;s why Moshi Homecare has built its reputation on 
+                  important decisions you&apos;ll make. That&apos;s why Moshi Home Care has built its reputation on 
                   trust, compassion, and excellence in care.
                 </p>
                 
@@ -689,8 +689,8 @@ export default function HomePage() {
               <div className="relative">
                 <div className="rounded-3xl overflow-hidden shadow-floating border border-white/10">
                   <Image
-                    src="/images/trust-team.jpeg"
-                    alt="Moshi Homecare professional caregiving team"
+                    src="/images/caregiver-team.jpeg"
+                    alt="Moshi Home Care professional caregiving team"
                     width={600}
                     height={500}
                     className="object-cover object-top w-full h-full"

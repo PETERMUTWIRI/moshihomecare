@@ -45,7 +45,7 @@ export default function ServicesPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/service-homecare.jpeg"
-        imageAlt="Professional homecare services"
+        imageAlt="Professional home care services"
         overlay="white-light"
         className="relative"
       >
@@ -65,10 +65,10 @@ export default function ServicesPage() {
                   Our Services
                 </SectionBadge>
                 <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-care-navy mb-6 leading-tight tracking-tight">
-                  Comprehensive <span className="text-care-red">Homecare Services</span>
+                  Comprehensive <span className="text-care-red">Home Care Services</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  From daily assistance to specialized care, Moshi Homecare provides a full spectrum of 
+                  From daily assistance to specialized care, Moshi Home Care provides a full spectrum of 
                   professional services designed to help your loved ones maintain independence, dignity, 
                   and quality of life in the comfort of their own home.
                 </p>
@@ -89,7 +89,7 @@ export default function ServicesPage() {
                   variant="blue"
                   className="mb-3 md:mb-6"
                 >
-                  Why Choose Moshi Homecare
+                  Why Choose Moshi Home Care
                 </SectionBadge>
                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-care-navy mb-6 leading-tight tracking-tight">
                   Care That Adapts to Your Unique Needs
@@ -121,7 +121,7 @@ export default function ServicesPage() {
                 <div className="rounded-3xl overflow-hidden shadow-floating border border-white/40">
                   <Image
                     src="/images/about-story.jpeg"
-                    alt="Moshi Homecare caregiver providing personalized care"
+                    alt="Moshi Home Care caregiver providing personalized care"
                     width={600}
                     height={500}
                     className="object-cover w-full h-full"
@@ -132,7 +132,7 @@ export default function ServicesPage() {
                 <div className="absolute -bottom-6 -left-6 z-10">
                   <StatCard
                     icon={<Users className="w-5 h-5 lg:w-6 lg:h-6" />}
-                    value="5,000+"
+                    value="Reliable"
                     label="Caregivers"
                     variant="glass"
                     animate={false}
@@ -161,7 +161,7 @@ export default function ServicesPage() {
               </h2>
               <p className="text-care-gray-600 text-lg leading-relaxed">
                 From personal care to specialized memory support, every service below is available
-                through Moshi Homecare — and each one can be combined into a single personalized
+                through Moshi Home Care — and each one can be combined into a single personalized
                 care plan tailored to your loved one&apos;s needs.
               </p>
             </FadeIn>
@@ -211,11 +211,11 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service 1: Homecare Services - Image Background */}
+      {/* Service 1: Home Care Services - Image Background */}
       <SectionBackground
         id="homecare"
         imageSrc="/images/service-homecare.jpeg"
-        imageAlt="Professional homecare services"
+        imageAlt="Professional home care services"
         overlay="gradient"
         className="relative scroll-mt-20"
       >
@@ -226,7 +226,7 @@ export default function ServicesPage() {
                 <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40">
                   <Image
                     src="/images/service-homecare.jpeg"
-                    alt="Professional homecare services"
+                    alt="Professional home care services"
                     width={600}
                     height={500}
                     className="object-cover w-full h-full"
@@ -243,10 +243,10 @@ export default function ServicesPage() {
                     Comprehensive Care
                   </SectionBadge>
                   <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
-                    Homecare Services
+                    Home Care Services
                   </h2>
                   <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
-                    Our comprehensive homecare services provide the support your loved ones need to 
+                    Our comprehensive home care services provide the support your loved ones need to 
                     maintain independence and dignity while remaining in the comfort of their own home. 
                     From personal care to companionship, we deliver compassionate, professional assistance 
                     tailored to each individual&apos;s unique circumstances.
@@ -609,7 +609,7 @@ export default function ServicesPage() {
 
                   <div className="bg-white rounded-2xl p-6 border-l-4 border-care-red shadow-soft">
                     <p className="text-care-gray-600 italic leading-relaxed">
-                      &ldquo;The companionship my mother receives from her Moshi Homecare caregiver has 
+                      &ldquo;The companionship my mother receives from her Moshi Home Care caregiver has 
                       transformed her outlook. She looks forward to their visits, and I have peace 
                       of mind knowing she&apos;s not alone.&rdquo;
                     </p>
@@ -954,7 +954,7 @@ export default function ServicesPage() {
                 Ready to Get Started?
               </h2>
               <p className="text-white/70 text-lg">
-                Beginning care with Moshi Homecare is simple and stress-free. We&apos;re here to guide 
+                Beginning care with Moshi Home Care is simple and stress-free. We&apos;re here to guide 
                 you every step of the way.
               </p>
             </FadeIn>

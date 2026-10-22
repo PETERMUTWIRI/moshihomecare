@@ -1,4 +1,4 @@
-// Utility functions for Moshi Homecare
+// Utility functions for Moshi Home Care
 
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";

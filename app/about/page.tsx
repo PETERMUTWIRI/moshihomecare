@@ -31,18 +31,18 @@ const values = [
 ];
 
 const milestones = [
-  { year: '2004', event: 'Moshi Homecare was founded with a mission to provide quality homecare' },
-  { year: '2010', event: 'Expanded services to cover all 50 states' },
-  { year: '2015', event: 'Reached 5,000 families served milestone' },
-  { year: '2020', event: 'Launched specialized dementia and Alzheimer\'s care programs' },
-  { year: '2024', event: 'Celebrated 20 years of compassionate care' },
+  { year: '2021', event: 'Moshi Home Care was founded with a mission to provide quality home care' },
+  { year: '2022', event: 'Expanded services to cover all counties in North Carolina' },
+  { year: '2023', event: 'Reached 5,000 clients cared for milestone' },
+  { year: '2024', event: 'Launched specialized dementia and Alzheimer\'s care programs' },
+  { year: '2026', event: 'Celebrated 5 years of compassionate care' },
 ];
 
 const stats = [
-  { value: '20+', label: 'Years Experience' },
-  { value: '10K+', label: 'Families Served' },
-  { value: '5K+', label: 'Caregivers' },
-  { value: '50', label: 'States Covered' },
+  { value: '5+', label: 'Years Experience' },
+  { value: '5K+', label: 'Families Served' },
+  { value: 'Reliable', label: 'Caregivers' },
+  { value: '100', label: 'NC Counties Covered' },
 ];
 
 export default function AboutPage() {
@@ -51,7 +51,7 @@ export default function AboutPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/caregiver-family.jpeg"
-        imageAlt="Moshi Homecare caregiver with a senior and their family"
+        imageAlt="Moshi Home Care caregiver with a senior and their family"
         overlay="white-light"
         className="relative"
       >
@@ -71,12 +71,12 @@ export default function AboutPage() {
                   About Us
                 </SectionBadge>
                 <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-care-navy mb-6 leading-tight tracking-tight">
-                  Two Decades of{' '}
+                  Over 5 Years of{' '}
                   <span className="text-care-red">Compassionate Care</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  At Moshi Homecare, we are dedicated to providing compassionate, dependable, and 
-                  personalized home care services to individuals and families across the United States. 
+                  At Moshi Home Care, we are dedicated to providing compassionate, dependable, and 
+                  personalized home care services to individuals and families across North Carolina.
                   Our mission is to help clients maintain their comfort, dignity, independence, and 
                   quality of life in the familiar surroundings of their own homes.
                 </p>
@@ -115,7 +115,7 @@ export default function AboutPage() {
       {/* Story Section - Image Background with Glass Card */}
       <SectionBackground
         imageSrc="/images/about-story.jpeg"
-        imageAlt="Moshi Homecare caregiver sharing a warm moment with a senior"
+        imageAlt="Moshi Home Care caregiver sharing a warm moment with a senior"
         overlay="gradient"
         className="relative"
       >
@@ -136,21 +136,21 @@ export default function AboutPage() {
                   </h2>
                   <div className="space-y-5 text-care-gray-600 leading-relaxed text-lg">
                     <p>
-                      Moshi Homecare was born from a simple, unwavering belief: that aging with dignity
-                      isn&apos;t a privilege—it&apos;s a fundamental right. Founded in 2004 by a registered
-                      nurse with over 25 years of clinical experience, Moshi Homecare exists because
+                      Moshi Home Care was born from a simple, unwavering belief: that aging with dignity
+                      isn&apos;t a privilege—it&apos;s a fundamental right. Founded in 2021 by a registered
+                      nurse with over 25 years of clinical experience, Moshi Home Care exists because
                       countless families struggled to find care that truly honored their loved ones.
                     </p>
                     <p>
                       Our passion stems from a deep-rooted conviction that healing happens best
-                      where love lives—at home. Moshi Homecare was built not as a business, but as a promise
+                      where love lives—at home. Moshi Home Care was built not as a business, but as a promise
                       to every family: that their parents, their grandparents, their loved ones would
                       receive the same level of care we would want for our own family.
                     </p>
                     <p>
-                      Today, that same spirit guides over 5,000 caregivers nationwide. What started as 
+                      Today, that same spirit guides our reliable caregivers across North Carolina. What started as 
                       one nurse&apos;s vision has grown into a trusted network serving thousands of families 
-                      across all 50 states.
+                      across all 100 counties.
                     </p>
                   </div>
                 </div>
@@ -209,7 +209,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed mb-12">
                 Our mission is to enhance the quality of life for seniors and individuals with 
-                care needs by providing compassionate, professional homecare services that promote 
+                care needs by providing compassionate, professional home care services that promote 
                 independence, dignity, and peace of mind for both clients and their families.
               </p>
             </FadeIn>
@@ -286,7 +286,7 @@ export default function AboutPage() {
       {/* Coverage Section - Image Background */}
       <SectionBackground
         imageSrc="/images/nationwide-coverage.jpeg"
-        imageAlt="Moshi Homecare nationwide coverage map"
+        imageAlt="Moshi Home Care North Carolina coverage map"
         overlay="gradient"
         className="relative"
       >
@@ -298,7 +298,7 @@ export default function AboutPage() {
                   <div className="relative rounded-3xl overflow-hidden h-[400px] shadow-floating border border-white/40">
                     <Image
                       src="/images/nationwide-coverage.jpeg"
-                      alt="Moshi Homecare nationwide coverage map - serving all US states"
+                      alt="Moshi Home Care North Carolina coverage map - serving all NC counties"
                       fill
                       className="object-cover"
                     />
@@ -312,18 +312,18 @@ export default function AboutPage() {
                         <MapPin className="w-8 h-8 text-white" />
                       </div>
                       <div>
-                        <h2 className="font-heading text-2xl md:text-3xl text-care-navy">Nationwide Coverage</h2>
-                        <p className="text-care-gray-500">Serving All States Across the USA</p>
+                        <h2 className="font-heading text-2xl md:text-3xl text-care-navy">North Carolina Coverage</h2>
+                        <p className="text-care-gray-500">Serving All Counties Across North Carolina</p>
                       </div>
                     </div>
                     <p className="text-care-gray-600 leading-relaxed mb-8 text-lg">
-                      No matter where you are in the United States, Moshi Homecare is ready to help. 
-                      Our extensive network of caregivers spans all 50 states, ensuring that quality 
-                      homecare is always within reach.
+                      No matter where you are in North Carolina, Moshi Home Care is ready to help. 
+                      Our extensive network of caregivers spans all 100 counties, ensuring that quality 
+                      home care is always within reach.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                       {[
-                        'All 50 states covered',
+                        'All 100 counties covered',
                         'Urban & rural areas',
                         'Same-day service available',
                         'Local caregivers assigned'

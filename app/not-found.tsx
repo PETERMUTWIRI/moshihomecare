@@ -57,7 +57,7 @@ export default function NotFound() {
         {/* Support Message */}
         <div className="mt-12 pt-8 border-t border-care-gray-200">
           <p className="text-care-gray-400 text-sm">
-            Need help? Contact Moshi Homecare at{' '}
+            Need help? Contact Moshi Home Care at{' '}
             <a href="tel:+19104766003" className="text-care-red hover:underline">
               +1 (910) 476-6003
             </a>

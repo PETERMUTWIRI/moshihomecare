@@ -112,7 +112,7 @@ export default function ReviewForm() {
           Thank You for Your Feedback!
         </h3>
         <p className="text-care-gray-500 mb-6 max-w-md mx-auto">
-          Your review has been submitted successfully and is now live on our reviews page. Thank you for helping other families discover Moshi Homecare!
+          Your review has been submitted successfully and is now live on our reviews page. Thank you for helping other families discover Moshi Home Care!
         </p>
         <button
           onClick={() => {

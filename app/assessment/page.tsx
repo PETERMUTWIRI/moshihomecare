@@ -90,7 +90,7 @@ const results = [
   },
   {
     maxScore: 5,
-    title: 'Part-Time Homecare Recommended',
+    title: 'Part-Time Home Care Recommended',
     subtitle: 'A few hours of support per day would help greatly.',
     description: 'Your loved one would benefit from regular assistance with daily activities, medication reminders, and companionship. Part-time care provides the right balance of independence and support.',
     services: [
@@ -102,11 +102,11 @@ const results = [
   },
   {
     maxScore: 8,
-    title: 'Full-Time Daily Homecare Recommended',
+    title: 'Full-Time Daily Home Care Recommended',
     subtitle: 'Daily caregiver support is the best fit.',
     description: 'Your loved one needs consistent, daily assistance to remain safe and comfortable at home. A dedicated caregiver can provide comprehensive support tailored to their routine and medical needs.',
     services: [
-      { name: 'Comprehensive Homecare', icon: Home, desc: 'All-inclusive in-home care services' },
+      { name: 'Comprehensive Home Care', icon: Home, desc: 'All-inclusive in-home care services' },
       { name: 'Daily Living Assistance', icon: HandHeart, desc: 'Personal care with dignity and respect' },
       { name: 'Medication Management', icon: Pill, desc: 'Organizing and tracking medications' },
       { name: 'Mobility Support', icon: Stethoscope, desc: 'Safe transfers and fall prevention' },
@@ -120,7 +120,7 @@ const results = [
     description: 'Based on your responses, your loved one would benefit from continuous care or live-in support. This ensures immediate assistance is always available, day or night, for maximum safety and comfort.',
     services: [
       { name: 'Live-In Care', icon: Home, desc: '24/7 continuous caregiver presence' },
-      { name: 'Comprehensive Homecare', icon: HandHeart, desc: 'Full-spectrum personal and medical support' },
+      { name: 'Comprehensive Home Care', icon: HandHeart, desc: 'Full-spectrum personal and medical support' },
       { name: 'Medication Management', icon: Pill, desc: 'Complete medication oversight' },
       { name: 'Safety Monitoring', icon: Stethoscope, desc: 'Constant fall-risk and wellness monitoring' },
     ],

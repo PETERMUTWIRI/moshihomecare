@@ -35,7 +35,7 @@ const awards = [
     id: 'homecare-pulse',
     title: 'Home Care Pulse Leader in Experience',
     organization: 'Home Care Pulse',
-    description: 'Awarded to agencies ranked in the top percentile for caregiver and client satisfaction nationwide.',
+    description: 'Awarded to agencies ranked in the top percentile for caregiver and client satisfaction across North Carolina.',
     year: '2022 – 2024',
     icon: Heart,
     color: 'bg-care-red',
@@ -43,9 +43,9 @@ const awards = [
   },
   {
     id: 'top-100',
-    title: 'Top 100 Homecare Agencies',
+    title: 'Top 100 Home Care Agencies',
     organization: 'National Home Care Association',
-    description: 'Named among the nation\'s top 100 homecare providers for quality of care, training standards, and family feedback.',
+    description: 'Named among the nation\'s top 100 home care providers for quality of care, training standards, and family feedback.',
     year: '2023',
     icon: Trophy,
     color: 'bg-amber-500',
@@ -73,7 +73,7 @@ const awards = [
   },
   {
     id: 'fast-growth',
-    title: 'Fastest Growing Homecare Provider',
+    title: 'Fastest Growing Home Care Provider',
     organization: 'Inc. 5000 Regional',
     description: 'Recognized for rapid, sustainable growth while maintaining excellence in caregiver retention and client outcomes.',
     year: '2023',
@@ -84,14 +84,14 @@ const awards = [
 ];
 
 const stats = [
-  { value: '20+', label: 'Years of Service' },
-  { value: '10K+', label: 'Families Served' },
+  { value: '5+', label: 'Years of Service' },
+  { value: '5K+', label: 'Families Served' },
   { value: '99%', label: 'Client Satisfaction' },
   { value: '5-Star', label: 'Average Rating' },
 ];
 
 const trustIndicators = [
-  'Licensed, bonded, and insured in all 50 states',
+  'Licensed, bonded, and insured across North Carolina',
   'Rigorous background checks on every caregiver',
   'Ongoing training and certification programs',
   '24/7 on-call support and emergency response',
@@ -104,8 +104,8 @@ export default function AwardsPage() {
     <main className="min-h-screen">
       {/* Hero Section - Image Background */}
       <SectionBackground
-        imageSrc="/images/trust-team.jpeg"
-        imageAlt="Moshi Homecare award-winning caregiving team"
+        imageSrc="/images/caregiver-team.jpeg"
+        imageAlt="Moshi Home Care award-winning caregiving team"
         overlay="white-light"
         className="relative"
       >
@@ -129,8 +129,8 @@ export default function AwardsPage() {
                   <span className="text-care-red">Recognized by Industry Leaders.</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  For over two decades, Moshi Homecare has set the standard for compassionate, 
-                  professional homecare. These recognitions reflect our unwavering commitment 
+                  For over 5 years, Moshi Home Care has set the standard for compassionate,
+                  professional home care. These recognitions reflect our unwavering commitment 
                   to excellence, transparency, and the families we serve.
                 </p>
               </FadeIn>
@@ -181,7 +181,7 @@ export default function AwardsPage() {
               </h2>
               <p className="text-care-gray-600 text-lg">
                 Awards and certifications that reflect our dedication to delivering 
-                exceptional homecare services across the United States.
+                exceptional home care services across North Carolina.
               </p>
             </div>
           </FadeIn>
@@ -225,7 +225,7 @@ export default function AwardsPage() {
       {/* Trust Section - Image Background */}
       <SectionBackground
         imageSrc="/images/about-story.jpeg"
-        imageAlt="Moshi Homecare trusted caregiving team"
+        imageAlt="Moshi Home Care trusted caregiving team"
         overlay="white-light"
         className="relative"
       >
@@ -263,7 +263,7 @@ export default function AwardsPage() {
                     <p className="text-care-gray-600 text-lg leading-relaxed">
                       Recognition is nice, but what truly matters is the peace of mind we bring 
                       to families every single day. Let us show you why thousands of families 
-                      across the USA choose Moshi Homecare.
+                      across North Carolina choose Moshi Home Care.
                     </p>
                     <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                       <Link

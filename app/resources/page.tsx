@@ -36,7 +36,7 @@ const comparisonCriteria = [
 const options = [
   {
     id: 'in-home',
-    name: 'In-Home Care\n(Moshi Homecare)',
+    name: 'In-Home Care\n(Moshi Home Care)',
     color: 'care-red',
     highlight: true,
     values: {
@@ -197,10 +197,10 @@ export default function ResourcesPage() {
                 Side-by-Side Comparison
               </SectionBadge>
               <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-4 tracking-tight">
-                See How Moshi Homecare Compares
+                See How Moshi Home Care Compares
               </h2>
               <p className="text-care-gray-600 text-lg">
-                See how Moshi Homecare in-home care stacks up against assisted living and nursing homes.
+                See how Moshi Home Care in-home care stacks up against assisted living and nursing homes.
               </p>
             </div>
           </FadeIn>
@@ -336,7 +336,7 @@ export default function ResourcesPage() {
                         <ShieldCheck className="w-7 h-7 text-white" />
                       </div>
                       <div>
-                        <h2 className="font-heading text-2xl md:text-3xl text-care-navy">The Moshi Homecare Advantage</h2>
+                        <h2 className="font-heading text-2xl md:text-3xl text-care-navy">The Moshi Home Care Advantage</h2>
                         <p className="text-care-gray-500">Why families choose us</p>
                       </div>
                     </div>

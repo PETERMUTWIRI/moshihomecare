@@ -37,7 +37,7 @@ const contactMethods = [
 
 const coverageInfo = [
   { icon: MapPin, title: 'Office Address', value: '145 Brisk Drive, Zebulon, NC 27597' },
-  { icon: MapPin, title: 'Service Coverage', value: 'All States (USA)' },
+  { icon: MapPin, title: 'Service Coverage', value: 'All Counties in North Carolina' },
   { icon: Clock, title: 'Availability', value: '24/7 Support' },
 ];
 
@@ -47,7 +47,7 @@ export default function ContactPage() {
       {/* Hero Section - Image Background */}
       <SectionBackground
         imageSrc="/images/contact-office.jpeg"
-        imageAlt="Moshi Homecare support team ready to help"
+        imageAlt="Moshi Home Care support team ready to help"
         overlay="white-light"
         className="relative"
       >
@@ -67,7 +67,7 @@ export default function ContactPage() {
                   Contact Us
                 </SectionBadge>
                 <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-care-navy mb-5 leading-tight tracking-tight">
-                  Get in Touch with Moshi Homecare
+                  Get in Touch with Moshi Home Care
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl">
                   Have questions about our services? We&apos;re here to help. Reach out to us through 
@@ -111,7 +111,7 @@ export default function ContactPage() {
       {/* Coverage & Quick Actions - Image Background */}
       <SectionBackground
         imageSrc="/images/support-team.jpeg"
-        imageAlt="Moshi Homecare support team"
+        imageAlt="Moshi Home Care support team"
         overlay="gradient"
         className="relative"
       >
@@ -124,7 +124,7 @@ export default function ContactPage() {
                     <div className="relative h-52 rounded-xl overflow-hidden mb-6">
                       <Image
                         src="/images/contact-office.jpeg"
-                        alt="Moshi Homecare support team ready to help"
+                        alt="Moshi Home Care support team ready to help"
                         fill
                         className="object-cover"
                       />
@@ -199,7 +199,7 @@ export default function ContactPage() {
                   <Clock className="w-12 h-12 text-care-red mb-5 mx-auto md:mx-0" />
                   <h2 className="font-heading text-2xl md:text-3xl !text-white mb-4">Fast Response Times</h2>
                   <p className="text-white/70 mb-8">
-                    We understand that care needs can be urgent. That&apos;s why Moshi Homecare prioritizes 
+                    We understand that care needs can be urgent. That&apos;s why Moshi Home Care prioritizes 
                     quick responses to all inquiries.
                   </p>
                   <div className="grid grid-cols-2 gap-6">
@@ -219,7 +219,7 @@ export default function ContactPage() {
                 <div className="relative rounded-3xl overflow-hidden h-80 md:h-full min-h-[320px] shadow-floating border border-white/10">
                   <Image
                     src="/images/support-team.jpeg"
-                    alt="Moshi Homecare customer support team"
+                    alt="Moshi Home Care customer support team"
                     fill
                     className="object-cover"
                   />

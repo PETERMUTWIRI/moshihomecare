@@ -9,7 +9,7 @@ interface WhatsAppButtonProps {
 
 export default function WhatsAppButton({ 
   phoneNumber = '', 
-  message = 'Hi, I would like to learn more about your homecare services.' 
+  message = 'Hi, I would like to learn more about your home care services.' 
 }: WhatsAppButtonProps) {
   const handleClick = () => {
     const number = phoneNumber || '19104766003';

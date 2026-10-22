@@ -4,8 +4,8 @@ import { Accessibility, ArrowLeft, CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
-  description: 'Our commitment to making Moshi Homecare homecare services accessible to everyone. Learn about our accessibility features and WCAG compliance.',
-  keywords: ['accessibility', 'WCAG', 'screen reader', 'keyboard navigation', 'inclusive design', 'Moshi Homecare'],
+  description: 'Our commitment to making Moshi Home Care home care services accessible to everyone. Learn about our accessibility features and WCAG compliance.',
+  keywords: ['accessibility', 'WCAG', 'screen reader', 'keyboard navigation', 'inclusive design', 'Moshi Home Care'],
 };
 
 export default function AccessibilityPage() {
@@ -23,7 +23,7 @@ export default function AccessibilityPage() {
               Accessibility Statement
             </h1>
             <p className="text-care-gray-500">
-              Our commitment to making homecare accessible to everyone
+              Our commitment to making home care accessible to everyone
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ export default function AccessibilityPage() {
             <div className="card-care p-8 md:p-12">
               <div className="prose prose-care max-w-none">
                 <p className="text-lg text-care-gray-500 mb-8">
-                  Moshi Homecare is committed to ensuring digital accessibility for people with 
+                  Moshi Home Care is committed to ensuring digital accessibility for people with 
                   disabilities. We continually work to improve the user experience for all visitors 
                   to our website.
                 </p>
@@ -50,7 +50,7 @@ export default function AccessibilityPage() {
 
                 <h2 className="font-heading text-xl text-care-navy mt-8 mb-4">Conformance Status</h2>
                 <p className="text-care-gray-500 mb-4">
-                  Moshi Homecare strives to conform to <strong>WCAG 2.1 Level AA</strong> standards. 
+                  Moshi Home Care strives to conform to <strong>WCAG 2.1 Level AA</strong> standards. 
                   We are continuously working to improve the accessibility of our website to ensure 
                   all users can access our content.
                 </p>
@@ -113,7 +113,7 @@ export default function AccessibilityPage() {
                   <div className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-care-blue flex-shrink-0 mt-0.5" />
                     <p className="text-care-navy font-medium">
-                      Quality care should be accessible to everyone. Moshi Homecare is committed to making our 
+                      Quality care should be accessible to everyone. Moshi Home Care is committed to making our 
                       website and services accessible to all users, regardless of ability.
                     </p>
                   </div>

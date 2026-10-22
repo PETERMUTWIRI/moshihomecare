@@ -23,7 +23,7 @@ const fallbackReviews = [
     name: 'Sarah Johnson',
     imageUrl: '/images/testimonial-1.jpeg',
     overallExperience: 5,
-    comment: 'Moshi Homecare has been a blessing for our family. The caregiver is compassionate, reliable, and truly cares about my mother\'s well-being. We couldn\'t ask for better care.',
+    comment: 'Moshi Home Care has been a blessing for our family. The caregiver is compassionate, reliable, and truly cares about my mother\'s well-being. We couldn\'t ask for better care.',
     title: 'Daughter of Client',
   },
   {
@@ -31,7 +31,7 @@ const fallbackReviews = [
     name: 'Michael Chen',
     imageUrl: '/images/testimonial-2.jpeg',
     overallExperience: 5,
-    comment: 'The peace of mind Moshi Homecare provides is priceless. Knowing my father is in good hands allows me to focus on my work without worry. Highly recommend!',
+    comment: 'The peace of mind Moshi Home Care provides is priceless. Knowing my father is in good hands allows me to focus on my work without worry. Highly recommend!',
     title: 'Son of Client',
   },
   {
@@ -39,7 +39,7 @@ const fallbackReviews = [
     name: 'Emily Rodriguez',
     imageUrl: '/images/testimonial-3.jpeg',
     overallExperience: 5,
-    comment: 'Professional, caring, and responsive. Moshi Homecare exceeded our expectations in every way. Their attention to detail and genuine compassion made all the difference.',
+    comment: 'Professional, caring, and responsive. Moshi Home Care exceeded our expectations in every way. Their attention to detail and genuine compassion made all the difference.',
     title: 'Daughter of Client',
   },
 ];
@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
               Testimonials
             </SectionBadge>
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-care-navy mb-5 tracking-tight">
-              What Families Say About Moshi Homecare
+              What Families Say About Moshi Home Care
             </h2>
             <p className="text-care-gray-600 text-lg">
               Real stories from families who trust us with their loved ones

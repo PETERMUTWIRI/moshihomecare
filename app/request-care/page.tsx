@@ -10,7 +10,7 @@ import StatCard from '@/components/StatCard';
 
 const careTypes = [
   { value: '', label: 'Select type of care needed' },
-  { value: 'Homecare Services', label: 'Homecare Services' },
+  { value: 'Home Care Services', label: 'Home Care Services' },
   { value: 'Medication Reminder', label: 'Medication Reminder' },
   { value: 'Light Housekeeping', label: 'Light Housekeeping' },
   { value: 'Daily Living Assistance', label: 'Daily Living Assistance' },
@@ -325,12 +325,12 @@ export default function RequestCarePage() {
                 <div className="relative rounded-2xl overflow-hidden aspect-[16/10] shadow-elevated">
                   <Image
                     src="/images/caregiver-family.jpeg"
-                    alt="Moshi Homecare caregiver with happy family"
+                    alt="Moshi Home Care caregiver with happy family"
                     fill
                     className="object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-care-navy/80 to-transparent flex items-end p-6">
-                    <p className="text-white font-medium">Trusted by 10,000+ families nationwide</p>
+                    <p className="text-white font-medium">Trusted by 5,000+ families across North Carolina</p>
                   </div>
                 </div>
               </FadeIn>
@@ -348,7 +348,7 @@ export default function RequestCarePage() {
                   />
                   <StatCard
                     icon={<Heart className="w-5 h-5" />}
-                    value="10K+"
+                    value="5K+"
                     label="Families"
                     variant="glass"
                     animate={false}
@@ -356,8 +356,8 @@ export default function RequestCarePage() {
                   />
                   <StatCard
                     icon={<MapPin className="w-5 h-5" />}
-                    value="50"
-                    label="States"
+                    value="100"
+                    label="NC Counties"
                     variant="glass"
                     animate={false}
                     className="text-center"

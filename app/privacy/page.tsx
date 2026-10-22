@@ -4,8 +4,8 @@ import { Shield, ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Learn how Moshi Homecare collects, uses, and protects your personal information. Our commitment to your privacy and data security.',
-  keywords: ['privacy policy', 'data protection', 'personal information', 'homecare privacy', 'Moshi Homecare'],
+  description: 'Learn how Moshi Home Care collects, uses, and protects your personal information. Our commitment to your privacy and data security.',
+  keywords: ['privacy policy', 'data protection', 'personal information', 'home care privacy', 'Moshi Home Care'],
 };
 
 export default function PrivacyPolicyPage() {
@@ -36,7 +36,7 @@ export default function PrivacyPolicyPage() {
             <div className="card-care p-8 md:p-12">
               <div className="prose prose-care max-w-none">
                 <p className="text-lg text-care-gray-500 mb-8">
-                  Moshi Homecare is committed to protecting your privacy. This Privacy Policy explains 
+                  Moshi Home Care is committed to protecting your privacy. This Privacy Policy explains 
                   how we collect, use, and safeguard your personal information when you use our website 
                   to request care services or apply as a caregiver.
                 </p>
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
                   If you have any questions about this Privacy Policy, please contact us:
                 </p>
                 <div className="bg-care-gray-50 rounded-xl p-6 mt-4">
-                  <p className="mb-1 font-semibold text-care-navy">Moshi Homecare</p>
+                  <p className="mb-1 font-semibold text-care-navy">Moshi Home Care</p>
                   <p className="text-care-gray-500">Email: <a href="mailto:privacy@moshihomecare.com" className="text-care-red hover:underline">privacy@moshihomecare.com</a></p>
                   <p className="text-care-gray-500">Phone: <a href="tel:+19104766003" className="text-care-red hover:underline">+1 (910) 476-6003</a></p>
                 </div>

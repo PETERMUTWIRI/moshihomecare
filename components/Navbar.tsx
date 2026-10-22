@@ -43,7 +43,7 @@ const resourcesDropdown = {
     { 
       href: '/reviews', 
       label: 'Reviews', 
-      description: 'Hear from families who trust Moshi Homecare',
+      description: 'Hear from families who trust Moshi Home Care',
       icon: MessageSquareHeart,
     },
     { 
@@ -112,7 +112,7 @@ export default function Navbar() {
               <div className="hidden sm:block">
                 <p className="text-white/90 text-xs md:text-sm">
                   <span className="font-semibold text-white">5-Star Rated</span>
-                  <span className="ml-1.5 text-white/70">by families nationwide</span>
+                  <span className="ml-1.5 text-white/70">by families across North Carolina</span>
                 </p>
               </div>
               
@@ -180,7 +180,7 @@ export default function Navbar() {
               <div className="relative w-12 h-12 md:w-14 md:h-14 flex-shrink-0">
                 <Image
                   src="/moshi-mark.png"
-                  alt="Moshi Homecare"
+                  alt="Moshi Home Care"
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-105"
                   priority
@@ -188,14 +188,14 @@ export default function Navbar() {
               </div>
               {/* Mobile: Single line title with colors; Desktop: Stacked */}
               <span className="font-heading text-base sm:text-lg md:text-xl lg:text-2xl leading-tight font-bold tracking-tight sm:hidden whitespace-nowrap">
-                <span className="text-care-red">Moshi</span><span className="text-care-navy"> Homecare</span>
+                <span className="text-care-red">Moshi</span><span className="text-care-navy"> Home Care</span>
               </span>
               <div className="hidden sm:flex flex-col">
                 <span className="font-heading text-lg md:text-xl lg:text-2xl leading-tight text-care-navy font-bold tracking-tight">
                   Moshi
                 </span>
                 <span className="text-[10px] md:text-xs lg:text-sm text-care-gray-500 font-medium tracking-wide uppercase">
-                  Homecare
+                  Home Care
                 </span>
               </div>
             </Link>
@@ -342,7 +342,7 @@ export default function Navbar() {
               {/* Logo Text in Menu */}
               <div className="px-4 py-3 border-b border-white/10 mb-2">
                 <span className="font-heading text-lg leading-tight font-bold tracking-tight whitespace-nowrap">
-                  <span className="text-care-red">Moshi</span><span className="text-white"> Homecare</span>
+                  <span className="text-care-red">Moshi</span><span className="text-white"> Home Care</span>
                 </span>
               </div>
 

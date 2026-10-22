@@ -26,16 +26,16 @@ const inter = Inter({
 export const metadata: Metadata = {
   // Core title template
   title: {
-    default: "Moshi Homecare",
-    template: "%s | Moshi Homecare",
+    default: "Moshi Home Care",
+    template: "%s | Moshi Home Care",
   },
   
   // Primary description
-  description: "Compassionate care, right at home. Professional homecare services you can trust, serving families across all states. Caregivers for seniors and individuals needing assistance at home.",
+  description: "Compassionate care, right at home. Professional home care services you can trust, serving families across all counties in North Carolina. Caregivers for seniors and individuals needing assistance at home.",
   
   // Keywords for search engines
   keywords: [
-    'homecare services',
+    'home care services',
     'senior care',
     'in-home care',
     'caregiver services',
@@ -46,16 +46,16 @@ export const metadata: Metadata = {
     'companionship services',
     'medication reminders',
     'daily living assistance',
-    'USA homecare',
+    'North Carolina home care',
     'professional caregivers',
-    'licensed homecare',
-    'Moshi Homecare',
+    'licensed home care',
+    'Moshi Home Care',
   ],
   
   // Authors and ownership
-  authors: [{ name: "Moshi Homecare" }],
-  creator: "Moshi Homecare",
-  publisher: "Moshi Homecare",
+  authors: [{ name: "Moshi Home Care" }],
+  creator: "Moshi Home Care",
+  publisher: "Moshi Home Care",
   
   // Format detection
   formatDetection: {
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   
-  // Icons - Using Moshi Homecare logo as favicon
+  // Icons - Using Moshi Home Care logo as favicon
   icons: {
     icon: [
       { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
@@ -84,10 +84,10 @@ export const metadata: Metadata = {
   
   // Open Graph - Social sharing
   openGraph: {
-    title: "Moshi Homecare",
-    description: "Trusted homecare services for your loved ones. 20+ years of experience serving families across all states.",
+    title: "Moshi Home Care",
+    description: "Trusted home care services for your loved ones. 5+ years of experience serving families across all counties in North Carolina.",
     url: 'https://www.moshihomecare.com',
-    siteName: "Moshi Homecare",
+    siteName: "Moshi Home Care",
     locale: 'en_US',
     type: 'website',
     images: [
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
         url: '/images/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Moshi Homecare - Professional Homecare Services',
+        alt: 'Moshi Home Care - Professional Home Care Services',
       },
     ],
   },
@@ -103,8 +103,8 @@ export const metadata: Metadata = {
   // Twitter Cards
   twitter: {
     card: 'summary_large_image',
-    title: "Moshi Homecare",
-    description: "Trusted homecare services for your loved ones. Serving all states with compassion and professionalism.",
+    title: "Moshi Home Care",
+    description: "Trusted home care services for your loved ones. Serving all counties in North Carolina with compassion and professionalism.",
     images: ['/images/og-image.jpg'],
     creator: '@MoshiHomecare',
     site: '@MoshiHomecare',
@@ -170,8 +170,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
-              name: 'Moshi Homecare',
-              description: 'Professional homecare services serving all states across the USA. 20+ years of experience providing compassionate care for seniors and individuals needing assistance.',
+              name: 'Moshi Home Care',
+              description: 'Professional home care services serving families across all counties in North Carolina. 5+ years of experience providing compassionate care for seniors and individuals needing assistance.',
               url: 'https://www.moshihomecare.com',
               telephone: '+1 (910) 476-6003',
               email: 'info@moshihomecare.com',
@@ -190,11 +190,11 @@ export default function RootLayout({
                 longitude: -78.3147,
               },
               areaServed: {
-                '@type': 'Country',
-                name: 'United States',
+                '@type': 'State',
+                name: 'North Carolina',
               },
               serviceType: [
-                'Homecare Services',
+                'Home Care Services',
                 'Senior Care',
                 'Personal Care',
                 'Companionship',
@@ -218,24 +218,24 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Service',
-              serviceType: 'Homecare Services',
+              serviceType: 'Home Care Services',
               provider: {
                 '@type': 'LocalBusiness',
-                name: 'Moshi Homecare',
+                name: 'Moshi Home Care',
               },
               areaServed: {
-                '@type': 'Country',
-                name: 'United States',
+                '@type': 'State',
+                name: 'North Carolina',
               },
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
-                name: 'Homecare Services',
+                name: 'Home Care Services',
                 itemListElement: [
                   {
                     '@type': 'Offer',
                     itemOffered: {
                       '@type': 'Service',
-                      name: 'Homecare Services',
+                      name: 'Home Care Services',
                     },
                   },
                   {
