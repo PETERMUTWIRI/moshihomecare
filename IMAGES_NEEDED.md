@@ -200,9 +200,9 @@ This document lists all images needed for the Moshi Homecare website. Please dow
 
 ---
 
-## 🆕 SERVICES PAGE — NEW SERVICE SECTIONS (Added Oct 2026)
+## 🆕 SERVICES PAGE — SERVICE IMAGES (Updated Oct 2026)
 
-These four service sections were added to `/services`. Placeholder images are currently in use — please replace them with dedicated photos using the exact filenames below (no code changes needed after replacing).
+The service sections below use the following photos. Place the files in `/public/images/` using the exact filenames below (no code changes needed after replacing).
 
 ### 27. service-dementia.jpeg
 **Priority: HIGH**
@@ -210,7 +210,7 @@ These four service sections were added to `/services`. Placeholder images are cu
 - **Scene:** Caregiver engaging a senior in a calming, familiar activity (puzzle, photo album, music) at home
 - **Mood:** Calm, patient, reassuring, warm
 - **Dimensions:** 800x600px (4:3)
-- **Currently using:** copy of `social-worker-taking-care-senior-woman.jpg`
+- **Status:** ✅ Downloaded (Oct 2026)
 
 ### 28. service-mealtime.jpeg
 **Priority: HIGH**
@@ -218,7 +218,7 @@ These four service sections were added to `/services`. Placeholder images are cu
 - **Scene:** Caregiver assisting a senior at the table with a meal, or helping with food preparation
 - **Mood:** Warm, dignified, supportive
 - **Dimensions:** 800x600px (4:3)
-- **Currently using:** copy of `request-care-hero.jpeg`
+- **Status:** ✅ Downloaded (Oct 2026)
 
 ### 29. service-errands.jpeg
 **Priority: MEDIUM**
@@ -226,7 +226,7 @@ These four service sections were added to `/services`. Placeholder images are cu
 - **Scene:** Caregiver with a senior out of the house — grocery shopping, at a pharmacy, or arriving at a medical appointment
 - **Mood:** Active, helpful, confident
 - **Dimensions:** 800x600px (4:3)
-- **Currently using:** copy of `caregiver-family.jpeg`
+- **Status:** ✅ Downloaded (Oct 2026)
 
 ### 30. service-exercise.jpeg
 **Priority: MEDIUM**
@@ -234,7 +234,55 @@ These four service sections were added to `/services`. Placeholder images are cu
 - **Scene:** Caregiver and senior walking together, gentle stretching, or seated exercise at home
 - **Mood:** Encouraging, energetic, positive
 - **Dimensions:** 800x600px (4:3)
-- **Currently using:** copy of `step-3-care.jpeg`
+- **Status:** ✅ Downloaded (Oct 2026)
+
+### 31. service-post-surgery.jpeg
+**Priority: HIGH**
+- **Description:** Post-surgical & recovery care
+- **Scene:** Caregiver supporting a senior recovering after surgery at home
+- **Mood:** Supportive, hopeful, professional
+- **Dimensions:** 800x600px (4:3)
+- **Status:** ✅ Downloaded (Oct 2026)
+
+### 32. service-respite.jpeg
+**Priority: MEDIUM**
+- **Description:** Respite care
+- **Scene:** Caregiver stepping in so family caregivers can rest, or sharing a relaxed moment with a senior
+- **Mood:** Relaxed, trusting, warm
+- **Dimensions:** 800x600px (4:3)
+- **Status:** ✅ Downloaded (Oct 2026)
+
+### 33. service-livein.jpeg
+**Priority: HIGH**
+- **Description:** 24/7 & live-in care
+- **Scene:** Live-in caregiver providing continuous care and companionship
+- **Mood:** Dependable, comforting, continuous support
+- **Dimensions:** 800x600px (4:3)
+- **Status:** ✅ Downloaded (Oct 2026)
+
+### 34. service-hospice.jpeg
+**Priority: MEDIUM**
+- **Description:** Hospice & end-of-life comfort care
+- **Scene:** Caregiver holding a senior's hand with compassion
+- **Mood:** Gentle, peaceful, dignified
+- **Dimensions:** 800x600px (4:3)
+- **Status:** ✅ Downloaded (Oct 2026)
+
+### 35. service-mobility.jpeg
+**Priority: MEDIUM**
+- **Description:** Parkinson's, stroke & chronic condition care
+- **Scene:** Caregiver assisting a senior with a walker during condition-specific care
+- **Mood:** Encouraging, steady, supportive
+- **Dimensions:** 800x600px (4:3)
+- **Status:** ✅ Downloaded (Oct 2026)
+
+### 36. service-transition.jpeg
+**Priority: MEDIUM**
+- **Description:** Hospital-to-home transitional care
+- **Scene:** Caregiver preparing a safe, welcoming setup for a senior's return home from the hospital
+- **Mood:** Organized, reassuring, proactive
+- **Dimensions:** 800x600px (4:3)
+- **Status:** ✅ Downloaded (Oct 2026)
 
 ---
 
@@ -310,10 +358,16 @@ After downloading/creating images, place them in:
 - [ ] contact-office.jpg
 - [ ] support-team.jpg
 - [ ] og-image.jpg
-- [ ] service-dementia.jpeg (currently placeholder)
-- [ ] service-mealtime.jpeg (currently placeholder)
-- [ ] service-errands.jpeg (currently placeholder)
-- [ ] service-exercise.jpeg (currently placeholder)
+- [x] service-dementia.jpeg
+- [x] service-mealtime.jpeg
+- [x] service-errands.jpeg
+- [x] service-exercise.jpeg
+- [x] service-post-surgery.jpeg
+- [x] service-respite.jpeg
+- [x] service-livein.jpeg
+- [x] service-hospice.jpeg
+- [x] service-mobility.jpeg
+- [x] service-transition.jpeg
 
 ---
 

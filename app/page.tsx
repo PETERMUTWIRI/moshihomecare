@@ -22,7 +22,10 @@ import {
   Brain,
   ShoppingCart,
   UtensilsCrossed,
-  Activity
+  Activity,
+  Stethoscope,
+  BookHeart,
+  CarTaxiFront
 } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
@@ -94,6 +97,12 @@ function ViewAllServicesCard() {
     { src: '/images/service-mealtime.jpeg', alt: 'Mealtime assistance' },
     { src: '/images/service-errands.jpeg', alt: 'Errands and appointments' },
     { src: '/images/service-exercise.jpeg', alt: 'Light exercise' },
+    { src: '/images/service-post-surgery.jpeg', alt: 'Post-surgery recovery care' },
+    { src: '/images/service-respite.jpeg', alt: 'Respite care' },
+    { src: '/images/service-livein.jpeg', alt: 'Live-in care' },
+    { src: '/images/service-hospice.jpeg', alt: 'Hospice comfort care' },
+    { src: '/images/service-mobility.jpeg', alt: 'Condition and mobility care' },
+    { src: '/images/service-transition.jpeg', alt: 'Hospital-to-home transition' },
     { src: '/images/hero-caregiver-senior.jpeg', alt: 'Caregiver with senior' },
   ];
 
@@ -260,7 +269,7 @@ export default function HomePage() {
                   <div className="hidden md:flex flex-wrap items-center gap-3 md:gap-7">
                     <div className="flex items-center gap-2 text-care-gray-600 text-sm">
                       <CheckCircle className="w-5 h-5 text-care-red" />
-                      <span>Licensed & Insured</span>
+                      <span>Licensed & Screened</span>
                     </div>
                     <div className="flex items-center gap-2 text-care-gray-600 text-sm">
                       <CheckCircle className="w-5 h-5 text-care-red" />
@@ -521,6 +530,150 @@ export default function HomePage() {
                     </h3>
                     <p className="text-care-gray-600 text-sm leading-relaxed">
                       Gentle, supervised exercise and daily movement to maintain strength, balance, and independence.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#post-surgery" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-post-surgery.jpeg"
+                      alt="Post-surgical and recovery care - caregiver supporting a senior recovering after surgery at home"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <Stethoscope className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Post-Surgical &amp; Recovery Care
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Support at home after surgery for a safe, smooth recovery — from discharge through every follow-up.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#respite-care" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-respite.jpeg"
+                      alt="Respite care - caregiver giving family caregivers a well-deserved break"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <Heart className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Respite Care
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Temporary relief for family caregivers — for a few hours, a weekend, or longer, with complete peace of mind.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#live-in-care" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-livein.jpeg"
+                      alt="24/7 and live-in care - live-in caregiver providing continuous care and companionship"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <Clock className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      24/7 &amp; Live-In Care
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Continuous, dependable support day and night for seniors who shouldn&apos;t be alone.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#hospice-care" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-hospice.jpeg"
+                      alt="Hospice and end-of-life comfort care - caregiver holding a senior's hand with compassion"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <BookHeart className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Hospice &amp; End-of-Life Comfort Care
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Gentle, dignified support at home that keeps your loved one comfortable and surrounded by care.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#condition-care" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-mobility.jpeg"
+                      alt="Parkinson's, stroke and chronic condition care - caregiver assisting a senior with a walker"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <Activity className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Parkinson&apos;s, Stroke &amp; Chronic Condition Care
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      Specialized, patient support for Parkinson&apos;s, stroke recovery, MS, ALS, arthritis, and more.
+                    </p>
+                  </div>
+                </Link>
+              </StaggerItem>
+
+              <StaggerItem>
+                <Link href="/services#transition-care" className="card-feature group block overflow-hidden h-full">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <Image
+                      src="/images/service-transition.jpeg"
+                      alt="Hospital-to-home transitional care - caregiver ready for a safe discharge home"
+                      fill
+                      className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <div className="w-12 h-12 rounded-xl bg-care-red/10 flex items-center justify-center mb-4 group-hover:bg-care-red transition-colors duration-300">
+                      <CarTaxiFront className="w-6 h-6 text-care-red group-hover:text-white transition-colors" />
+                    </div>
+                    <h3 className="font-heading text-xl mb-2 text-care-navy group-hover:text-care-red transition-colors">
+                      Hospital-to-Home Transitional Care
+                    </h3>
+                    <p className="text-care-gray-600 text-sm leading-relaxed">
+                      A safe, smooth bridge from hospital to home — focused support in the critical first days.
                     </p>
                   </div>
                 </Link>

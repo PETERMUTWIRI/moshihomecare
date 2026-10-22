@@ -199,6 +199,16 @@ export default function RootLayout({
                 'Personal Care',
                 'Companionship',
                 'Medication Reminders',
+                'Mealtime & Eating Assistance',
+                'Errands, Shopping & Appointments',
+                'Light Exercise & Active Living',
+                'Alzheimer\'s & Dementia Care',
+                'Post-Surgical & Recovery Care',
+                'Respite Care',
+                '24/7 & Live-In Care',
+                'Hospice & End-of-Life Comfort Care',
+                'Parkinson\'s, Stroke & Chronic Condition Care',
+                'Hospital-to-Home Transitional Care',
               ],
               priceRange: '$$',
               openingHours: '24/7',
@@ -257,6 +267,83 @@ export default function RootLayout({
                     itemOffered: {
                       '@type': 'Service',
                       name: 'Companionship',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Light Housekeeping',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Mealtime & Eating Assistance',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Errands, Shopping & Appointments',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Light Exercise & Active Living',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Alzheimer\'s & Dementia Care',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Post-Surgical & Recovery Care',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Respite Care',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: '24/7 & Live-In Care',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Hospice & End-of-Life Comfort Care',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Parkinson\'s, Stroke & Chronic Condition Care',
+                    },
+                  },
+                  {
+                    '@type': 'Offer',
+                    itemOffered: {
+                      '@type': 'Service',
+                      name: 'Hospital-to-Home Transitional Care',
                     },
                   },
                 ],

@@ -91,7 +91,7 @@ const stats = [
 ];
 
 const trustIndicators = [
-  'Licensed, bonded, and insured across North Carolina',
+  'Licensed, bonded, and screened caregivers across North Carolina',
   'Rigorous background checks on every caregiver',
   'Ongoing training and certification programs',
   '24/7 on-call support and emergency response',

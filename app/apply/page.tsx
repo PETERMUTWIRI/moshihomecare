@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 import Image from 'next/image';
 import { Heart, ArrowRight, CheckCircle, User, Phone, Mail, Award, FileUp, Briefcase, FileText, Clock, MapPin } from 'lucide-react';
-import { submitCaregiverApplication, generateCVMailto } from '@/lib/whatsapp';
+import { generateApplicationMailto } from '@/lib/whatsapp';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
 import SectionBackground, { SectionBadge, FloatingCard, BlurredOrb } from '@/components/SectionBackground';
 import StatCard from '@/components/StatCard';
@@ -23,9 +23,16 @@ const serviceOptions = [
   'Light Housekeeping',
   'Daily Living Assistance',
   'Companionship',
+  'Mealtime & Eating Assistance',
+  'Errands, Shopping & Appointments',
+  'Light Exercise & Active Living',
   'Specialized Care (Dementia/Alzheimer\'s)',
   'Post-Surgery Care',
   'Respite Care',
+  '24/7 & Live-In Care',
+  'Hospice & End-of-Life Comfort',
+  'Parkinson\'s, Stroke & Chronic Condition Care',
+  'Hospital-to-Home Transitional Care',
 ];
 
 export default function ApplyPage() {
@@ -46,29 +53,17 @@ export default function ApplyPage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Prepare services string
-    const servicesString = formData.services.join(', ');
-
-    // If CV is uploaded via email, open mailto first
-    if (cvUploadMethod === 'email' || !cvFile) {
-      const mailtoLink = generateCVMailto({
-        name: formData.name,
-        email: formData.email,
-        phone: formData.phone,
-        recipientEmail: 'careers@moshihomecare.com',
-      });
-      window.open(mailtoLink, '_blank');
-    }
-
-    // Submit to WhatsApp
-    submitCaregiverApplication({
+    // Send the application to the Moshi Home Care inbox via the applicant's email client
+    const mailtoLink = generateApplicationMailto({
       name: formData.name,
-      phone: formData.phone,
       email: formData.email,
+      phone: formData.phone,
       experience: formData.experience,
-      services: servicesString,
-      cvMethod: cvUploadMethod === 'email' || !cvFile ? 'email' : 'upload',
+      services: formData.services.join(', '),
+      cvFileName: cvUploadMethod === 'upload' ? cvFile?.name : null,
+      recipientEmail: 'info@moshihomecare.com',
     });
+    window.open(mailtoLink, '_blank');
 
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -108,9 +103,10 @@ export default function ApplyPage() {
                 Application Submitted!
               </h1>
               <p className="text-care-gray-500 mb-4">
-                {cvUploadMethod === 'email' 
-                  ? 'Please check your email client - we\'ve prepared a message for you to send your CV. Also, WhatsApp should open with your application details.'
-                  : 'WhatsApp should open automatically with your application details. We\'ll review your application and get back to you soon.'}
+                Your email client should open with your application details addressed to{' '}
+                <a href="mailto:info@moshihomecare.com" className="text-care-red font-medium">info@moshihomecare.com</a>.
+                {' '}Please attach your CV{cvFile ? ` (${cvFile.name})` : ''} to the email before sending, and we&apos;ll
+                review your application and get back to you soon.
               </p>
               <div className="space-y-3">
                 <button
@@ -165,7 +161,7 @@ export default function ApplyPage() {
                   Apply to Be a Moshi Home Care Caregiver
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl">
-                  Join our team of compassionate caregivers. Fill out the form below and we&apos;ll connect with you via WhatsApp.
+                  Join our team of compassionate caregivers. Fill out the form below and we&apos;ll connect with you via email.
                 </p>
               </FadeIn>
             </div>
@@ -369,7 +365,7 @@ export default function ApplyPage() {
                   </button>
 
                   <p className="text-care-gray-400 text-xs text-center">
-                    By submitting, you agree to be contacted via WhatsApp and email about your application.
+                    By submitting, you agree to be contacted via phone and email about your application.
                   </p>
                 </form>
               </div>

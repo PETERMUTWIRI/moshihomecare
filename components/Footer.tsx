@@ -6,11 +6,21 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const footerLinks = {
   services: [
-    { label: 'Home Care Services', href: '/request-care' },
-    { label: 'Medication Reminder', href: '/request-care' },
-    { label: 'Light Housekeeping', href: '/request-care' },
-    { label: 'Daily Living Assistance', href: '/request-care' },
-    { label: 'Companionship', href: '/request-care' },
+    { label: 'Home Care Services', href: '/services#homecare' },
+    { label: 'Medication Reminder', href: '/services#medication' },
+    { label: 'Light Housekeeping', href: '/services#housekeeping' },
+    { label: 'Daily Living Assistance', href: '/services#daily-living' },
+    { label: 'Companionship', href: '/services#companionship' },
+    { label: 'Alzheimer\'s & Dementia Care', href: '/services#dementia' },
+    { label: 'Mealtime & Eating Assistance', href: '/services#mealtime' },
+    { label: 'Errands, Shopping & Appointments', href: '/services#errands' },
+    { label: 'Light Exercise & Active Living', href: '/services#exercise' },
+    { label: 'Post-Surgical & Recovery Care', href: '/services#post-surgery' },
+    { label: 'Respite Care', href: '/services#respite-care' },
+    { label: '24/7 & Live-In Care', href: '/services#live-in-care' },
+    { label: 'Hospice & End-of-Life Comfort Care', href: '/services#hospice-care' },
+    { label: 'Parkinson\'s, Stroke & Chronic Condition Care', href: '/services#condition-care' },
+    { label: 'Hospital-to-Home Transitional Care', href: '/services#transition-care' },
   ],
   company: [
     { label: 'About Us', href: '/about' },

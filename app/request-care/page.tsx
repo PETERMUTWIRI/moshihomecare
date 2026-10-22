@@ -20,6 +20,11 @@ const careTypes = [
   { value: 'Errands, Shopping & Appointments', label: 'Errands, Shopping & Appointments' },
   { value: 'Light Exercise & Active Living', label: 'Light Exercise & Active Living' },
   { value: 'Respite Care', label: 'Respite Care' },
+  { value: 'Post-Surgical & Recovery Care', label: 'Post-Surgical & Recovery Care' },
+  { value: '24/7 & Live-In Care', label: '24/7 & Live-In Care' },
+  { value: 'Hospice & End-of-Life Comfort Care', label: 'Hospice & End-of-Life Comfort Care' },
+  { value: 'Parkinson\'s, Stroke & Chronic Condition Care', label: 'Parkinson\'s, Stroke & Chronic Condition Care' },
+  { value: 'Hospital-to-Home Transitional Care', label: 'Hospital-to-Home Transitional Care' },
   { value: 'Multiple Services', label: 'Multiple Services' },
 ];
 

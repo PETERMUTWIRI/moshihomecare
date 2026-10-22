@@ -102,7 +102,7 @@ export default function ServicesPage() {
                 </p>
                 <div className="space-y-3">
                   {[
-                    'Licensed, bonded, and insured caregivers with extensive training',
+                    'Licensed, bonded, and screened caregivers with extensive training',
                     'Personalized care plans that evolve with changing needs',
                     '24/7 on-call support and rapid emergency response',
                     'Seamless coordination with healthcare providers and family',
@@ -167,7 +167,7 @@ export default function ServicesPage() {
             </FadeIn>
           </div>
 
-          <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" staggerDelay={0.1}>
+          <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" staggerDelay={0.1}>
             {[
               {
                 icon: HandHeart,
@@ -188,6 +188,16 @@ export default function ServicesPage() {
                 icon: Brain,
                 title: 'Specialized Care & Companionship',
                 services: ['Alzheimer\'s & Dementia Care', 'Respite Care', 'Companionship & Emotional Support', 'Doctor\'s Appointment Escort']
+              },
+              {
+                icon: Activity,
+                title: 'Recovery & Condition Care',
+                services: ['Post-Surgical & Recovery Care', 'Parkinson\'s, Stroke & Condition Care', 'Hospital-to-Home Transition', 'Hospice & End-of-Life Comfort']
+              },
+              {
+                icon: Clock,
+                title: 'Around-the-Clock & Family Support',
+                services: ['24/7 & Live-In Care', 'Overnight & Weekend Care', 'Respite for Family Caregivers', 'Transportation & Escort']
               }
             ].map((category) => (
               <StaggerItem key={category.title}>
@@ -931,6 +941,467 @@ export default function ServicesPage() {
                 <Image
                   src="/images/service-exercise.jpeg"
                   alt="Caregiver and senior enjoying light exercise and activity together"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 10: Post-Surgical & Recovery Care - Image Background */}
+      <SectionBackground
+        id="post-surgery"
+        imageSrc="/images/service-post-surgery.jpeg"
+        imageAlt="Caregiver supporting a senior recovering after surgery at home"
+        overlay="gradient"
+        className="relative scroll-mt-20"
+      >
+        <div className="section-padding">
+          <div className="container-care mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <FadeIn direction="right">
+                <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40">
+                  <Image
+                    src="/images/service-post-surgery.jpeg"
+                    alt="Caregiver supporting a senior recovering after surgery at home"
+                    width={600}
+                    height={500}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </FadeIn>
+              <FadeIn direction="left" delay={0.15}>
+                <FloatingCard variant="white" className="text-center md:text-left">
+                  <SectionBadge
+                    icon={<Stethoscope className="w-4 h-4" />}
+                    variant="red"
+                    className="mb-3 md:mb-6"
+                  >
+                    Recovery Support
+                  </SectionBadge>
+                  <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                    Post-Surgical &amp; Recovery Care
+                  </h2>
+                  <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                    After surgery, the right support at home can make all the difference in a safe,
+                    smooth recovery. Our caregivers help your loved one follow discharge instructions,
+                    stay mobile, and heal comfortably in the familiar surroundings of home.
+                  </p>
+                  <p className="text-care-gray-600 leading-relaxed mb-8">
+                    We work alongside your healthcare team and family to support the recovery plan —
+                    from the first days home through every follow-up appointment.
+                  </p>
+
+                  <h3 className="font-heading text-lg text-care-navy mb-4">Service Features</h3>
+                  <div className="grid sm:grid-cols-2 gap-3 mb-8">
+                    {[
+                      'Discharge instruction support',
+                      'Safe mobility & transfer help',
+                      'Medication reminder schedules',
+                      'Rides to follow-up appointments',
+                      'Meal preparation & hydration',
+                      'Daily progress updates'
+                    ].map((item, index) => (
+                      <div key={index} className="flex items-center gap-2 p-2 rounded-lg bg-gradient-warm">
+                        <CheckCircle className="w-4 h-4 text-care-red flex-shrink-0" />
+                        <span className="text-care-gray-600 text-sm">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="bg-care-navy rounded-2xl p-6 text-white">
+                    <h4 className="font-heading !text-white mb-3">Common Recoveries We Support</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        'Hip & knee replacement',
+                        'Heart surgery',
+                        'Abdominal surgery',
+                        'Injury recovery'
+                      ].map((item) => (
+                        <span key={item} className="bg-white/10 rounded-full px-3 py-1.5 text-xs text-white/80">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </FloatingCard>
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </SectionBackground>
+
+      {/* Service 11: Respite Care - Light Background */}
+      <section id="respite-care" className="section-padding bg-white scroll-mt-20">
+        <div className="container-care mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <FadeIn direction="right">
+              <div className="order-2 lg:order-1 text-center md:text-left">
+                <SectionBadge
+                  icon={<Heart className="w-4 h-4" />}
+                  variant="red"
+                  className="mb-3 md:mb-6"
+                >
+                  Family Support
+                </SectionBadge>
+                <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                  Respite Care
+                </h2>
+                <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                  Caring for a loved one is deeply rewarding — but everyone needs a break. Our respite
+                  care steps in whenever family caregivers need time to rest, work, travel, or simply
+                  recharge.
+                </p>
+                <p className="text-care-gray-600 leading-relaxed mb-8">
+                  Your loved one keeps their familiar routine and the same personalized care plan,
+                  whether respite lasts a few hours, a weekend, or several weeks.
+                </p>
+
+                <h3 className="font-heading text-lg text-care-navy mb-4">What We Provide</h3>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  {[
+                    { icon: Users, text: 'Relief for family caregivers' },
+                    { icon: Clock, text: 'Flexible — hours to weeks' },
+                    { icon: Home, text: 'Care in the comfort of home' },
+                    { icon: Shield, text: 'Existing care plan continues' },
+                    { icon: Phone, text: 'Updates while you\'re away' },
+                    { icon: Heart, text: 'Overnight & weekend options' }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 p-3 rounded-xl bg-gradient-warm">
+                      <div className="w-10 h-10 rounded-lg bg-care-red/10 flex items-center justify-center border border-care-red/10">
+                        <item.icon className="w-5 h-5 text-care-red" />
+                      </div>
+                      <span className="text-care-gray-600 text-sm font-medium">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-care-navy rounded-2xl p-6 text-white">
+                  <h4 className="font-heading !text-white mb-2 flex items-center gap-2">
+                    <Heart className="w-5 h-5 text-care-red" />
+                    Caregiver Burnout Is Real
+                  </h4>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Taking time for yourself isn&apos;t selfish — it&apos;s essential. Regular respite
+                    protects your health and the quality of care you provide, so you can be there for
+                    your loved one for the long run.
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn direction="left" delay={0.15}>
+              <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40 order-1 lg:order-2">
+                <Image
+                  src="/images/service-respite.jpeg"
+                  alt="Caregiver giving family caregivers a well-deserved break"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 12: 24/7 & Live-In Care - Image Background */}
+      <SectionBackground
+        id="live-in-care"
+        imageSrc="/images/service-livein.jpeg"
+        imageAlt="Live-in caregiver providing continuous care and companionship"
+        overlay="gradient"
+        className="relative scroll-mt-20"
+      >
+        <div className="section-padding">
+          <div className="container-care mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <FadeIn direction="right">
+                <FloatingCard variant="white" className="text-center md:text-left">
+                  <SectionBadge
+                    icon={<Clock className="w-4 h-4" />}
+                    variant="red"
+                    className="mb-3 md:mb-6"
+                  >
+                    Around-the-Clock Care
+                  </SectionBadge>
+                  <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                    24/7 &amp; Live-In Care
+                  </h2>
+                  <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                    Some needs don&apos;t follow a schedule. Our live-in and 24/7 care provides
+                    continuous, dependable support day and night — for seniors who shouldn&apos;t be
+                    alone, or families who need lasting peace of mind.
+                  </p>
+                  <p className="text-care-gray-600 leading-relaxed mb-8">
+                    Caregivers are matched to your loved one&apos;s routines and personality, with
+                    planned rotations so care stays fresh, consistent, and personal.
+                  </p>
+
+                  <h3 className="font-heading text-lg text-care-navy mb-4">Service Features</h3>
+                  <div className="grid sm:grid-cols-2 gap-3 mb-8">
+                    {[
+                      'Continuous day-and-night coverage',
+                      'Matched to your daily routines',
+                      'Planned caregiver rotations',
+                      'Overnight safety & supervision',
+                      'Companionship around the clock',
+                      'Flexible hourly or live-in plans'
+                    ].map((item, index) => (
+                      <div key={index} className="flex items-center gap-2 p-2 rounded-lg bg-gradient-warm">
+                        <CheckCircle className="w-4 h-4 text-care-red flex-shrink-0" />
+                        <span className="text-care-gray-600 text-sm">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="bg-care-navy rounded-2xl p-6 text-white">
+                    <h4 className="font-heading !text-white mb-3">Ideal For</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        'Advanced dementia',
+                        'Fall risk',
+                        'Post-hospital recovery',
+                        'End-of-life comfort'
+                      ].map((item) => (
+                        <span key={item} className="bg-white/10 rounded-full px-3 py-1.5 text-xs text-white/80">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </FloatingCard>
+              </FadeIn>
+              <FadeIn direction="left" delay={0.15}>
+                <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40">
+                  <Image
+                    src="/images/service-livein.jpeg"
+                    alt="Live-in caregiver providing continuous care and companionship"
+                    width={600}
+                    height={500}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </SectionBackground>
+
+      {/* Service 13: Hospice & End-of-Life Comfort Care - Light Background */}
+      <section id="hospice-care" className="section-padding bg-white scroll-mt-20">
+        <div className="container-care mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <FadeIn direction="right">
+              <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40">
+                <Image
+                  src="/images/service-hospice.jpeg"
+                  alt="Caregiver holding a senior's hand with compassion during hospice care"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+            </FadeIn>
+            <FadeIn direction="left" delay={0.15}>
+              <div className="text-center md:text-left">
+                <SectionBadge
+                  icon={<BookHeart className="w-4 h-4" />}
+                  variant="red"
+                  className="mb-3 md:mb-6"
+                >
+                  Compassionate Comfort
+                </SectionBadge>
+                <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                  Hospice &amp; End-of-Life Comfort Care
+                </h2>
+                <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                  When curative treatment ends, comfort and dignity become everything. Our caregivers
+                  provide gentle, non-medical support that keeps your loved one comfortable, present,
+                  and surrounded by care at home.
+                </p>
+                <p className="text-care-gray-600 leading-relaxed mb-8">
+                  We work alongside hospice providers and family members, handling the daily needs so
+                  families can focus on meaningful time together.
+                </p>
+
+                <h3 className="font-heading text-lg text-care-navy mb-4">What We Provide</h3>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  {[
+                    { icon: HandHeart, text: 'Personal comfort & dignity care' },
+                    { icon: BookHeart, text: 'Emotional & spiritual companionship' },
+                    { icon: Users, text: 'Support for the whole family' },
+                    { icon: Home, text: 'Peaceful care at home' },
+                    { icon: Shield, text: 'Coordination with hospice teams' },
+                    { icon: Clock, text: 'Overnight presence & vigil' }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 p-3 rounded-xl bg-gradient-warm">
+                      <div className="w-10 h-10 rounded-lg bg-care-red/10 flex items-center justify-center border border-care-red/10">
+                        <item.icon className="w-5 h-5 text-care-red" />
+                      </div>
+                      <span className="text-care-gray-600 text-sm font-medium">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-care-navy rounded-2xl p-6 text-white">
+                  <h4 className="font-heading !text-white mb-2">We Handle the Daily Needs</h4>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Personal hygiene, meals, repositioning, light housekeeping, and errands — so you
+                    can simply be family.
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 14: Parkinson's, Stroke & Chronic Condition Care - Image Background */}
+      <SectionBackground
+        id="condition-care"
+        imageSrc="/images/service-mobility.jpeg"
+        imageAlt="Caregiver assisting a senior with a walker during condition-specific care"
+        overlay="gradient"
+        className="relative scroll-mt-20"
+      >
+        <div className="section-padding">
+          <div className="container-care mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+              <FadeIn direction="right">
+                <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40">
+                  <Image
+                    src="/images/service-mobility.jpeg"
+                    alt="Caregiver assisting a senior with a walker during condition-specific care"
+                    width={600}
+                    height={500}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+              </FadeIn>
+              <FadeIn direction="left" delay={0.15}>
+                <FloatingCard variant="white" className="text-center md:text-left">
+                  <SectionBadge
+                    icon={<Activity className="w-4 h-4" />}
+                    variant="red"
+                    className="mb-3 md:mb-6"
+                  >
+                    Specialized Condition Care
+                  </SectionBadge>
+                  <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                    Parkinson&apos;s, Stroke &amp; Chronic Condition Care
+                  </h2>
+                  <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                    Living with Parkinson&apos;s, the effects of a stroke, or conditions like MS, ALS,
+                    arthritis, or heart disease requires specialized, patient, consistent support. Our
+                    caregivers are trained in the unique challenges each condition brings.
+                  </p>
+                  <p className="text-care-gray-600 leading-relaxed mb-8">
+                    We build condition-specific care plans that evolve as needs change — protecting
+                    independence while keeping your loved one safe and supported.
+                  </p>
+
+                  <h3 className="font-heading text-lg text-care-navy mb-4">Service Features</h3>
+                  <div className="grid sm:grid-cols-2 gap-3 mb-8">
+                    {[
+                      'Mobility & transfer assistance',
+                      'Condition-specific care plans',
+                      'Cognitive & communication support',
+                      'Fall-risk monitoring',
+                      'Adaptive dressing & grooming',
+                      'Nutrition & meal support'
+                    ].map((item, index) => (
+                      <div key={index} className="flex items-center gap-2 p-2 rounded-lg bg-gradient-warm">
+                        <CheckCircle className="w-4 h-4 text-care-red flex-shrink-0" />
+                        <span className="text-care-gray-600 text-sm">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="bg-care-navy rounded-2xl p-6 text-white">
+                    <h4 className="font-heading !text-white mb-3">Conditions We Support</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {[
+                        'Parkinson\'s disease',
+                        'Stroke recovery',
+                        'Multiple sclerosis',
+                        'ALS',
+                        'Arthritis & mobility loss',
+                        'Heart disease & diabetes'
+                      ].map((item) => (
+                        <span key={item} className="bg-white/10 rounded-full px-3 py-1.5 text-xs text-white/80">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </FloatingCard>
+              </FadeIn>
+            </div>
+          </div>
+        </div>
+      </SectionBackground>
+
+      {/* Service 15: Hospital-to-Home Transitional Care - Light Background */}
+      <section id="transition-care" className="section-padding bg-white scroll-mt-20">
+        <div className="container-care mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <FadeIn direction="right">
+              <div className="order-2 lg:order-1 text-center md:text-left">
+                <SectionBadge
+                  icon={<CarTaxiFront className="w-4 h-4" />}
+                  variant="red"
+                  className="mb-3 md:mb-6"
+                >
+                  Smooth Transitions
+                </SectionBadge>
+                <h2 className="font-heading text-3xl md:text-4xl text-care-navy mb-6 leading-tight">
+                  Hospital-to-Home Transitional Care
+                </h2>
+                <p className="text-care-gray-600 leading-relaxed mb-6 text-lg">
+                  The days right after a hospital discharge are critical — and the most common time
+                  for readmissions. Our transitional care bridges the gap between hospital and home.
+                </p>
+                <p className="text-care-gray-600 leading-relaxed mb-8">
+                  From pickup to follow-up appointments, we make sure the transition is safe, smooth,
+                  and stress-free for your loved one and your family.
+                </p>
+
+                <h3 className="font-heading text-lg text-care-navy mb-4">What We Provide</h3>
+                <div className="grid sm:grid-cols-2 gap-4 mb-8">
+                  {[
+                    { icon: FileText, text: 'Discharge plan coordination' },
+                    { icon: Calendar, text: 'Focused first-72-hours support' },
+                    { icon: Home, text: 'Safe home setup & fall proofing' },
+                    { icon: CarTaxiFront, text: 'Rides home & to follow-ups' },
+                    { icon: Pill, text: 'Medication schedule setup' },
+                    { icon: Phone, text: 'Updates for family & care team' }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-3 p-3 rounded-xl bg-gradient-warm">
+                      <div className="w-10 h-10 rounded-lg bg-care-red/10 flex items-center justify-center border border-care-red/10">
+                        <item.icon className="w-5 h-5 text-care-red" />
+                      </div>
+                      <span className="text-care-gray-600 text-sm font-medium">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="bg-care-navy rounded-2xl p-6 text-white">
+                  <h4 className="font-heading !text-white mb-2">Why It Matters</h4>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    Patients who have dedicated support after discharge recover faster, avoid
+                    complications, and are far less likely to end up back in the hospital.
+                  </p>
+                </div>
+              </div>
+            </FadeIn>
+            <FadeIn direction="left" delay={0.15}>
+              <div className="relative rounded-3xl overflow-hidden shadow-floating border border-white/40 order-1 lg:order-2">
+                <Image
+                  src="/images/service-transition.jpeg"
+                  alt="Caregiver equipment ready for hospital-to-home transitional care"
                   width={600}
                   height={500}
                   className="object-cover w-full h-full"
