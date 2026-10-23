@@ -106,8 +106,6 @@ const config: Config = {
             800: '#1E293B',
             900: '#0F172A',
           },
-          // WhatsApp Green
-          whatsapp: '#25D366',
         },
       },
       fontFamily: {

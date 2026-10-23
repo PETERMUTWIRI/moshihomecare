@@ -35,7 +35,7 @@ import StatCard from '@/components/StatCard';
 
 // Trust indicators
 const trustIndicators = [
-  { icon: MapPin, label: 'Serving North Carolina', value: 'All NC Counties' },
+  { icon: MapPin, label: 'Serving North Carolina', value: '7 NC Counties' },
   { icon: Award, label: 'Years Experience', value: '5+' },
   { icon: Users, label: 'Clients Cared For', value: '5K+' },
   { icon: Shield, label: 'Screened Caregivers', value: '100%' },

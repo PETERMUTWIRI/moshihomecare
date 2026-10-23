@@ -30,8 +30,7 @@
   --care-gray-500: #64748B;
   --care-gray-600: #475569;
   --care-gray-700: #334155;
-  --care-whatsapp: #25D366;
-  
+
   /* Shadcn Theme Variables */
   --background: 210 40% 98%;
   --foreground: 222 47% 11%;
@@ -581,44 +580,6 @@ body {
   background: rgba(15, 43, 50, 0.06);
   color: var(--care-navy);
   border: 1px solid rgba(15, 43, 50, 0.1);
-}
-
-/* ==========================================
-   WHATSAPP FLOATING BUTTON
-   ========================================== */
-
-.whatsapp-float {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 50;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #25D366;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  transition: all 0.3s ease;
-  animation: pulse-whatsapp 2s infinite;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
-}
-
-@keyframes pulse-whatsapp {
-  0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
-  }
 }
 
 /* ==========================================

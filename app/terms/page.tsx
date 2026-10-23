@@ -64,7 +64,7 @@ export default function TermsOfServicePage() {
                 </p>
                 <ul className="list-disc pl-6 mb-6 space-y-2 text-care-gray-500">
                   <li>You agree to provide accurate and complete information</li>
-                  <li>You authorize us to contact you via WhatsApp or phone</li>
+                  <li>You authorize us to contact you via email or phone</li>
                   <li>Submission of a request does not guarantee service availability</li>
                   <li>All care arrangements are subject to caregiver availability and screening</li>
                 </ul>

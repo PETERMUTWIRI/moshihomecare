@@ -89,7 +89,7 @@ export default function Footer() {
             </Link>
             <p className="text-care-gray-300 text-sm leading-relaxed mb-6">
               Professional, compassionate home care services you can trust.
-              Serving families across all counties in North Carolina for over 5 years.
+              Serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties for over 5 years.
             </p>
           </div>
 
@@ -163,7 +163,7 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-care-gray-400 uppercase tracking-wider mb-0.5">Coverage</p>
-                  <p className="text-white text-sm">All Counties in North Carolina</p>
+                  <p className="text-white text-sm">Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">

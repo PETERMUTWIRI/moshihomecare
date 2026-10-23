@@ -32,8 +32,8 @@ const values = [
 
 const milestones = [
   { year: '2021', event: 'Moshi Home Care was founded with a mission to provide quality home care' },
-  { year: '2022', event: 'Expanded services to cover all counties in North Carolina' },
-  { year: '2023', event: 'Reached 5,000 clients cared for milestone' },
+  { year: '2022', event: 'Expanded services across the Triangle region' },
+  { year: '2026', event: 'Reached 5,000 clients cared for milestone' },
   { year: '2024', event: 'Launched specialized dementia and Alzheimer\'s care programs' },
   { year: '2026', event: 'Celebrated 5 years of compassionate care' },
 ];
@@ -42,7 +42,7 @@ const stats = [
   { value: '5+', label: 'Years Experience' },
   { value: '5K+', label: 'Families Served' },
   { value: 'Reliable', label: 'Caregivers' },
-  { value: '100', label: 'NC Counties Covered' },
+  { value: '7', label: 'NC Counties Covered' },
 ];
 
 export default function AboutPage() {
@@ -150,7 +150,7 @@ export default function AboutPage() {
                     <p>
                       Today, that same spirit guides our reliable caregivers across North Carolina. What started as 
                       one nurse&apos;s vision has grown into a trusted network serving thousands of families 
-                      across all 100 counties.
+                      across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties.
                     </p>
                   </div>
                 </div>
@@ -298,7 +298,7 @@ export default function AboutPage() {
                   <div className="relative rounded-3xl overflow-hidden h-[400px] shadow-floating border border-white/40">
                     <Image
                       src="/images/nationwide-coverage.jpeg"
-                      alt="Moshi Home Care North Carolina coverage map - serving all NC counties"
+                      alt="Moshi Home Care North Carolina coverage map"
                       fill
                       className="object-cover"
                     />
@@ -313,17 +313,18 @@ export default function AboutPage() {
                       </div>
                       <div>
                         <h2 className="font-heading text-2xl md:text-3xl text-care-navy">North Carolina Coverage</h2>
-                        <p className="text-care-gray-500">Serving All Counties Across North Carolina</p>
+                        <p className="text-care-gray-500">Serving Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties</p>
                       </div>
                     </div>
                     <p className="text-care-gray-600 leading-relaxed mb-8 text-lg">
-                      No matter where you are in North Carolina, Moshi Home Care is ready to help. 
-                      Our extensive network of caregivers spans all 100 counties, ensuring that quality 
-                      home care is always within reach.
+                      From the Triangle region and beyond, Moshi Home Care is ready to help.
+                      Our extensive network of caregivers serves Nash, Franklin, Johnson, Wake,
+                      Durham, Cary and Granville Counties, ensuring that quality home care is
+                      always within reach.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                       {[
-                        'All 100 counties covered',
+                        '7 NC counties covered',
                         'Urban & rural areas',
                         'Same-day service available',
                         'Local caregivers assigned'

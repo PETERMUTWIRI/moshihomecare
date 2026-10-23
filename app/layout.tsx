@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import WhatsAppButton from '@/components/WhatsAppButton';
 import BackToTop from '@/components/BackToTop';
 import CookieConsent from '@/components/CookieConsent';
 
@@ -31,7 +30,7 @@ export const metadata: Metadata = {
   },
   
   // Primary description
-  description: "Compassionate care, right at home. Professional home care services you can trust, serving families across all counties in North Carolina. Caregivers for seniors and individuals needing assistance at home.",
+  description: "Compassionate care, right at home. Professional home care services you can trust, serving families in Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties. Caregivers for seniors and individuals needing assistance at home.",
   
   // Keywords for search engines
   keywords: [
@@ -85,7 +84,7 @@ export const metadata: Metadata = {
   // Open Graph - Social sharing
   openGraph: {
     title: "Moshi Home Care",
-    description: "Trusted home care services for your loved ones. 5+ years of experience serving families across all counties in North Carolina.",
+    description: "Trusted home care services for your loved ones. 5+ years of experience serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties.",
     url: 'https://www.moshihomecare.com',
     siteName: "Moshi Home Care",
     locale: 'en_US',
@@ -104,7 +103,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Moshi Home Care",
-    description: "Trusted home care services for your loved ones. Serving all counties in North Carolina with compassion and professionalism.",
+    description: "Trusted home care services for your loved ones. Serving Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties with compassion and professionalism.",
     images: ['/images/og-image.jpg'],
     creator: '@MoshiHomecare',
     site: '@MoshiHomecare',
@@ -171,7 +170,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
               name: 'Moshi Home Care',
-              description: 'Professional home care services serving families across all counties in North Carolina. 5+ years of experience providing compassionate care for seniors and individuals needing assistance.',
+              description: 'Professional home care services serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties. 5+ years of experience providing compassionate care for seniors and individuals needing assistance.',
               url: 'https://www.moshihomecare.com',
               telephone: '+1 (910) 476-6003',
               email: 'info@moshihomecare.com',
@@ -189,10 +188,15 @@ export default function RootLayout({
                 latitude: 35.8243,
                 longitude: -78.3147,
               },
-              areaServed: {
-                '@type': 'State',
-                name: 'North Carolina',
-              },
+              areaServed: [
+                'Nash County',
+                'Franklin County',
+                'Johnson County',
+                'Wake County',
+                'Durham County',
+                'Cary',
+                'Granville County',
+              ],
               serviceType: [
                 'Home Care Services',
                 'Senior Care',
@@ -233,10 +237,15 @@ export default function RootLayout({
                 '@type': 'LocalBusiness',
                 name: 'Moshi Home Care',
               },
-              areaServed: {
-                '@type': 'State',
-                name: 'North Carolina',
-              },
+              areaServed: [
+                'Nash County',
+                'Franklin County',
+                'Johnson County',
+                'Wake County',
+                'Durham County',
+                'Cary',
+                'Granville County',
+              ],
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
                 name: 'Home Care Services',
@@ -366,9 +375,6 @@ export default function RootLayout({
         
         {/* Footer */}
         <Footer />
-        
-        {/* WhatsApp Floating Button */}
-        <WhatsAppButton />
         
         {/* Back to top button */}
         <BackToTop />

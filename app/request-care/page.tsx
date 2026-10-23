@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Heart, ArrowRight, CheckCircle, MapPin, Clock, User, Phone, FileText, Calendar } from 'lucide-react';
-import { submitClientRequest } from '@/lib/whatsapp';
+import { generateCareRequestMailto } from '@/lib/mailto';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
 import SectionBackground, { SectionBadge, FloatingCard, BlurredOrb } from '@/components/SectionBackground';
 import StatCard from '@/components/StatCard';
@@ -53,8 +53,8 @@ export default function RequestCarePage() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Submit to WhatsApp
-    submitClientRequest({
+    // Send the request to the Moshi Home Care inbox via the visitor's email client
+    const mailtoLink = generateCareRequestMailto({
       name: formData.name,
       phone: formData.phone,
       location: formData.location,
@@ -62,6 +62,7 @@ export default function RequestCarePage() {
       duration: formData.duration,
       notes: formData.notes,
     });
+    window.open(mailtoLink, '_blank');
 
     setIsSubmitting(false);
     setIsSubmitted(true);
@@ -82,11 +83,12 @@ export default function RequestCarePage() {
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
               <h1 className="font-heading text-2xl md:text-3xl text-care-navy mb-4">
-                WhatsApp Opening...
+                Email Opening...
               </h1>
               <p className="text-care-gray-500 mb-6">
-                We&apos;ve prepared your care request. WhatsApp should open automatically with your details.
-                If it doesn&apos;t open, please check your browser settings or contact us directly.
+                We&apos;ve prepared your care request. Your email app should open automatically with
+                your details, ready to send to info@moshihomecare.com. If it doesn&apos;t open,
+                please email us directly or contact us by phone.
               </p>
               <div className="space-y-3">
                 <button
@@ -137,7 +139,7 @@ export default function RequestCarePage() {
                   Get the Care Your Loved One Deserves
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl">
-                  Fill out the form below and we&apos;ll connect with you via WhatsApp to discuss your care needs.
+                  Fill out the form below and we&apos;ll connect with you via email to discuss your care needs.
                 </p>
               </FadeIn>
             </div>
@@ -278,14 +280,14 @@ export default function RequestCarePage() {
                       'Sending...'
                     ) : (
                       <>
-                        Send Request via WhatsApp
+                        Send Request via Email
                         <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                       </>
                     )}
                   </button>
 
                   <p className="text-care-gray-400 text-xs text-center">
-                    By submitting, you agree to be contacted via WhatsApp about your care request.
+                    By submitting, you agree to be contacted by email about your care request.
                   </p>
                 </form>
               </div>
@@ -361,7 +363,7 @@ export default function RequestCarePage() {
                   />
                   <StatCard
                     icon={<MapPin className="w-5 h-5" />}
-                    value="100"
+                    value="7"
                     label="NC Counties"
                     variant="glass"
                     animate={false}

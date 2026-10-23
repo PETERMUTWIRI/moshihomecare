@@ -17,15 +17,6 @@ const contactMethods = [
     cta: 'Call Now',
   },
   {
-    icon: MessageCircle,
-    title: 'WhatsApp',
-    description: 'Quick responses via WhatsApp messaging',
-    action: 'Available 24/7',
-    href: 'https://wa.me/1234567890',
-    cta: 'Chat on WhatsApp',
-    external: true,
-  },
-  {
     icon: Mail,
     title: 'Email',
     description: 'Send us your questions anytime',
@@ -37,7 +28,7 @@ const contactMethods = [
 
 const coverageInfo = [
   { icon: MapPin, title: 'Office Address', value: '145 Brisk Drive, Zebulon, NC 27597' },
-  { icon: MapPin, title: 'Service Coverage', value: 'All Counties in North Carolina' },
+  { icon: MapPin, title: 'Service Coverage', value: 'Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties' },
   { icon: Clock, title: 'Availability', value: '24/7 Support' },
 ];
 
@@ -82,7 +73,7 @@ export default function ContactPage() {
       {/* Contact Methods */}
       <section className="pb-16 md:pb-24 bg-gradient-lift">
         <div className="container-care mx-auto px-4 sm:px-6 lg:px-8">
-          <StaggerContainer className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto" staggerDelay={0.1}>
+          <StaggerContainer className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto" staggerDelay={0.1}>
             {contactMethods.map((method) => (
               <StaggerItem key={method.title}>
                 <div className="card-feature p-7 md:p-8 text-center h-full flex flex-col hover:-translate-y-2">
@@ -94,8 +85,6 @@ export default function ContactPage() {
                   <p className="font-medium text-care-navy mb-6">{method.action}</p>
                   <a
                     href={method.href}
-                    target={method.external ? '_blank' : undefined}
-                    rel={method.external ? 'noopener noreferrer' : undefined}
                     className="btn-primary w-full text-sm py-3 mt-auto group"
                   >
                     {method.cta}

@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 import Image from 'next/image';
 import { Heart, ArrowRight, CheckCircle, User, Phone, Mail, Award, FileUp, Briefcase, FileText, Clock, MapPin } from 'lucide-react';
-import { generateApplicationMailto } from '@/lib/whatsapp';
+import { generateApplicationMailto } from '@/lib/mailto';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
 import SectionBackground, { SectionBadge, FloatingCard, BlurredOrb } from '@/components/SectionBackground';
 import StatCard from '@/components/StatCard';

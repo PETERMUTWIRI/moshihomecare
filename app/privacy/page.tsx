@@ -74,12 +74,12 @@ export default function PrivacyPolicyPage() {
                   <li>Improve our website and services</li>
                 </ul>
 
-                <h2 className="font-heading text-xl text-care-navy mt-8 mb-4">3. WhatsApp Communication</h2>
+                <h2 className="font-heading text-xl text-care-navy mt-8 mb-4">3. Email Communication</h2>
                 <p className="text-care-gray-500 mb-4">
-                  When you submit a form on our website, we may open WhatsApp with a pre-filled message 
-                  containing your information. This allows us to respond to your request quickly. Your 
-                  information is sent directly to us via WhatsApp and is not stored on our servers unless 
-                  you explicitly consent to follow-up communication.
+                  When you submit a form on our website, we open your email app with a pre-filled message
+                  addressed to info@moshihomecare.com containing your information. This allows us to respond
+                  to your request quickly. Your information is sent directly to us via email and is not
+                  stored on our servers unless you explicitly consent to follow-up communication.
                 </p>
 
                 <h2 className="font-heading text-xl text-care-navy mt-8 mb-4">4. Data Sharing</h2>
