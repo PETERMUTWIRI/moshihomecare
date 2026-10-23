@@ -1,36 +1,8 @@
-// Email utility for client care requests and caregiver applications.
-// Opens the visitor's email client pre-addressed to the Moshi Home Care inbox.
+// Email utility for caregiver applications.
+// Opens the applicant's email client pre-addressed to the Moshi Home Care inbox
+// so they can review the application and attach their CV before sending.
 
 export const OFFICE_EMAIL = 'info@moshihomecare.com';
-
-interface ClientRequestData {
-  name: string;
-  phone: string;
-  location: string;
-  serviceType: string;
-  duration: string;
-  notes?: string;
-}
-
-/**
- * Generate a mailto link that sends a client care request to the office inbox.
- * The visitor's email client opens as the sender with the request pre-filled.
- */
-export function generateCareRequestMailto(data: ClientRequestData, recipientEmail: string = OFFICE_EMAIL): string {
-  const subject = encodeURIComponent(`New Care Request - ${data.name}`);
-  let body = `New Care Request - Moshi Home Care\n\n` +
-    `Name: ${data.name}\n` +
-    `Phone: ${data.phone}\n` +
-    `Location: ${data.location}\n` +
-    `Service Needed: ${data.serviceType}\n` +
-    `Duration: ${data.duration}\n`;
-
-  if (data.notes) {
-    body += `Additional Notes: ${data.notes}\n`;
-  }
-
-  return `mailto:${recipientEmail}?subject=${subject}&body=${encodeURIComponent(body)}`;
-}
 
 /**
  * Generate a mailto link that sends the full caregiver application to the office inbox.

@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Heart, ArrowRight, CheckCircle, MapPin, Clock, User, Phone, FileText, Calendar } from 'lucide-react';
-import { generateCareRequestMailto } from '@/lib/mailto';
+import { Heart, ArrowRight, CheckCircle, MapPin, Clock, User, Phone, Mail, FileText, Calendar } from 'lucide-react';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
 import SectionBackground, { SectionBadge, FloatingCard, BlurredOrb } from '@/components/SectionBackground';
 import StatCard from '@/components/StatCard';
@@ -40,6 +39,7 @@ const durationOptions = [
 export default function RequestCarePage() {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     phone: '',
     location: '',
     serviceType: '',
@@ -48,24 +48,30 @@ export default function RequestCarePage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError('');
 
-    // Send the request to the Moshi Home Care inbox via the visitor's email client
-    const mailtoLink = generateCareRequestMailto({
-      name: formData.name,
-      phone: formData.phone,
-      location: formData.location,
-      serviceType: formData.serviceType,
-      duration: formData.duration,
-      notes: formData.notes,
-    });
-    window.open(mailtoLink, '_blank');
+    try {
+      const response = await fetch('/api/request-care', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+
+      setIsSubmitted(true);
+    } catch {
+      setSubmitError('Sorry, something went wrong while sending your request. Please try again, or call us at +1 (910) 476-6003.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -83,12 +89,12 @@ export default function RequestCarePage() {
                 <CheckCircle className="w-10 h-10 text-green-600" />
               </div>
               <h1 className="font-heading text-2xl md:text-3xl text-care-navy mb-4">
-                Email Opening...
+                Request Received
               </h1>
               <p className="text-care-gray-500 mb-6">
-                We&apos;ve prepared your care request. Your email app should open automatically with
-                your details, ready to send to info@moshihomecare.com. If it doesn&apos;t open,
-                please email us directly or contact us by phone.
+                Thank you! Your care request has been sent to our team, and a confirmation
+                email is on its way to {formData.email}. We&apos;ll contact you shortly to
+                discuss your care needs.
               </p>
               <div className="space-y-3">
                 <button
@@ -191,6 +197,24 @@ export default function RequestCarePage() {
                     />
                   </div>
 
+                  {/* Email */}
+                  <div>
+                    <label htmlFor="email" className="form-label flex items-center gap-2">
+                      <Mail className="w-4 h-4 text-care-gray-400" />
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Enter your email address"
+                      className="form-input"
+                    />
+                  </div>
+
                   {/* Location */}
                   <div>
                     <label htmlFor="location" className="form-label flex items-center gap-2">
@@ -285,6 +309,10 @@ export default function RequestCarePage() {
                       </>
                     )}
                   </button>
+
+                  {submitError && (
+                    <p className="text-red-600 text-sm text-center">{submitError}</p>
+                  )}
 
                   <p className="text-care-gray-400 text-xs text-center">
                     By submitting, you agree to be contacted by email about your care request.
