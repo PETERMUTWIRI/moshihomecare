@@ -38,11 +38,11 @@ const milestones = [
   { year: '2026', event: 'Celebrated 5 years of compassionate care' },
 ];
 
-const stats = [
+const stats: { value: string; label: string; detail?: string }[] = [
   { value: '5+', label: 'Years Experience' },
   { value: '5K+', label: 'Families Served' },
   { value: 'Reliable', label: 'Caregivers' },
-  { value: '7', label: 'NC Counties Covered' },
+  { value: '7', label: 'NC Counties Covered', detail: 'Nash, Franklin, Johnson, Wake, Durham, Cary & Granville' },
 ];
 
 export default function AboutPage() {
@@ -102,6 +102,7 @@ export default function AboutPage() {
                   icon={stat.label.includes('Experience') ? <Award className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Families') ? <Heart className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Caregivers') ? <Users className="w-5 h-5 lg:w-6 lg:h-6" /> : <Globe className="w-5 h-5 lg:w-6 lg:h-6" />}
                   value={stat.value}
                   label={stat.label}
+                  detail={stat.detail}
                   variant="white"
                   className="shadow-elevated"
                   animate={false}

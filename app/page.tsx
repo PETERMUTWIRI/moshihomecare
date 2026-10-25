@@ -34,8 +34,8 @@ import SectionBackground, { FloatingCard, SectionBadge, BlurredOrb } from '@/com
 import StatCard from '@/components/StatCard';
 
 // Trust indicators
-const trustIndicators = [
-  { icon: MapPin, label: 'Serving North Carolina', value: '7 NC Counties' },
+const trustIndicators: { icon: typeof MapPin; label: string; value: string; detail?: string }[] = [
+  { icon: MapPin, label: 'Serving North Carolina', value: '7 NC Counties', detail: 'Nash, Franklin, Johnson, Wake, Durham, Cary & Granville' },
   { icon: Award, label: 'Years Experience', value: '5+' },
   { icon: Users, label: 'Clients Cared For', value: '5K+' },
   { icon: Shield, label: 'Screened Caregivers', value: '100%' },
@@ -831,6 +831,9 @@ export default function HomePage() {
                       <div>
                         <p className="font-heading text-2xl !text-white">{indicator.value}</p>
                         <p className="text-white/60 text-sm font-medium">{indicator.label}</p>
+                        {indicator.detail && (
+                          <p className="text-white/40 text-xs mt-1 leading-snug">{indicator.detail}</p>
+                        )}
                       </div>
                     </div>
                   ))}

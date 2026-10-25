@@ -393,6 +393,7 @@ export default function RequestCarePage() {
                     icon={<MapPin className="w-5 h-5" />}
                     value="7"
                     label="NC Counties"
+                    detail="Nash, Franklin, Johnson, Wake, Durham, Cary & Granville"
                     variant="glass"
                     animate={false}
                     className="text-center"

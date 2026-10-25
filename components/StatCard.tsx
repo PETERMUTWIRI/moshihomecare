@@ -6,6 +6,7 @@ interface StatCardProps {
   icon: ReactNode;
   value: string;
   label: string;
+  detail?: string;
   variant?: 'glass' | 'white' | 'dark' | 'red';
   className?: string;
   iconClassName?: string;
@@ -25,6 +26,7 @@ export default function StatCard({
   icon,
   value,
   label,
+  detail,
   variant = 'white',
   className = '',
   iconClassName = '',
@@ -36,24 +38,28 @@ export default function StatCard({
       icon: 'bg-care-red text-white',
       value: 'text-care-navy',
       label: 'text-care-gray-500',
+      detail: 'text-care-gray-500/80',
     },
     white: {
       card: 'bg-white border-care-gray-100 shadow-elevated',
       icon: 'bg-care-red text-white',
       value: 'text-care-navy',
       label: 'text-care-gray-500',
+      detail: 'text-care-gray-500/80',
     },
     dark: {
       card: 'bg-care-navy/90 backdrop-blur-lg border-white/10 shadow-floating',
       icon: 'bg-care-red text-white',
       value: 'text-white',
       label: 'text-white/70',
+      detail: 'text-white/40',
     },
     red: {
       card: 'bg-gradient-to-br from-care-red to-care-red-700 border-care-red-600 shadow-glow-red',
       icon: 'bg-white/20 text-white',
       value: 'text-white',
       label: 'text-white/80',
+      detail: 'text-white/60',
     },
   };
 
@@ -91,6 +97,11 @@ export default function StatCard({
           <p className={`text-xs lg:text-sm ${v.label}`}>
             {label}
           </p>
+          {detail && (
+            <p className={`text-xs mt-1 leading-snug ${v.detail}`}>
+              {detail}
+            </p>
+          )}
         </div>
       </div>
     </div>
