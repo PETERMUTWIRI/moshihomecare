@@ -2,7 +2,7 @@
 // Opens the applicant's email client pre-addressed to the Moshi Home Care inbox
 // so they can review the application and attach their CV before sending.
 
-export const OFFICE_EMAIL = 'info@moshihomecare.com';
+export const OFFICE_EMAIL = 'info@moshihomecare.org';
 
 /**
  * Generate a mailto link that sends the full caregiver application to the office inbox.

@@ -154,11 +154,11 @@ export default function Navbar() {
                 <span className="text-xs md:text-sm font-medium whitespace-nowrap">+1 (910) 476-6003</span>
               </a>
               <a 
-                href="mailto:info@moshihomecare.com" 
+                href="mailto:info@moshihomecare.org" 
                 className="hidden lg:flex items-center gap-1.5 text-white/90 hover:text-white transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                <span className="text-sm font-medium whitespace-nowrap">info@moshihomecare.com</span>
+                <span className="text-sm font-medium whitespace-nowrap">info@moshihomecare.org</span>
               </a>
             </div>
           </div>
@@ -422,11 +422,11 @@ export default function Navbar() {
                   <span>+1 (910) 476-6003</span>
                 </a>
                 <a
-                  href="mailto:info@moshihomecare.com"
+                  href="mailto:info@moshihomecare.org"
                   className="flex items-center gap-2 py-3 px-4 text-sm font-bold text-white hover:bg-white/10 rounded-xl transition-colors"
                 >
                   <Mail className="w-4 h-4" />
-                  <span>info@moshihomecare.com</span>
+                  <span>info@moshihomecare.org</span>
                 </a>
                 <Link
                   href="/request-care"

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.moshihomecare.com';
+  const baseUrl = 'https://www.moshihomecare.org';
   
   // Current date for lastModified
   const currentDate = new Date();

@@ -20,8 +20,8 @@ const contactMethods = [
     icon: Mail,
     title: 'Email',
     description: 'Send us your questions anytime',
-    action: 'info@moshihomecare.com',
-    href: 'mailto:info@moshihomecare.com',
+    action: 'info@moshihomecare.org',
+    href: 'mailto:info@moshihomecare.org',
     cta: 'Send Email',
   },
 ];

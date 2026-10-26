@@ -144,8 +144,8 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-care-red flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-xs text-care-gray-400 uppercase tracking-wider mb-0.5">Email</p>
-                  <a href="mailto:info@moshihomecare.com" className="text-white hover:text-care-red transition-colors text-sm">
-                    info@moshihomecare.com
+                  <a href="mailto:info@moshihomecare.org" className="text-white hover:text-care-red transition-colors text-sm">
+                    info@moshihomecare.org
                   </a>
                 </div>
               </li>

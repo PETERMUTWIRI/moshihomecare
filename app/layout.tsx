@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   
   // Canonical URL base
-  metadataBase: new URL('https://www.moshihomecare.com'),
+  metadataBase: new URL('https://www.moshihomecare.org'),
   
   // Alternates
   alternates: {
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Moshi Home Care",
     description: "Trusted home care services for your loved ones. 5+ years of experience serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties.",
-    url: 'https://www.moshihomecare.com',
+    url: 'https://www.moshihomecare.org',
     siteName: "Moshi Home Care",
     locale: 'en_US',
     type: 'website',
@@ -171,10 +171,10 @@ export default function RootLayout({
               '@type': 'LocalBusiness',
               name: 'Moshi Home Care',
               description: 'Professional home care services serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties. 5+ years of experience providing compassionate care for seniors and individuals needing assistance.',
-              url: 'https://www.moshihomecare.com',
+              url: 'https://www.moshihomecare.org',
               telephone: '+1 (910) 476-6003',
-              email: 'info@moshihomecare.com',
-              image: 'https://www.moshihomecare.com/moshi_logo_card.png',
+              email: 'info@moshihomecare.org',
+              image: 'https://www.moshihomecare.org/moshi_logo_card.png',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '145 Brisk Drive',

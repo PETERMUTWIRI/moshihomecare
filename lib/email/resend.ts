@@ -7,8 +7,8 @@
  * 1. Sign up at https://resend.com and create an API key
  * 2. Add `RESEND_API_KEY=re_xxxxxxxx` to .env.local (and to Vercel's
  *    environment variables for production)
- * 3. Verify the moshihomecare.com domain in the Resend dashboard so emails
- *    can be sent from info@moshihomecare.com. Until then, set
+ * 3. Verify the moshihomecare.org domain in the Resend dashboard so emails
+ *    can be sent from info@moshihomecare.org. Until then, set
  *    RESEND_FROM_EMAIL to a Resend test address (e.g. 'onboarding@resend.dev').
  */
 
@@ -25,10 +25,10 @@ function getResend(): Resend {
   return resendClient;
 }
 
-const OFFICE_EMAIL = 'info@moshihomecare.com';
+const OFFICE_EMAIL = 'info@moshihomecare.org';
 const OFFICE_PHONE = '+1 (910) 476-6003';
 const FROM_EMAIL =
-  process.env.RESEND_FROM_EMAIL || 'Moshi Home Care <info@moshihomecare.com>';
+  process.env.RESEND_FROM_EMAIL || 'Moshi Home Care <info@moshihomecare.org>';
 
 // Brand palette (matches globals.css)
 const NAVY = '#0F2B32';

@@ -77,7 +77,7 @@ export default function PrivacyPolicyPage() {
                 <h2 className="font-heading text-xl text-care-navy mt-8 mb-4">3. Email Communication</h2>
                 <p className="text-care-gray-500 mb-4">
                   When you submit a form on our website, we open your email app with a pre-filled message
-                  addressed to info@moshihomecare.com containing your information. This allows us to respond
+                  addressed to info@moshihomecare.org containing your information. This allows us to respond
                   to your request quickly. Your information is sent directly to us via email and is not
                   stored on our servers unless you explicitly consent to follow-up communication.
                 </p>
@@ -115,7 +115,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="bg-care-gray-50 rounded-xl p-6 mt-4">
                   <p className="mb-1 font-semibold text-care-navy">Moshi Home Care</p>
-                  <p className="text-care-gray-500">Email: <a href="mailto:privacy@moshihomecare.com" className="text-care-red hover:underline">privacy@moshihomecare.com</a></p>
+                  <p className="text-care-gray-500">Email: <a href="mailto:privacy@moshihomecare.org" className="text-care-red hover:underline">privacy@moshihomecare.org</a></p>
                   <p className="text-care-gray-500">Phone: <a href="tel:+19104766003" className="text-care-red hover:underline">+1 (910) 476-6003</a></p>
                 </div>
               </div>

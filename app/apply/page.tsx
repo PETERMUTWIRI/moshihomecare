@@ -61,7 +61,7 @@ export default function ApplyPage() {
       experience: formData.experience,
       services: formData.services.join(', '),
       cvFileName: cvUploadMethod === 'upload' ? cvFile?.name : null,
-      recipientEmail: 'info@moshihomecare.com',
+      recipientEmail: 'info@moshihomecare.org',
     });
     window.open(mailtoLink, '_blank');
 
@@ -104,7 +104,7 @@ export default function ApplyPage() {
               </h1>
               <p className="text-care-gray-500 mb-4">
                 Your email client should open with your application details addressed to{' '}
-                <a href="mailto:info@moshihomecare.com" className="text-care-red font-medium">info@moshihomecare.com</a>.
+                <a href="mailto:info@moshihomecare.org" className="text-care-red font-medium">info@moshihomecare.org</a>.
                 {' '}Please attach your CV{cvFile ? ` (${cvFile.name})` : ''} to the email before sending, and we&apos;ll
                 review your application and get back to you soon.
               </p>
