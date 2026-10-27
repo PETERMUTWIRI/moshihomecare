@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { Star, Users, Quote } from 'lucide-react';
+import Link from 'next/link';
+import { Star, Users, Quote, MessageSquare } from 'lucide-react';
 import StarRating from '@/components/StarRating';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
 import { SectionBadge } from '@/components/SectionBackground';
@@ -16,33 +17,6 @@ interface Review {
   wouldRecommend: boolean;
   createdAt: string;
 }
-
-const fallbackReviews = [
-  {
-    id: 'fallback-1',
-    name: 'Sarah Johnson',
-    imageUrl: '/images/testimonial-1.jpeg',
-    overallExperience: 5,
-    comment: 'Moshi Home Care has been a blessing for our family. The caregiver is compassionate, reliable, and truly cares about my mother\'s well-being. We couldn\'t ask for better care.',
-    title: 'Daughter of Client',
-  },
-  {
-    id: 'fallback-2',
-    name: 'Michael Chen',
-    imageUrl: '/images/testimonial-2.jpeg',
-    overallExperience: 5,
-    comment: 'The peace of mind Moshi Home Care provides is priceless. Knowing my father is in good hands allows me to focus on my work without worry. Highly recommend!',
-    title: 'Son of Client',
-  },
-  {
-    id: 'fallback-3',
-    name: 'Emily Rodriguez',
-    imageUrl: '/images/testimonial-3.jpeg',
-    overallExperience: 5,
-    comment: 'Professional, caring, and responsive. Moshi Home Care exceeded our expectations in every way. Their attention to detail and genuine compassion made all the difference.',
-    title: 'Daughter of Client',
-  },
-];
 
 export default function TestimonialsSection() {
   const [reviews, setReviews] = useState<Review[]>([]);
@@ -61,9 +35,7 @@ export default function TestimonialsSection() {
       });
   }, []);
 
-  const displayReviews = reviews.length > 0
-    ? reviews.slice(0, 3).map((r) => ({ ...r, title: 'Verified Client' }))
-    : fallbackReviews;
+  const displayReviews = reviews.slice(0, 3);
 
   return (
     <section className="section-padding bg-gradient-lift relative overflow-hidden">
@@ -106,6 +78,21 @@ export default function TestimonialsSection() {
               </div>
             ))}
           </div>
+        ) : displayReviews.length === 0 ? (
+          <FadeIn>
+            <div className="text-center max-w-xl mx-auto py-8">
+              <div className="w-16 h-16 rounded-full bg-care-gray-100 flex items-center justify-center mx-auto mb-4">
+                <MessageSquare className="w-8 h-8 text-care-gray-400" />
+              </div>
+              <h3 className="font-heading text-xl text-care-navy mb-2">No Reviews Yet</h3>
+              <p className="text-care-gray-500 mb-6">
+                Be the first to share your experience with Moshi Home Care.
+              </p>
+              <Link href="/reviews" className="btn-primary inline-flex">
+                Leave a Review
+              </Link>
+            </div>
+          </FadeIn>
         ) : (
           <StaggerContainer className="grid md:grid-cols-3 gap-8" staggerDelay={0.12}>
             {displayReviews.map((review, index) => (
@@ -135,7 +122,7 @@ export default function TestimonialsSection() {
 
                   {/* Review Text */}
                   <p className="text-care-gray-600 leading-relaxed mb-8 text-base">
-                    &ldquo;{'comment' in review && review.comment ? review.comment : 'Verified client review'}&rdquo;
+                    &ldquo;{review.comment ? review.comment : 'Verified client review'}&rdquo;
                   </p>
 
                   {/* Author */}
@@ -154,7 +141,7 @@ export default function TestimonialsSection() {
                     </div>
                     <div>
                       <p className="font-heading text-care-navy text-base">{review.name}</p>
-                      <p className="text-care-gray-500 text-sm">{'title' in review ? review.title : 'Verified Client'}</p>
+                      <p className="text-care-gray-500 text-sm">Verified Client</p>
                     </div>
                   </div>
 
