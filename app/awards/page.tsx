@@ -84,8 +84,7 @@ const awards = [
 ];
 
 const stats = [
-  { value: '5+', label: 'Years of Service' },
-  { value: '5K+', label: 'Families Served' },
+  { value: '3+', label: 'Years of Service' },
   { value: '99%', label: 'Client Satisfaction' },
   { value: '5-Star', label: 'Average Rating' },
 ];
@@ -129,7 +128,7 @@ export default function AwardsPage() {
                   <span className="text-care-red">Recognized by Industry Leaders.</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
-                  For over 5 years, Moshi Home Care has set the standard for compassionate,
+                  For over 3 years, Moshi Home Care has set the standard for compassionate,
                   professional home care. These recognitions reflect our unwavering commitment 
                   to excellence, transparency, and the families we serve.
                 </p>
@@ -142,11 +141,11 @@ export default function AwardsPage() {
       {/* Stats Bar - Gradient Background */}
       <section className="py-14 bg-gradient-lift border-y border-care-gray-100">
         <div className="container-care mx-auto px-4 sm:px-6 lg:px-8">
-          <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-8" staggerDelay={0.1}>
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-3 gap-8" staggerDelay={0.1}>
             {stats.map((stat) => (
               <StaggerItem key={stat.label}>
                 <StatCard
-                  icon={stat.label.includes('Service') ? <Award className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Families') ? <Heart className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Satisfaction') ? <Star className="w-5 h-5 lg:w-6 lg:h-6" /> : <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />}
+                  icon={stat.label.includes('Service') ? <Award className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Satisfaction') ? <Star className="w-5 h-5 lg:w-6 lg:h-6" /> : <Trophy className="w-5 h-5 lg:w-6 lg:h-6" />}
                   value={stat.value}
                   label={stat.label}
                   variant="glass"

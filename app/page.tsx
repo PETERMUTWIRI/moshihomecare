@@ -36,8 +36,7 @@ import StatCard from '@/components/StatCard';
 // Trust indicators
 const trustIndicators: { icon: typeof MapPin; label: string; value: string; detail?: string }[] = [
   { icon: MapPin, label: 'Serving North Carolina', value: '7 NC Counties', detail: 'Nash, Franklin, Johnson, Wake, Durham, Cary & Granville' },
-  { icon: Award, label: 'Years Experience', value: '5+' },
-  { icon: Users, label: 'Clients Cared For', value: '5K+' },
+  { icon: Award, label: 'Years Experience', value: '3+' },
   { icon: Shield, label: 'Screened Caregivers', value: '100%' },
 ];
 
@@ -60,7 +59,7 @@ function HeroImage() {
         <div className="hidden md:block absolute -bottom-6 -left-4 lg:-bottom-8 lg:-left-8 z-30">
           <StatCard
             icon={<Award className="w-5 h-5 lg:w-6 lg:h-6" />}
-            value="5+"
+            value="3+"
             label="Years Experience"
             variant="glass"
             animate={false}
@@ -814,7 +813,7 @@ export default function HomePage() {
                   Why Choose Moshi Home Care
                 </SectionBadge>
                 <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl !text-white mb-6 tracking-tight">
-                  Trusted Care for Over 5 Years
+                  Trusted Care for Over 3 Years
                 </h2>
                 <p className="text-white/70 text-lg mb-10 leading-relaxed">
                   We understand that choosing a caregiver for your loved one is one of the most 
@@ -822,7 +821,7 @@ export default function HomePage() {
                   trust, compassion, and excellence in care.
                 </p>
                 
-                <div className="grid grid-cols-2 gap-4 lg:gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-6">
                   {trustIndicators.map((indicator) => (
                     <div key={indicator.label} className="card-dark p-5 rounded-2xl hover:bg-white/5 transition-colors">
                       <div className="w-12 h-12 rounded-xl bg-care-red/20 flex items-center justify-center mb-4">

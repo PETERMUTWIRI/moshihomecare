@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { Heart, Shield, Users, Award, Clock, MapPin, CheckCircle, Star, Target, Globe } from 'lucide-react';
+import { Heart, Shield, Users, Award, Clock, MapPin, CheckCircle, Target, Globe } from 'lucide-react';
 import CTASection from '@/components/CTASection';
 import FadeIn, { StaggerContainer, StaggerItem } from '@/components/FadeIn';
 import SectionBackground, { FloatingCard, SectionBadge, BlurredOrb } from '@/components/SectionBackground';
@@ -30,17 +30,8 @@ const values = [
   },
 ];
 
-const milestones = [
-  { year: '2021', event: 'Moshi Home Care was founded with a mission to provide quality home care' },
-  { year: '2022', event: 'Expanded services across the Triangle region' },
-  { year: '2026', event: 'Reached 5,000 clients cared for milestone' },
-  { year: '2024', event: 'Launched specialized dementia and Alzheimer\'s care programs' },
-  { year: '2026', event: 'Celebrated 5 years of compassionate care' },
-];
-
 const stats: { value: string; label: string; detail?: string }[] = [
-  { value: '5+', label: 'Years Experience' },
-  { value: '5K+', label: 'Families Served' },
+  { value: '3+', label: 'Years Experience' },
   { value: 'Reliable', label: 'Caregivers' },
   { value: '7', label: 'NC Counties Covered', detail: 'Nash, Franklin, Johnson, Wake, Durham, Cary & Granville' },
 ];
@@ -71,7 +62,7 @@ export default function AboutPage() {
                   About Us
                 </SectionBadge>
                 <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-care-navy mb-6 leading-tight tracking-tight">
-                  Over 5 Years of{' '}
+                  Over 3 Years of{' '}
                   <span className="text-care-red">Compassionate Care</span>
                 </h1>
                 <p className="text-care-gray-600 text-base md:text-lg lg:text-xl leading-relaxed">
@@ -95,11 +86,11 @@ export default function AboutPage() {
       {/* Stats Section - Floating Cards */}
       <section className="py-16 bg-gradient-lift relative -mt-8 z-10">
         <div className="container-care mx-auto px-4 sm:px-6 lg:px-8">
-          <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-6" staggerDelay={0.1}>
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-3 gap-6" staggerDelay={0.1}>
             {stats.map((stat) => (
               <StaggerItem key={stat.label}>
                 <StatCard
-                  icon={stat.label.includes('Experience') ? <Award className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Families') ? <Heart className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Caregivers') ? <Users className="w-5 h-5 lg:w-6 lg:h-6" /> : <Globe className="w-5 h-5 lg:w-6 lg:h-6" />}
+                  icon={stat.label.includes('Experience') ? <Award className="w-5 h-5 lg:w-6 lg:h-6" /> : stat.label.includes('Caregivers') ? <Users className="w-5 h-5 lg:w-6 lg:h-6" /> : <Globe className="w-5 h-5 lg:w-6 lg:h-6" />}
                   value={stat.value}
                   label={stat.label}
                   detail={stat.detail}
@@ -138,8 +129,8 @@ export default function AboutPage() {
                   <div className="space-y-5 text-care-gray-600 leading-relaxed text-lg">
                     <p>
                       Moshi Home Care was born from a simple, unwavering belief: that aging with dignity
-                      isn&apos;t a privilege—it&apos;s a fundamental right. Founded in 2021 by a registered
-                      nurse with over 25 years of clinical experience, Moshi Home Care exists because
+                      isn&apos;t a privilege—it&apos;s a fundamental right. Founded in 2023 by a registered
+                      nurse with over 18 years of experience, Moshi Home Care exists because
                       countless families struggled to find care that truly honored their loved ones.
                     </p>
                     <p>
@@ -150,8 +141,8 @@ export default function AboutPage() {
                     </p>
                     <p>
                       Today, that same spirit guides our reliable caregivers across North Carolina. What started as 
-                      one nurse&apos;s vision has grown into a trusted network serving thousands of families 
-                      across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties.
+                      one nurse&apos;s vision has grown into a trusted care network across Nash, Franklin,
+                      Johnson, Wake, Durham, Cary and Granville Counties.
                     </p>
                   </div>
                 </div>
@@ -167,24 +158,6 @@ export default function AboutPage() {
                       height={500}
                       className="object-cover w-full h-full"
                     />
-                  </div>
-                  
-                  {/* Floating Journey Card */}
-                  <div className="absolute -bottom-8 -left-6 lg:-left-8 z-10">
-                    <FloatingCard variant="dark" className="max-w-xs">
-                      <h3 className="font-heading text-xl !text-white mb-4 flex items-center gap-2">
-                        <Star className="w-5 h-5 text-care-red" />
-                        Our Journey
-                      </h3>
-                      <div className="space-y-3">
-                        {milestones.slice(0, 3).map((milestone) => (
-                          <div key={milestone.year} className="flex gap-3">
-                            <span className="font-heading text-care-red text-base font-bold min-w-[48px]">{milestone.year}</span>
-                            <p className="text-white/80 text-sm font-medium leading-snug">{milestone.event}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </FloatingCard>
                   </div>
                 </div>
               </FadeIn>

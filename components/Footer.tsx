@@ -89,7 +89,7 @@ export default function Footer() {
             </Link>
             <p className="text-care-gray-300 text-sm leading-relaxed mb-6">
               Professional, compassionate home care services you can trust.
-              Serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties for over 5 years.
+              Serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties for over 3 years.
             </p>
           </div>
 

@@ -84,7 +84,7 @@ export const metadata: Metadata = {
   // Open Graph - Social sharing
   openGraph: {
     title: "Moshi Home Care",
-    description: "Trusted home care services for your loved ones. 5+ years of experience serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties.",
+    description: "Trusted home care services for your loved ones. 3+ years of experience serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties.",
     url: 'https://www.moshihomecare.org',
     siteName: "Moshi Home Care",
     locale: 'en_US',
@@ -170,7 +170,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
               name: 'Moshi Home Care',
-              description: 'Professional home care services serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties. 5+ years of experience providing compassionate care for seniors and individuals needing assistance.',
+              description: 'Professional home care services serving families across Nash, Franklin, Johnson, Wake, Durham, Cary and Granville Counties. 3+ years of experience providing compassionate care for seniors and individuals needing assistance.',
               url: 'https://www.moshihomecare.org',
               telephone: '+1 (910) 476-6003',
               email: 'info@moshihomecare.org',

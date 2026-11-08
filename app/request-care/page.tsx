@@ -364,27 +364,16 @@ export default function RequestCarePage() {
                     fill
                     className="object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-care-navy/80 to-transparent flex items-end p-6">
-                    <p className="text-white font-medium">Trusted by 5,000+ families across North Carolina</p>
-                  </div>
                 </div>
               </FadeIn>
 
               {/* Quick Stats */}
               <FadeIn direction="up" delay={0.25}>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   <StatCard
                     icon={<Clock className="w-5 h-5" />}
                     value="30min"
                     label="Response"
-                    variant="glass"
-                    animate={false}
-                    className="text-center"
-                  />
-                  <StatCard
-                    icon={<Heart className="w-5 h-5" />}
-                    value="5K+"
-                    label="Families"
                     variant="glass"
                     animate={false}
                     className="text-center"
